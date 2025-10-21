@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio AYMANE AYYADI - Étudiant BTS SIO SISR</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="antialiased">
+    <!-- Header Navigation -->
+    <header class="header fixed top-0 left-0 w-full z-50 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-[#4e9eff] hover:text-[#601cfc] transition duration-300">AYMANE AYYADI</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Accueil</a>
+                <a href="#profil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
+                <a href="#parcours" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Parcours</a>
+                <a href="#competences" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Compétences</a>
+                <a href="#projets" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Projets</a>
+                <a href="#veille" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
+                <a href="#contact" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- Section Accueil -->
+    <section id="accueil" class="min-h-screen flex items-center relative bg-[#0a0e1a] overflow-hidden">
+        <!-- Background network image -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop" 
+                 alt="Network background" 
+                 class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-6 z-20">
+            <div class="max-w-2xl animate-fadeInUp">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    <span class="gradient-text">Bonjour,</span><br>
+                    je suis <span class="gradient-text">AYMANE AYYADI</span><br>
+                    <span class="text-xl md:text-2xl font-normal text-[#c7d5e0]">Étudiant en deuxième année BTS SIO option (SISR)</span>
+                </h1>
+                
+                <div class="flex space-x-6 mt-8">
+                    <a href="https://www.linkedin.com/in/aymane-ayyadi-52b62a340/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#4e9eff] text-white hover:bg-[#4e9eff] hover:scale-110 transition duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Aymaneayyadi" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#4e9eff] text-white hover:bg-[#4e9eff] hover:scale-110 transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#profil" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-arrow">
+            <div class="w-0.5 h-8 bg-[#4e9eff] relative">
+                <div class="absolute bottom-0 left-0 w-2 h-2 border-r-2 border-b-2 border-[#4e9eff] transform rotate-45 -ml-1"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- Section Profil -->
+    <section id="profil" class="section section-bg relative">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop"
+                  alt="Network background"
+                  class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/3 flex justify-center animate-fadeInUp delay-100">
+                    <img src="images/image.png" 
+                         alt="Photo de profil AYMANE AYYADI" 
+                         class="profile-img w-64 h-64 md:w-80 md:h-80 rounded-full object-cover">
+                </div>
+                
+                <div class="lg:w-2/3 animate-fadeInUp delay-200">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">À propos <span class="gradient-text">de moi</span></h2>
+                    
+                    <div class="space-y-4 text-[#c7d5e0]">
+                        <p class="text-lg text-white">
+                            Je me présente, je m'appelle AYMANE AYYADI, J'ai 18 ans et je suis actuellement étudiant en deuxième année 
+                            BTS Services Informatiques aux Organisations option Solutions d'Infrastructure, Systèmes et Réseaux (SIO SISR) 
+                            à IFIDE SUP-FORMATION Alsace de Strasbourg.
+                        </p>
+                        
+                        <p>
+                            Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2, accessible après le baccalauréat, 
+                            qui forme des techniciens spécialisés dans les métiers de l'informatique. Ce BTS s'adresse aux étudiants intéressés 
+                            par les technologies numériques, la programmation, la gestion des réseaux et le développement d'applications.
+                        </p>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-xl font-semibold text-[#4e9eff] mb-4">Les deux spécialités du BTS SIO :</h4>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="card-bg p-6 rounded-lg border-l-4 border-[#4e9eff] hover-scale">
+                                    <h5 class="text-lg font-semibold text-[#4e9eff] mb-2">SISR - Solutions d'Infrastructure, Systèmes et Réseaux</h5>
+                                    <p class="text-[#c7d5e0]">Cette option forme aux métiers de l'administration et de la maintenance des systèmes et réseaux informatiques. 
+                                    Les étudiants développent des compétences dans l'installation, la configuration et la sécurisation des infrastructures IT.</p>
+                                </div>
+                                
+                                <div class="card-bg p-6 rounded-lg border-l-4 border-[#4e9eff] hover-scale">
+                                    <h5 class="text-lg font-semibold text-[#4e9eff] mb-2">SLAM - Solutions Logicielles et Applications Métiers</h5>
+                                    <p class="text-[#c7d5e0]">Cette option forme aux métiers de la programmation et du développement logiciel. 
+                                    Les étudiants acquièrent des compétences dans la conception et le développement d'applications, de sites web et de logiciels.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 animate-fadeInUp delay-300">
+                            <a href="images/CV  Aymane AYYADI.pdf" class="gradient-bg text-white px-8 py-3 rounded-full font-semibold inline-flex items-center hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                                <i class="fas fa-download mr-2"></i>
+                                Télécharger mon CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours -->
+    <section id="parcours" class="section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-3xl md:text-4xl font-bold">Mon <span class="gradient-text">parcours scolaire</span></h2>
+                <p class="text-[#c7d5e0] max-w-2xl mx-auto mt-4">Découvrez mon parcours académique et mes expériences professionnelles</p>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <!-- IFIDE SUP-FORMATION -->
+                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-100">
+                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                            <img src="images/IFIDEStrasPhoto.jpg" alt="IFIDE SUP" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        
+                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
+                            <h3 class="text-xl font-semibold text-[#4e9eff]">IFIDE SUP-FORMATION</h3>
+                            <span class="text-[#c7d5e0] block mb-2">2024/2025</span>
+                            <p class="text-[#c7d5e0]">Première année BTS SIO.</p>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Réseaux</span>
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Systèmes</span>
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Sécurité</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- LYCÉE SELMANE EL FARISSI -->
+                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-200">
+                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        
+                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
+                            <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
+                            <span class="text-[#c7d5e0] block mb-2">2023/2024</span>
+                            <p class="text-[#c7d5e0]">Deuxième année Bac Sciences physiques.</p>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Physique</span>
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Chimie</span>
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Maths</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- LYCÉE SELMANE EL FARISSI -->
+                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-300">
+                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-12 h-12 rounded-full object-cover">
+                        </div>
+                        
+                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
+                            <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
+                            <span class="text-[#c7d5e0] block mb-2">2022/2023</span>
+                            <p class="text-[#c7d5e0]">Première année Bac Sciences Expérimentales.</p>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Sciences</span>
+                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Informatique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes Compétences</h2>
+            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Les technologies que je maîtrise et que j'utilise dans mes projets</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- HTML5 -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-100">
+                    <div class="text-center mb-4">
+                        <i class="fab fa-html5 text-5xl text-[#4e9eff]"></i>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">HTML5</h3>
+                        <p class="text-[#c7d5e0] mb-4">Maîtrise des bases et des éléments avancés du langage de balisage web</p>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-full h-2 rounded-full skill-bar-bg">
+                                <div class="h-full rounded-full skill-bar-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="font-semibold text-[#4e9eff]">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CSS3 -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-200">
+                    <div class="text-center mb-4">
+                        <i class="fab fa-css3-alt text-5xl text-[#4e9eff]"></i>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">CSS3</h3>
+                        <p class="text-[#c7d5e0] mb-4">Styles avancés, animations et design responsive moderne</p>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-full h-2 rounded-full skill-bar-bg">
+                                <div class="h-full rounded-full skill-bar-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="font-semibold text-[#4e9eff]">80%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GitHub -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-300">
+                    <div class="text-center mb-4">
+                        <i class="fab fa-github text-5xl text-[#4e9eff]"></i>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                        <p class="text-[#c7d5e0] mb-4">Gestion de versions, collaboration et déploiement de projets</p>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-full h-2 rounded-full skill-bar-bg">
+                                <div class="h-full rounded-full skill-bar-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="font-semibold text-[#4e9eff]">75%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Windows Server -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-400">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-server text-5xl text-[#4e9eff]"></i>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">Windows Server</h3>
+                        <p class="text-[#c7d5e0] mb-4">Administration système, Active Directory et gestion des réseaux</p>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-full h-2 rounded-full skill-bar-bg">
+                                <div class="h-full rounded-full skill-bar-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="font-semibold text-[#4e9eff]">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional skills -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Linux -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-100">
+                    <div class="flex items-center gap-4">
+                        <i class="fab fa-linux text-3xl text-[#4e9eff]"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold">Linux</h3>
+                            <div class="flex items-center gap-3 mt-2">
+                                <div class="w-full h-2 rounded-full skill-bar-bg">
+                                    <div class="h-full rounded-full skill-bar-fill" style="width: 65%"></div>
+                                </div>
+                                <span class="font-semibold text-[#4e9eff] text-sm">65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Réseaux -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-200">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-network-wired text-3xl text-[#4e9eff]"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold">Réseaux</h3>
+                            <div class="flex items-center gap-3 mt-2">
+                                <div class="w-full h-2 rounded-full skill-bar-bg">
+                                    <div class="h-full rounded-full skill-bar-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="font-semibold text-[#4e9eff] text-sm">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Virtualisation -->
+                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-300">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-cloud text-3xl text-[#4e9eff]"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold">Virtualisation</h3>
+                            <div class="flex items-center gap-3 mt-2">
+                                <div class="w-full h-2 rounded-full skill-bar-bg">
+                                    <div class="h-full rounded-full skill-bar-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="font-semibold text-[#4e9eff] text-sm">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes <span class="gradient-text">Réalisations</span></h2>
+            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Découvrez mes projets personnels et professionnels</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 - Windows Server 2022 -->
+                <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/images (1).png" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="flex flex-col space-y-4">
+                                <a href="images/Documentations AD DS V2 AYMANE AYYADI (1).pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-eye mr-2"></i>
+                                    Voir la documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projet 1 - Windows Server 2022</h3>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
+                        </div>
+                        
+                        <p class="text-[#c7d5e0]">Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe et services DNS.</p>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 - Parcus -->
+                <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/logo-parcus-membre-agisport.jpg" alt="Parcus" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="flex flex-col space-y-4">
+                                <a href="images/Livrable 2 Technique Parcus Groupe 4_compressed.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-eye mr-2"></i>
+                                    Voir la documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projet 2 - Parcus</h3>
+                        
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
+                        </div>
+                        
+                        <p class="text-[#c7d5e0]">Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe et services DNS.</p>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 - Application React -->
+                <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/images.png" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="flex flex-col space-y-4">
+                                <a href="images/Documentations AD DS V2 AYMANE AYYADI (1).pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-eye mr-2"></i>
+                                    Voir la documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Windows Server 2022</h3>
+                        
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
+                        </div>
+                        
+                        <p class="text-[#c7d5e0]">Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe et services DNS.</p>
+                    </div>
+                </div>
+            
+            <!-- More projects button -->
+            <div class="text-center mt-12 animate-fadeInUp delay-400">
+                <a href="#" class="inline-flex items-center text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
+                    <span class="mr-2">Voir plus de projets</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Veille -->
+    <section id="veille" class="section section-bg">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto animate-fadeInUp">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4e9eff]">La veille technologique</h2>
+                
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Qu'est-ce que la veille technologique ?</h3>
+                    <p class="text-[#c7d5e0] mb-4">
+                        La veille technologique consiste à s'informer de façon systématique sur les techniques les plus récentes, 
+                        notamment l'innovation de nouvelles technologies. Elle se doit de prévenir et alerter tout responsable d'un changement 
+                        ou d'une nouveauté technologique susceptible d'intervenir sur l'organisation et le rendement d'une entreprise.
+                    </p>
+                    <p class="text-[#c7d5e0]">
+                        Ce domaine regroupe à la fois des sujets de société comme le Big Data, le piratage informatique, la sécurité, 
+                        la cryptographie, ainsi que les technologies actuelles et futures telles que la réalité virtuelle, le cloud, 
+                        les objets connectés, les robots et drones.
+                    </p>
+                </div>
+                
+                <div class="card-bg p-8 rounded-lg shadow-lg animate-fadeInUp delay-100">
+                    <h3 class="text-2xl font-semibold mb-8 text-center text-[#4e9eff]">Focus sur l'Intelligence Artificielle</h3>
+                    
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-2/3">
+                            <p class="text-[#c7d5e0] mb-4">
+                                <strong class="text-white">Qu'est-ce que l'intelligence artificielle ?</strong><br><br>
+                                L'intelligence artificielle (IA) est un procédé permettant aux machines de simuler certaines facultés humaines 
+                                grâce à des algorithmes particulièrement élaborés. Aujourd'hui, ces technologies sont capables de traiter 
+                                des problèmes complexes et de générer des données bien plus rapidement qu'un être humain ne pourrait le faire.
+                            </p>
+                            <p class="text-[#c7d5e0]">
+                                Bien que son développement soit encore relativement récent, l'IA prendra une place de plus en plus prépondérante 
+                                dans les années à venir. En raison de sa complexité et de son rôle croissant dans notre société, 
+                                il me semble pertinent d'approfondir ce sujet dans le cadre de ma formation SISR.
+                            </p>
+                        </div>
+                        
+                        <div class="lg:w-1/3">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Intelligence Artificielle" class="w-full rounded-lg shadow-md hover:shadow-xl hover:scale-102 transition duration-300">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Contactez-moi</h2>
+            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100"></p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center animate-fadeInUp delay-100">
+                        <div class="text-[#4e9eff] text-3xl mb-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Téléphone</h3>
+                        <p class="text-[#c7d5e0]">+33 7 43 34 95 47</p>
+                    </div>
+                    
+                    <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center animate-fadeInUp delay-200">
+                        <div class="text-[#4e9eff] text-3xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Email</h3>
+                        <p class="text-[#c7d5e0]">aymane.ayyadi@hotmail.com</p>
+                    </div>
+                </div>
+                
+                <form class="card-bg p-8 rounded-lg shadow-lg animate-fadeInUp delay-300">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" placeholder="Votre nom" class="form-input w-full px-4 py-3 rounded-lg text-white">
+                        <input type="email" placeholder="Votre email" class="form-input w-full px-4 py-3 rounded-lg text-white">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <input type="text" placeholder="Sujet" class="form-input w-full px-4 py-3 rounded-lg text-white">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <textarea placeholder="Votre message" rows="6" class="form-input w-full px-4 py-3 rounded-lg text-white"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="gradient-bg text-white w-full py-4 rounded-full font-semibold flex items-center justify-center hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-[rgba(255,255,255,0.1)]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#c7d5e0] text-sm mb-4 md:mb-0">©2025 Copyright <span class="text-[#4e9eff] font-semibold">AYMANE AYYADI</span> - Étudiant BTS SIO SISR</p>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/aymane-ayyadi-52b62a340/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[rgba(255,255,255,0.05)] text-[#c7d5e0] hover:bg-[#4e9eff] hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Aymaneayyadi" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[rgba(255,255,255,0.05)] text-[#c7d5e0] hover:bg-[#4e9eff] hover:text-white transition duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#accueil" class="fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center rounded-full bg-[#4e9eff] text-white shadow-lg hover:bg-[#3d8ae8] hover:-translate-y-1 transition duration-300 z-40">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+</body>
+</html>
