@@ -18,7 +18,6 @@
             <div class="hidden md:flex space-x-8">
                 <a href="#accueil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Accueil</a>
                 <a href="#profil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
-                <a href="#Centres D'intérêt" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Centres D'intérêt</a>
                 <a href="#parcours" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Parcours</a>
                 <a href="#Mes certificats" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Mes certificats</a>
                 <a href="#competences" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Compétences</a>
@@ -131,7 +130,6 @@
     </section>
 
     <!-- Section Centre d'intérêt -->
-     <section id="Centres D'intérêt" class="section section-bg"></section>
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 animate-fadeInUp">
                 <h2 class="text-3xl md:text-4xl font-bold">Mes <span class="gradient-text">centres d'intérêt</span></h2>
@@ -189,166 +187,106 @@
     </section>
 
     <!-- Section Parcours -->
-    <section id="parcours" class="section">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fadeInUp">
-                <h2 class="text-3xl md:text-4xl font-bold">Mon <span class="gradient-text">parcours scolaire</span></h2>
-                <p class="text-[#c7d5e0] max-w-2xl mx-auto mt-4">Découvrez mon parcours académique et mes expériences professionnelles</p>
+<section id="parcours" class="section">
+    <!-- ... contenu existant ... -->
+</section>
+
+<!-- Section Certificats -->
+<section id="Mes certificats" class="section section-bg">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes <span class="gradient-text">certificats</span></h2>
+        <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Les certifications que j'ai obtenues dans le cadre de ma formation</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Certificat 1 -->
+            <div class="certificate-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&fit=crop" alt="Certificat Réseaux" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium">
+                        <i class="fas fa-award mr-1"></i> Certifié
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Fondamentaux des Réseaux</h3>
+                    <div class="flex items-center text-[#c7d5e0] mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-sm"></i>
+                        <span class="text-sm">Obtenu en 2024</span>
+                    </div>
+                    <p class="text-[#c7d5e0] mb-4">Certification couvrant les concepts de base des réseaux TCP/IP, adressage IP, sous-réseaux et protocoles fondamentaux.</p>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Réseaux</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">TCP/IP</span>
+                        </div>
+                        <a href="#" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            <div class="relative max-w-4xl mx-auto">
-                <div class="space-y-12">
-                    <!-- IFIDE SUP-FORMATION -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-100">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="Conception/Site/images/IFIDEStrasPhoto.jpg" alt="IFIDE SUP" class="w-12 h-12 rounded-full object-cover">
-                        </div>
-                        
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">IFIDE SUP-FORMATION</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2024/2025</span>
-                            <p class="text-[#c7d5e0]">Première année BTS SIO.</p>
-                            <div class="mt-3 flex flex-wrap gap-2">
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Réseaux</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Systèmes</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Sécurité</span>
-                            </div>
-                        </div>
+            <!-- Certificat 2 -->
+            <div class="certificate-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-200">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&fit=crop" alt="Certificat Sécurité" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium">
+                        <i class="fas fa-award mr-1"></i> Certifié
                     </div>
-                    
-                    <!-- LYCÉE SELMANE EL FARISSI -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-200">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-12 h-12 rounded-full object-cover">
-                        </div>
-                        
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2023/2024</span>
-                            <p class="text-[#c7d5e0]">Deuxième année Bac Sciences physiques.</p>
-                            <div class="mt-3 flex flex-wrap gap-2">
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Physique</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Chimie</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Maths</span>
-                            </div>
-                        </div>
+                </div>
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Sécurité des Systèmes</h3>
+                    <div class="flex items-center text-[#c7d5e0] mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-sm"></i>
+                        <span class="text-sm">Obtenu en 2025</span>
                     </div>
+                    <p class="text-[#c7d5e0] mb-4">Introduction aux principes de sécurité informatique, protection des systèmes et bonnes pratiques de sécurisation.</p>
                     
-                    <!-- LYCÉE SELMANE EL FARISSI -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-300">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-12 h-12 rounded-full object-cover">
+                    <div class="flex justify-between items-center">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Sécurité</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Systèmes</span>
                         </div>
-                        
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2022/2023</span>
-                            <p class="text-[#c7d5e0]">Première année Bac Sciences Expérimentales.</p>
-                            <div class="mt-3 flex flex-wrap gap-2">
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Sciences</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Informatique</span>
-                            </div>
+                        <a href="#" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certificat 3 -->
+            <div class="certificate-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-300">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&fit=crop" alt="Certificat Linux" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium">
+                        <i class="fas fa-award mr-1"></i> Certifié
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Administration Linux</h3>
+                    <div class="flex items-center text-[#c7d5e0] mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-sm"></i>
+                        <span class="text-sm">Obtenu en 2024</span>
+                    </div>
+                    <p class="text-[#c7d5e0] mb-4">Certification sur les bases de l'administration système Linux, gestion des utilisateurs et services.</p>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Linux</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Administration</span>
                         </div>
+                        <a href="#" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Section Certificats -->
-    <section id="Mes certificats" class="section section-bg"></section>
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes <span class="gradient-text">certificats</span></h2>
-            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Les certifications que j'ai obtenues dans le cadre de ma formation</p>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Certificat 1 -->
-                <div class="certificate-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&fit=crop" alt="Certificat Réseaux" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium">
-                            <i class="fas fa-award mr-1"></i> Certifié
-                        </div>
-                    </div>
-                    
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Fondamentaux des Réseaux</h3>
-                        <div class="flex items-center text-[#c7d5e0] mb-3">
-                            <i class="fas fa-calendar-alt mr-2 text-sm"></i>
-                            <span class="text-sm">Obtenu en 2024</span>
-                        </div>
-                        <p class="text-[#c7d5e0] mb-4">Certification couvrant les concepts de base des réseaux TCP/IP, adressage IP, sous-réseaux et protocoles fondamentaux.</p>
-                        
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-wrap gap-2">
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Réseaux</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">TCP/IP</span>
-                            </div>
-                            <a href="#" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Certificat 2 -->
-                <div class="certificate-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-200">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&fit=crop" alt="Certificat Sécurité" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium">
-                            <i class="fas fa-award mr-1"></i> Certifié
-                        </div>
-                    </div>
-                    
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Sécurité des Systèmes</h3>
-                        <div class="flex items-center text-[#c7d5e0] mb-3">
-                            <i class="fas fa-calendar-alt mr-2 text-sm"></i>
-                            <span class="text-sm">Obtenu en 2025</span>
-                        </div>
-                        <p class="text-[#c7d5e0] mb-4">Introduction aux principes de sécurité informatique, protection des systèmes et bonnes pratiques de sécurisation.</p>
-                        
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-wrap gap-2">
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Sécurité</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Systèmes</span>
-                            </div>
-                            <a href="#" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Certificat 3 -->
-                <div class="certificate-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-300">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&fit=crop" alt="Certificat Linux" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium">
-                            <i class="fas fa-award mr-1"></i> Certifié
-                        </div>
-                    </div>
-                    
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Administration Linux</h3>
-                        <div class="flex items-center text-[#c7d5e0] mb-3">
-                            <i class="fas fa-calendar-alt mr-2 text-sm"></i>
-                            <span class="text-sm">Obtenu en 2024</span>
-                        </div>
-                        <p class="text-[#c7d5e0] mb-4">Certification sur les bases de l'administration système Linux, gestion des utilisateurs et services.</p>
-                        
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-wrap gap-2">
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Linux</span>
-                                <span class="tag px-3 py-1 rounded-full text-sm font-medium">Administration</span>
-                            </div>
-                            <a href="#" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+</section>
 
     <!-- Section Compétences -->
     <section id="competences" class="section section-bg">
@@ -494,36 +432,10 @@
             <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Découvrez mes projets personnels et professionnels</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 - Windows Server 2022 -->
+                <!-- Projet 1 - Parcus -->
                 <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="Conception/Site/images/images (1).png" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        
-                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="flex flex-col space-y-4">
-                                <a href="Conception/Site/images/Documentations AD DS V2 AYMANE AYYADI (1).pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
-                                    <i class="fas fa-eye mr-2"></i>
-                                    Voir la documentation
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">AP1 - Windows Server 2022</h3>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
-                        </div>
-                        
-                        <p class="text-[#c7d5e0]">Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe et services DNS.</p>
-                    </div>
-                </div>
-                
-                <!-- Projet 2 - Parcus -->
-                <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="Conception/Site/images/logo-parcus-membre-agisport.jpg" alt="Parcus" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="Conception/Site/images/logo-parcus-membre-agisport.jpg" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
                             <div class="flex flex-col space-y-4">
@@ -537,13 +449,48 @@
                     
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">AP2 - Parcus</h3>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">GLPI</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">FOG / Déploiement</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">RustDesk</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">BitLocker</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Debian</span>
+                        </div>
+                        
+                        <p class="text-[#c7d5e0]">Mise en place complète de l’infrastructure informatique PARCUS :
+Active Directory, GPO, gestion de parc GLPI, déploiement système avec FOG, assistance à distance via RustDesk et chiffrement BitLocker.</p>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 - Projet IFIDE -->
+                <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="Conception/Site/images/Projet ifide.png" alt="Parcus" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="flex flex-col space-y-4">
+                                <a href="Conception/Site/images/Livrable 2 Technique Parcus Groupe 4_compressed.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-eye mr-2"></i>
+                                    Voir la documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AP3 - Projet IFIDE</h3>
                         
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DHCP</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DFS</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">DFSR</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">GPO</span>
                         </div>
                         
-                        <p class="text-[#c7d5e0]">Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe et services DNS.</p>
+                        <p class="text-[#c7d5e0]">Mise en place d’une infrastructure complète avec Active Directory, DNS, DHCP, GPO, DFS, réplication inter-site et connexion VPN IPSec entre Strasbourg et Mulhouse.</p>
                     </div>
                 </div>
                 
@@ -563,7 +510,7 @@
                     </div>
                     
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Windows Server 2022</h3>
+                        <h3 class="text-xl font-semibold mb-2">AP4 - </h3>
                         
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
