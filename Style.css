@@ -296,23 +296,12 @@
 
 
 
-/* Assurer un espacement cohérent entre les sections */
-.section {
-    padding: 6rem 0;
-    position: relative;
-    z-index: 1;
-}
 
-/* Empêcher les superpositions */
-.container {
-    position: relative;
-    z-index: 2;
-}
 
-/* Corriger l'ID avec espace */
-#Mes-certificats {
-    scroll-margin-top: 80px; /* Pour la navigation par ancre */
-}
 
-/* Alternative : utiliser un ID sans espace */
-<section id="certificats" class="section section-bg">
+
+
+
+
+
+
