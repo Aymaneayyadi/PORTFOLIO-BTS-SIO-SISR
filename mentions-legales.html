@@ -6,56 +6,116 @@
     <title>Mentions légales - Aymane Ayyadi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="mentions-legales.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="antialiased bg-[#0a0e1a] text-white">
+<body class="mentions-legales-container">
 
-    <header class="header py-6 px-6">
-        <a href="index.html" class="text-[#4e9eff] hover:text-[#601cfc] text-lg transition duration-300">
-            ← Retour au portfolio
-        </a>
+    <!-- Particules décoratives -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <header class="mentions-header py-6 px-6">
+        <div class="container mx-auto">
+            <a href="index.html" class="text-[#4e9eff] hover:text-white text-lg transition duration-300">
+                <i class="fas fa-arrow-left"></i>
+                Retour au portfolio
+            </a>
+        </div>
     </header>
 
-    <section class="container mx-auto px-6 py-12 max-w-4xl">
-
-        <h1 class="text-4xl font-bold mb-8 gradient-text">Mentions légales</h1>
-
-        <div class="space-y-10 text-[#c7d5e0]">
-
-            <div>
-                <h2 class="text-2xl font-semibold text-[#4e9eff] mb-2">1. Éditeur du site</h2>
-                <p>
-                    Nom : AYMAME AYYADI<br>
-                    Statut : Étudiant BTS SIO SISR<br>
-                    Email : aymane.ayyadi@hotmail.com
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-2xl font-semibold text-[#4e9eff] mb-2">2. Hébergement</h2>
-                <p>
-                    Le site est hébergé par l’hébergeur choisi dans le cadre du projet.<br>
-                    (Modifier ici avec : OVH, Hostinger, GitHub Pages, etc.)
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-2xl font-semibold text-[#4e9eff] mb-2">3. Propriété intellectuelle</h2>
-                <p>
-                    Le contenu du site (textes, images, documents, code) est protégé par le droit d’auteur.
-                    Toute reproduction, distribution ou modification sans autorisation est interdite.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-2xl font-semibold text-[#4e9eff] mb-2">4. Données personnelles</h2>
-                <p>
-                    Aucune donnée personnelle n’est collectée sans consentement.
-                    Les informations transmises via le formulaire de contact ne sont pas stockées et servent uniquement à répondre au message.
-                </p>
-            </div>
-
+    <section class="container mx-auto px-6 py-12 max-w-4xl relative z-10">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text mentions-title">Mentions légales</h1>
+            <p class="text-[#c7d5e0] max-w-2xl mx-auto subtitle">Informations légales concernant le site portfolio d'Aymane Ayyadi</p>
         </div>
+
+        <div class="space-y-8">
+            <!-- Section 1 -->
+            <div class="mention-section delay-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-user text-xl text-[#4e9eff]"></i>
+                    <h2 class="text-2xl font-semibold text-white">1. Éditeur du site</h2>
+                </div>
+                <div class="space-y-2">
+                    <p class="flex items-center gap-2">
+                        <i class="fas fa-user-tag text-[#4e9eff]"></i>
+                        <span><strong>Nom :</strong> AYMANE AYYADI</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-[#4e9eff]"></i>
+                        <span><strong>Statut :</strong> Étudiant BTS SIO SISR</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fas fa-envelope text-[#4e9eff]"></i>
+                        <span><strong>Email :</strong> aymane.ayyadi@hotmail.com</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="mention-section delay-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-server text-xl text-[#4e9eff]"></i>
+                    <h2 class="text-2xl font-semibold text-white">2. Hébergement</h2>
+                </div>
+                <p>
+                    Ce site est hébergé dans le cadre d'un projet éducatif. L'hébergement peut être assuré par différentes plateformes selon les besoins du projet.<br>
+                    <span class="text-[#4e9eff] mt-2 block">(Exemples possibles : GitHub Pages, OVH, Hostinger, etc.)</span>
+                </p>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="mention-section delay-3">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-copyright text-xl text-[#4e9eff]"></i>
+                    <h2 class="text-2xl font-semibold text-white">3. Propriété intellectuelle</h2>
+                </div>
+                <p>
+                    L'ensemble du contenu présent sur ce site (textes, images, graphismes, logo, documents, code source) est la propriété exclusive de AYMANE AYYADI, sauf mention contraire.
+                </p>
+                <p class="mt-4">
+                    Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord écrit exprès de l'auteur.
+                </p>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="mention-section delay-4">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-shield-alt text-xl text-[#4e9eff]"></i>
+                    <h2 class="text-2xl font-semibold text-white">4. Données personnelles</h2>
+                </div>
+                <p>
+                    Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant.
+                </p>
+                <p class="mt-4">
+                    Les informations collectées via le formulaire de contact sont uniquement utilisées pour répondre à votre message et ne sont pas conservées au-delà du temps nécessaire pour traiter votre demande.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section Contact -->
+        <div class="contact-info">
+            <h3 class="text-xl font-semibold flex items-center gap-2">
+                <i class="fas fa-info-circle"></i>
+                Informations supplémentaires
+            </h3>
+            <p>
+                Ce site a été créé dans le cadre de la formation BTS SIO (Services Informatiques aux Organisations) option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
+            </p>
+            <p class="mt-2">
+                Pour toute question concernant ces mentions légales, vous pouvez me contacter à l'adresse email indiquée ci-dessus.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mentions-footer">
+            <p>
+                <i class="far fa-copyright mr-1"></i> 2025 AYMANE AYYADI - Tous droits réservés
+            </p>
+        </footer>
     </section>
 
 </body>
