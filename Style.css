@@ -490,7 +490,96 @@
 
 
 
+/* Navbar principale */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
 
+/* Section gauche avec logo et nom */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Nom */
+.name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Menu navigation */
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+/* Styles pour le logo seul - garde ton CSS existant */
+.logo {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #4e9eff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    border-color: #601cfc;
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.1);
+}
+
+.logo-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4e9eff, #601cfc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    display: none;
+}
+
+/* Affiche le fallback si l'image n'existe pas */
+.logo-img[src=""] + .logo-fallback,
+.logo-img:not([src]) + .logo-fallback {
+    display: flex;
+}
 
 
 
