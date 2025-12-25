@@ -581,6 +581,17 @@
     display: flex;
 }
 
+/* Ajuste l'alignement logo + nom dans le header */
+.header .container .flex.items-center.gap-3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Assure que le logo s'aligne correctement avec le texte */
+.logo {
+    flex-shrink: 0; /* Empêche le logo de se déformer */
+}
 
 
 
