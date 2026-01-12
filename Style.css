@@ -1,3 +1,117 @@
+/* ===== RÉINITIALISATION ET GARANTIES ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== CORRECTIONS SPÉCIFIQUES POUR VOTRE SITE ===== */
+
+/* 1. GARANTIR QUE LE BACKGROUND EST VISIBLE */
+#accueil {
+    background-color: #0a0e1a !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* L'image de fond avec overlay */
+#accueil > .absolute.inset-0.z-0 {
+    background: linear-gradient(rgba(10, 14, 26, 0.7), rgba(10, 14, 26, 0.9)) !important;
+}
+
+#accueil > .absolute.inset-0.z-0 img {
+    opacity: 0.4 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* 2. HEADER VISIBLE */
+.header {
+    background: rgba(10, 14, 26, 0.95) !important;
+    border-bottom: 1px solid #4e9eff !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* 3. SECTIONS DE BASE */
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-bg {
+    background: #1a1f2e !important;
+}
+
+/* 4. CARTES DE BASE */
+.card-bg {
+    background: #252a3d;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* 5. BOUTONS DE BASE */
+.gradient-bg {
+    background: linear-gradient(45deg, #4e9eff, #601cfc) !important;
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 6. IMAGE DE PROFIL */
+.profile-img {
+    border: 5px solid #4e9eff;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* 7. NAVIGATION */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    color: #4e9eff;
+}
+
+/* 8. FORMULAIRES */
+.form-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* 9. FOOTER */
+footer {
+    background: #0a0e1a;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* 10. RESPONSIVE DE BASE */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
         
         :root {
