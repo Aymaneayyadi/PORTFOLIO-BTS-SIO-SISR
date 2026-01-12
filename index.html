@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- ==================== META BASIQUE ==================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- ==================== SEO & META ==================== -->
     <title>Portfolio Aymane Ayyadi | BTS SIO SISR</title>
     
-    <!-- ==================== SEO & META ==================== -->
     <!-- SEO Meta Tags -->
     <meta name="description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
-    <link rel="canonical" href="https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- Twitter Meta -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
-    <meta name="twitter:description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
-    <meta name="twitter:image" content="https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/Conception/Site/images/image.png">
     
     <!-- Open Graph Meta -->
     <meta property="og:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
@@ -28,11 +22,19 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
+    <meta name="twitter:description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
+    <meta name="twitter:image" content="https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/Conception/Site/images/image.png">
+    
     <!-- ==================== STYLES & ICONS ==================== -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Style.css">
-    <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
     
     <!-- ==================== JSON-LD SCHEMA ==================== -->
     <script type="application/ld+json">
@@ -62,7 +64,7 @@
             </div>
             
             <!-- Navigation Desktop -->
-            <div class="hidden md:flex space-x-8">
+            <nav class="hidden md:flex space-x-8">
                 <a href="#accueil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Accueil</a>
                 <a href="#profil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
                 <a href="#parcours" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Parcours</a>
@@ -70,10 +72,10 @@
                 <a href="#certificats" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Certificats</a>
                 <a href="#veille" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
                 <a href="#contact" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
-            </div>
+            </nav>
         </div>
     </header>
-    
+
     <!-- ==================== SECTION ACCUEIL ==================== -->
     <section id="accueil" class="min-h-screen flex items-center relative bg-[#0a0e1a] overflow-hidden">
         <!-- Background network image -->
@@ -109,7 +111,7 @@
             </div>
         </a>
     </section>
-    
+
     <!-- ==================== SECTION PROFIL ==================== -->
     <section id="profil" class="section section-bg relative">
         <div class="absolute inset-0 z-0 opacity-10">
@@ -177,7 +179,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- ==================== SECTION CENTRES D'INTÉRÊT ==================== -->
     <section class="section">
         <div class="container mx-auto px-6">
@@ -235,7 +237,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- ==================== SECTION PARCOURS ==================== -->
     <section id="parcours" class="section">
         <div class="container mx-auto px-6">
@@ -302,24 +304,34 @@
             </div>
         </div>
     </section>
-    
-    <!-- ==================== SECTION PROJETS ==================== -->
+
+        <!-- ==================== SECTION PROJETS ==================== -->
     <section id="projets" class="section">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes <span class="gradient-text">Projets</span></h2>
             <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Découvrez mes projets personnels et professionnels</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 - Parcus -->
+                <!-- Projet 1 - Parcus (AP2) -->
                 <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
                     <div class="relative h-64 overflow-hidden">
                         <img src="Conception/Site/images/logo-parcus-membre-agisport.jpg" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
                             <div class="flex flex-col space-y-4">
+                                <a href="Conception/Site/images/LIVRABLE 1 Groupe 4 Aymane et Ayoub et Youssef AP2.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Livrable 1
+                                </a>
+                                
                                 <a href="Conception/Site/images/Livrable 2 Technique Parcus Groupe 4_compressed.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
-                                    <i class="fas fa-eye mr-2"></i>
-                                    Voir la documentation
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Livrable 2
+                                </a>
+                                
+                                <a href="Conception/Site/images/Schéma réseau Parcus .png" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-sitemap mr-2"></i>
+                                    Schéma Réseau
                                 </a>
                             </div>
                         </div>
@@ -343,16 +355,26 @@
                     </div>
                 </div>
                 
-                <!-- Projet 2 - Projet IFIDE -->
+                <!-- Projet 2 - Projet IFIDE (AP3) -->
                 <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
                     <div class="relative h-64 overflow-hidden">
                         <img src="Conception/Site/images/Projet ifide.png" alt="Parcus" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
                             <div class="flex flex-col space-y-4">
-                                <a href="Conception/Site/images/Livrable 2 Technique Parcus Groupe 4_compressed.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
-                                    <i class="fas fa-eye mr-2"></i>
-                                    Voir la documentation
+                                <a href="Conception/Site/images/Livrable 1 Group 4 Aymane et Abdou AP3.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Livrable 1
+                                </a>
+                                
+                                <a href="Conception/Site/images/Liverable 2 Aymane et Abdou AP3.pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Livrable 2
+                                </a>
+                                
+                                <a href="Conception/Site/images/Schéma réseau Ap3.png" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-sitemap mr-2"></i>
+                                    Schéma Réseau
                                 </a>
                             </div>
                         </div>
@@ -376,46 +398,53 @@
                     </div>
                 </div>
                 
-                <!-- Projet 3 - Application React -->
+                <!-- Projet 3 - Application React (AP4) -->
                 <div class="project-card card-bg rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 group animate-fadeInUp delay-100">
                     <div class="relative h-64 overflow-hidden">
                         <img src="Conception/Site/images/images.png" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
                             <div class="flex flex-col space-y-4">
-                                <a href="Conception/Site/images/Documentations AD DS V2 AYMANE AYYADI (1).pdf" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
-                                    <i class="fas fa-eye mr-2"></i>
-                                    Voir la documentation
+                                <!-- TO DO: Ajouter lien Livrable 1 AP4 -->
+                                <a href="#" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Livrable 1
+                                </a>
+                                
+                                <!-- TO DO: Ajouter lien Livrable 2 AP4 -->
+                                <a href="#" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Livrable 2
+                                </a>
+                                
+                                <!-- TO DO: Ajouter lien Schéma réseau AP4 -->
+                                <a href="#" class="bg-white text-gray-900 px-4 py-2 rounded-full font-medium flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                    <i class="fas fa-sitemap mr-2"></i>
+                                    Schéma Réseau
                                 </a>
                             </div>
                         </div>
                     </div>
                     
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">AP4 - </h3>
+                        <h3 class="text-xl font-semibold mb-2">AP4 - Application React</h3>
                         
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span class="tag px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
                         </div>
                         
                         <p class="text-[#c7d5e0]">
-                            Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe et services DNS.
+                            Mise en place d'un domaine Active Directory avec gestion des utilisateurs, politiques de groupe, services DNS et développement d'une application web React.
                         </p>
                     </div>
                 </div>
             </div>
-            
-            <!-- More projects button -->
-            <div class="text-center mt-12 animate-fadeInUp delay-400">
-                <a href="#" class="inline-flex items-center text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
-                    <span class="mr-2">Voir plus de projets</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
         </div>
     </section>
-    
+
     <!-- ==================== SECTION CERTIFICATS ==================== -->
     <section id="certificats" class="section section-bg">
         <div class="container mx-auto px-6">
@@ -576,486 +605,761 @@
             </div>
         </div>
     </section>
-    
+
     <!-- ==================== SECTION VEILLE TECHNOLOGIQUE ==================== -->
-<section id="veille" class="section section-bg">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
+    <section id="veille" class="section bg-gradient-to-b from-[#0a0e1a] to-[#0f1324]">
+        <div class="container mx-auto px-6 max-w-7xl">
             <!-- Titre principal -->
             <div class="text-center mb-16 animate-fadeInUp">
-                <div class="relative inline-block mb-6">
-                    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mb-4 mx-auto">
-                        <i class="fas fa-server text-2xl text-white"></i>
+                <div class="inline-block relative mb-6">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-[#4e9eff]/20 to-[#601cfc]/20 blur-xl rounded-full"></div>
+                    <div class="relative w-24 h-24 rounded-full gradient-bg flex items-center justify-center mx-auto">
+                        <i class="fas fa-server text-3xl text-white"></i>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Veille <span class="gradient-text">Technologique</span></h2>
                 </div>
-                <p class="text-[#c7d5e0] max-w-3xl mx-auto text-lg">
-                    Surveillance continue des innovations en virtualisation et de leur impact sur l'administration système et réseau (SISR).
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Veille <span class="gradient-text">Technologique</span>
+                </h2>
+                <p class="text-[#c7d5e0] text-xl max-w-3xl mx-auto">
+                    Virtualisation avec VMware et Administration Windows Server
                 </p>
             </div>
 
-            <!-- Introduction -->
-            <div class="card-bg rounded-xl shadow-lg mb-16 overflow-hidden animate-fadeInUp delay-100">
-                <div class="grid md:grid-cols-2 gap-0">
-                    <div class="p-8 md:p-10">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center">
-                                <i class="fas fa-cloud text-xl text-white"></i>
+            <!-- Qu'est-ce que la veille technologique ? -->
+            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-700 flex items-center justify-center">
+                        <i class="fas fa-binoculars text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Qu'est-ce que la Veille Technologique ?</h3>
+                        <p class="text-[#c7d5e0]">Définition et importance pour un administrateur SISR</p>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <p class="text-[#c7d5e0]">
+                            La <strong class="text-white">veille technologique</strong> est un processus continu de surveillance, 
+                            d'analyse et de collecte d'informations sur les évolutions technologiques dans son domaine d'expertise.
+                        </p>
+                        
+                        <div class="bg-[#1a1f36] rounded-xl p-6 border border-purple-500/20">
+                            <h4 class="text-white font-medium mb-3">Objectifs principaux :</h4>
+                            <ul class="space-y-2 text-sm text-[#c7d5e0] list-disc pl-5">
+                                <li>Anticiper les nouvelles technologies et tendances</li>
+                                <li>Maintenir et actualiser ses compétences techniques</li>
+                                <li>Identifier les opportunités d'amélioration de l'infrastructure</li>
+                                <li>Comprendre les évolutions des solutions existantes</li>
+                                <li>Préparer les migrations et évolutions du parc informatique</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <p class="text-[#c7d5e0]">
+                            Pour un <strong class="text-[#4e9eff]">administrateur SISR</strong>, la veille technologique est essentielle pour :
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
+                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
+                                    <i class="fas fa-shield-alt text-[#4e9eff]"></i>
+                                </div>
+                                <p class="text-sm text-white">Sécurité des systèmes</p>
                             </div>
-                            <h3 class="text-2xl font-semibold text-white">Qu'est-ce que la virtualisation ?</h3>
+                            
+                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
+                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
+                                    <i class="fas fa-tachometer-alt text-[#4e9eff]"></i>
+                                </div>
+                                <p class="text-sm text-white">Optimisation des performances</p>
+                            </div>
+                            
+                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
+                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
+                                    <i class="fas fa-cogs text-[#4e9eff]"></i>
+                                </div>
+                                <p class="text-sm text-white">Automatisation des tâches</p>
+                            </div>
+                            
+                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
+                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
+                                    <i class="fas fa-cloud text-[#4e9eff]"></i>
+                                </div>
+                                <p class="text-sm text-white">Évolution vers le cloud</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-[#c7d5e0] text-sm mt-4">
+                            Dans ce cadre, ma veille se concentre particulièrement sur la <strong>virtualisation VMware</strong> 
+                            et l'administration des services Windows Server.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Introduction du projet -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-20 items-center">
+                <div class="animate-fadeInUp">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
+                            <i class="fab fa-windows text-2xl text-[#4e9eff]"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white">
+                            C'est quoi la Virtualisation ?
+                        </h3>
+                    </div>
+                    
+                    <div class="space-y-4 text-[#c7d5e0]">
+                        <p>
+                            La <strong class="text-white">virtualisation</strong> est une technologie qui permet de créer plusieurs environnements 
+                            informatiques simulés (machines virtuelles) à partir d'un seul système physique.
+                        </p>
+                        
+                        <p>
+                            Dans le cadre de mon <strong class="text-[#4e9eff]">projet AP3</strong>, j'ai déployé une infrastructure complète 
+                            sous VMware Workstation Professional, incluant plusieurs machines virtuelles Windows Server 2022 
+                            pour simuler un environnement d'entreprise réel.
+                        </p>
+                        
+                        <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
+                            <h5 class="text-white font-medium mb-2">Pourquoi virtualiser ?</h5>
+                            <ul class="text-sm text-[#c7d5e0] space-y-1 list-disc pl-5">
+                                <li>Optimisation des ressources matérielles</li>
+                                <li>Isolation des environnements</li>
+                                <li>Facilité de déploiement et de migration</li>
+                                <li>Récupération rapide après incident (snapshots)</li>
+                                <li>Réduction des coûts matériels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-fadeInUp delay-100">
+                    <!-- Architecture visuelle - CLICKABLE -->
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-[#4e9eff] to-[#601cfc] rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition duration-500"></div>
+                        <a href="#schemaModal" class="relative bg-[#1a1f36] rounded-xl p-6 border border-[#4e9eff]/30 hover:border-[#4e9eff] transition duration-300 cursor-pointer block">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-4 bg-[#0a0e1a] flex items-center justify-center group-hover:scale-[1.02] transition duration-300">
+                                <div class="text-center p-2 w-full h-full flex flex-col items-center justify-center">
+                                    <!-- Image avec effet de zoom au survol -->
+                                    <img src="Conception/Site/images/Schéma virtualisation.png" 
+                                         alt="Schéma de virtualisation" 
+                                         class="w-full h-full object-contain max-h-[280px] group-hover:scale-105 transition duration-300">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#4e9eff]/10 rounded-full">
+                                    <i class="fas fa-sitemap text-[#4e9eff]"></i>
+                                    <span class="text-[#c7d5e0] text-sm">Cliquez pour Voir le schéma</span>
+                                </div>                   
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section : Les types de virtualisation -->
+            <div class="mb-16 animate-fadeInUp">
+                <div class="text-center mb-10">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                            <i class="fas fa-layer-group text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white">
+                            Les Différents Types de Virtualisation
+                        </h3>
+                    </div>
+                    <p class="text-[#c7d5e0] max-w-3xl mx-auto">
+                        La virtualisation peut être catégorisée selon plusieurs approches, chacune répondant à des besoins spécifiques
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Type 1 : Virtualisation de serveurs -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-server text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation de Serveurs</h4>
+                        <p class="text-sm text-[#c7d5e0] text-center">
+                            Création de plusieurs machines virtuelles sur un seul serveur physique
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
+                            <p class="text-xs text-[#4e9eff] text-center">
+                                <i class="fas fa-desktop mr-1"></i>
+                                Ex: VMware vSphere, Microsoft Hyper-V
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Type 2 : Virtualisation de postes de travail -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-desktop text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation de Postes</h4>
+                        <p class="text-sm text-[#c7d5e0] text-center">
+                            Exécution d'environnements de bureau virtualisés sur un PC local
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
+                            <p class="text-xs text-green-400 text-center">
+                                <i class="fas fa-laptop mr-1"></i>
+                                Ex: VMware Workstation, VirtualBox
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Type 3 : Virtualisation de réseau -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-cyan-700 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-network-wired text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation Réseau</h4>
+                        <p class="text-sm text-[#c7d5e0] text-center">
+                            Création de réseaux virtuels indépendants de la topologie physique
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
+                            <p class="text-xs text-blue-400 text-center">
+                                <i class="fas fa-wifi mr-1"></i>
+                                Ex: VMware NSX, VLANs, SD-WAN
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Type 4 : Virtualisation de stockage -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-700 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-hdd text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation Stockage</h4>
+                        <p class="text-sm text-[#c7d5e0] text-center">
+                            Agrégation de ressources de stockage physiques en pools virtuels
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
+                            <p class="text-xs text-purple-400 text-center">
+                                <i class="fas fa-database mr-1"></i>
+                                Ex: VMware vSAN, RAID virtuel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section : Hyperviseurs Type 1 vs Type 2 -->
+            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
+                <h3 class="text-2xl font-semibold text-white mb-8 text-center">
+                    Hyperviseurs : Type 1 vs Type 2
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Hyperviseur Type 1 -->
+                    <div class="bg-[#1a1f36] rounded-xl p-6 border border-green-500/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center">
+                                <i class="fas fa-bolt text-xl text-green-400"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-white">Hyperviseur Type 1 (Bare Metal)</h4>
                         </div>
                         
                         <div class="space-y-4">
                             <p class="text-[#c7d5e0]">
-                                La virtualisation est une technologie qui permet de créer des versions virtuelles de ressources physiques 
-                                (serveurs, stockage, réseaux) afin d'optimiser leur utilisation et de simplifier leur gestion.
-                            </p>
-                            <p class="text-[#c7d5e0]">
-                                Pour un étudiant en SISR, comprendre la virtualisation est essentiel car elle est au cœur des infrastructures 
-                                modernes, permettant une meilleure gestion des ressources, une haute disponibilité et une réduction des coûts.
+                                S'installe directement sur le matériel physique. Aucun système d'exploitation hôte requis.
                             </p>
                             
-                            <!-- Ressources pratiques -->
-                            <div class="mt-6 pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                                <h4 class="text-white font-medium mb-3 flex items-center gap-2">
-                                    <i class="fas fa-external-link-alt text-[#4e9eff]"></i>
-                                    Ressources Utiles :
-                                </h4>
-                                <ul class="space-y-2 text-sm text-[#c7d5e0]">
+                            <div class="bg-[#0a0e1a] rounded-lg p-4">
+                                <h5 class="text-white font-medium mb-2">Caractéristiques :</h5>
+                                <ul class="text-sm text-[#c7d5e0] space-y-2">
                                     <li class="flex items-start gap-2">
-                                        <i class="fas fa-play text-[#4e9eff] mt-1 text-xs"></i>
-                                        <a href="https://www.youtube.com/watch?v=FZR0rG3HKIk" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition">
-                                            <span class="font-medium">[VIDÉO]</span> Introduction à la virtualisation VMware (15 min)
-                                        </a>
+                                        <i class="fas fa-check text-green-400 mt-1"></i>
+                                        <span>Performance maximale (accès direct au matériel)</span>
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <i class="fas fa-file-alt text-[#4e9eff] mt-1 text-xs"></i>
-                                        <a href="https://docs.microsoft.com/fr-fr/virtualization/" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition">
-                                            <span class="font-medium">[GUIDE]</span> Microsoft - Documentation Virtualisation
-                                        </a>
+                                        <i class="fas fa-check text-green-400 mt-1"></i>
+                                        <span>Stabilité et sécurité accrues</span>
                                     </li>
                                     <li class="flex items-start gap-2">
-                                        <i class="fas fa-laptop-code text-[#4e9eff] mt-1 text-xs"></i>
-                                        <a href="https://github.com/awesome-virtualization/awesome-virtualization" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition">
-                                            <span class="font-medium">[GITHUB]</span> Awesome Virtualization - ressources
-                                        </a>
+                                        <i class="fas fa-check text-green-400 mt-1"></i>
+                                        <span>Utilisé en production et data centers</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex items-center gap-2 text-sm text-[#c7d5e0]">
+                                <i class="fab fa-vmware text-green-400"></i>
+                                <span>Exemples : VMware ESXi, Microsoft Hyper-V, Xen, KVM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hyperviseur Type 2 -->
+                    <div class="bg-[#1a1f36] rounded-xl p-6 border border-[#4e9eff]/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
+                                <i class="fas fa-layer-group text-xl text-[#4e9eff]"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-white">Hyperviseur Type 2 (Hosted)</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <p class="text-[#c7d5e0]">
+                                S'installe comme une application sur un système d'exploitation hôte.
+                            </p>
+                            
+                            <div class="bg-[#0a0e1a] rounded-lg p-4">
+                                <h5 class="text-white font-medium mb-2">Caractéristiques :</h5>
+                                <ul class="text-sm text-[#c7d5e0] space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-[#4e9eff] mt-1"></i>
+                                        <span>Facile à installer et configurer</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-[#4e9eff] mt-1"></i>
+                                        <span>Idéal pour développement, tests, labs</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check text-[#4e9eff] mt-1"></i>
+                                        <span>Performance moindre (via OS hôte)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex items-center gap-2 text-sm text-[#c7d5e0]">
+                                <i class="fab fa-vmware text-[#4e9eff]"></i>
+                                <span>Exemples : VMware Workstation, Oracle VirtualBox, Parallels</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-[#0a0e1a] rounded-xl border border-yellow-500/20">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-lightbulb text-yellow-400 text-xl mt-1"></i>
+                        <div>
+                            <h5 class="text-white font-medium mb-2">Dans le cadre de mon projet :</h5>
+                            <p class="text-sm text-[#c7d5e0]">
+                                J'ai utilisé <strong class="text-[#4e9eff]">VMware Workstation (Type 2)</strong> pour créer un environnement de test 
+                                complet sur mon poste local. Ce choix permet une grande flexibilité pour les tests, snapshots 
+                                et la portabilité de l'infrastructure complète.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nouveautés VMware - AVEC AVANTAGES/INCONVÉNIENTS -->
+            <div class="mb-16 animate-fadeInUp">
+                <div class="text-center mb-10">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                            <i class="fab fa-vmware text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white">
+                            Nouvelles Fonctionnalités VMware
+                        </h3>
+                    </div>
+                    <p class="text-[#c7d5e0] max-w-3xl mx-auto">
+                        VMware continue d'innover avec de nouvelles fonctionnalités pour la virtualisation et le cloud
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Nouveauté 1 -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300 hover:-translate-y-2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                                <i class="fas fa-cloud text-xl text-white"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-white">VMware Cloud Foundation</h4>
+                        </div>
+                        <p class="text-sm text-[#c7d5e0] mb-4">
+                            Plateforme cloud hybride intégrée combinant vSphere, vSAN et NSX
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Cloud Hybride</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Infrastructure as Code</span>
+                        </div>
+                        
+                        <!-- Avantages et Inconvénients -->
+                        <div class="space-y-4">
+                            <!-- Avantages -->
+                            <div>
+                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
+                                    <i class="fas fa-plus-circle text-green-400"></i>
+                                    Avantages
+                                </h5>
+                                <ul class="text-xs text-[#c7d5e0] space-y-1">
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Plateforme unifiée pour gestion cloud hybride</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Automatisation et orchestration complète</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Sécurité intégrée et gestion centralisée</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Inconvénients -->
+                            <div>
+                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
+                                    <i class="fas fa-minus-circle text-red-400"></i>
+                                    Inconvénients
+                                </h5>
+                                <ul class="text-xs text-[#c7d5e0] space-y-1">
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Coût élevé de mise en œuvre</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Courbe d'apprentissage importante</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Dépendance forte à l'écosystème VMware</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Pourquoi la virtualisation en SISR -->
-                    <div class="relative bg-[rgba(78,158,255,0.08)] p-8 md:p-10 border-l-0 md:border-l-4 border-[#4e9eff] rounded-lg shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg">
-                        <div class="absolute top-4 right-4">
-                            <i class="fas fa-lightbulb text-3xl text-[#4e9eff] opacity-30"></i>
-                        </div>
-
-                        <h4 class="font-semibold text-white mb-4 text-lg">Pourquoi la virtualisation en SISR ?</h4>
-
-                        <p class="text-[#c7d5e0] leading-relaxed">
-                            La virtualisation permet de consolider plusieurs serveurs physiques sur une seule machine,
-                            réduire les coûts matériels, faciliter les sauvegardes et migrations, et améliorer la reprise après sinistre.
-                        </p>
-
-                        <!-- Avantages concrets -->
-                        <div class="mt-6 p-4 bg-[rgba(0,0,0,0.2)] rounded-lg border border-[rgba(78,158,255,0.3)] transition-colors hover:bg-[rgba(0,0,0,0.25)]">
-                            <h5 class="text-white font-medium mb-2 flex items-center gap-2">
-                                <i class="fas fa-chart-line text-[#4e9eff]"></i>
-                                Avantages clés :
-                            </h5>
-                            <ul class="text-sm text-[#c7d5e0] space-y-1">
-                                <li>• Utilisation optimale des ressources matérielles</li>
-                                <li>• Isolation des environnements de test/production</li>
-                                <li>• Déploiement rapide de nouveaux serveurs</li>
-                                <li>• Économies d'énergie et réduction de l'empreinte carbone</li>
-                            </ul>
-                        </div>
-
-                        <!-- Statistique -->
-                        <div class="mt-6 pt-4 border-t border-[rgba(78,158,255,0.3)]">
-                            <div class="flex items-center gap-2 text-sm text-[#c7d5e0]">
-                                <i class="fas fa-bolt text-[#4e9eff]"></i>
-                                <span>Jusqu'à <strong>80% d'économie</strong> sur les coûts matériels</span>
+                    <!-- Nouveauté 2 -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300 hover:-translate-y-2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-xl text-white"></i>
                             </div>
+                            <h4 class="text-lg font-semibold text-white">vSphere avec Tanzu</h4>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Schéma : Architecture de virtualisation -->
-            <div class="card-bg rounded-xl shadow-lg mb-16 animate-fadeInUp delay-150">
-                <div class="p-8 md:p-10">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center">
-                            <i class="fas fa-sitemap text-xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-white">
-                            Architecture de virtualisation
-                        </h3>
-                    </div>
-
-                    <p class="text-[#c7d5e0] mb-8 max-w-3xl">
-                        Le schéma ci-dessous illustre l'architecture typique d'une infrastructure virtualisée,
-                        montrant comment l'hyperviseur permet de gérer plusieurs machines virtuelles sur un seul serveur physique.
-                    </p>
-
-                    <div class="flex justify-center">
-                        <img 
-                            src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&fit=crop"
-                            alt="Architecture de virtualisation"
-                            class="w-full max-w-[800px] max-h-[400px] object-contain rounded-lg shadow-md border border-[rgba(255,255,255,0.1)]"
-                        >
-                    </div>
-
-                    <p class="text-sm text-[#c7d5e0] mt-6 text-center">
-                        <i class="fas fa-info-circle text-[#4e9eff] mr-1"></i>
-                        L'hyperviseur (VMware ESXi, Hyper-V, KVM) gère l'accès des VMs aux ressources physiques.
-                    </p>
-                </div>
-            </div>
-
-            <!-- 3 cartes thématiques -->
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Carte 1 - Virtualisation Serveur -->
-                <div class="card-bg rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-200 overflow-hidden group">
-                    <div class="h-40 bg-gradient-to-r from-[#4e9eff]/20 to-[#601cfc]/20 flex items-center justify-center">
-                        <i class="fas fa-server text-5xl text-white opacity-80 group-hover:scale-110 transition duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-full bg-[#4e9eff]/20 flex items-center justify-center">
-                                <i class="fas fa-cogs text-[#4e9eff]"></i>
-                            </div>
-                            <h4 class="text-xl font-semibold text-white">Virtualisation Serveur</h4>
-                        </div>
-                        <p class="text-[#c7d5e0] mb-4">
-                            Consolidation de serveurs physiques, création de VMs, gestion des ressources (CPU, RAM, stockage).
+                        <p class="text-sm text-[#c7d5e0] mb-4">
+                            Intégration native de Kubernetes dans vSphere pour les applications conteneurisées
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">VMware vSphere</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Hyper-V</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">KVM</span>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">Kubernetes</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">Conteneurs</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">DevOps</span>
                         </div>
                         
-                        <!-- Liens concrets -->
-                        <div class="pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <h5 class="text-white text-sm font-medium mb-2">Ressources :</h5>
-                            <ul class="space-y-1 text-xs">
-                                <li>
-                                    <a href="https://www.vmware.com/products/vsphere.html" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="text-[#c7d5e0] hover:text-white hover:underline flex items-center gap-1">
-                                        <i class="fas fa-external-link-alt text-[#4e9eff]"></i>
-                                        VMware vSphere - Essai gratuit
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://docs.microsoft.com/fr-fr/virtualization/hyper-v-on-windows/" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="text-[#c7d5e0] hover:text-white hover:underline flex items-center gap-1">
-                                        <i class="fas fa-book text-[#4e9eff]"></i>
-                                        Hyper-V Documentation
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 2 - Virtualisation Réseau -->
-                <div class="card-bg rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-300 overflow-hidden group">
-                    <div class="h-40 bg-gradient-to-r from-[#601cfc]/20 to-[#4e9eff]/20 flex items-center justify-center">
-                        <i class="fas fa-network-wired text-5xl text-white opacity-80 group-hover:scale-110 transition duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-full bg-[#4e9eff]/20 flex items-center justify-center">
-                                <i class="fas fa-project-diagram text-[#4e9eff]"></i>
+                        <!-- Avantages et Inconvénients -->
+                        <div class="space-y-4">
+                            <!-- Avantages -->
+                            <div>
+                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
+                                    <i class="fas fa-plus-circle text-green-400"></i>
+                                    Avantages
+                                </h5>
+                                <ul class="text-xs text-[#c7d5e0] space-y-1">
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Intégration native Kubernetes/vSphere</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Gestion unifiée VMs et conteneurs</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Déploiement simplifié des workloads modernes</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <h4 class="text-xl font-semibold text-white">Virtualisation Réseau</h4>
-                        </div>
-                        <p class="text-[#c7d5e0] mb-4">
-                            Création de réseaux virtuels, VLANs, vSwitch, NSX, SDN (Software Defined Networking).
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">NSX</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">vSwitch</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">SDN</span>
-                        </div>
-                        
-                        <!-- Liens concrets -->
-                        <div class="pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <h5 class="text-white text-sm font-medium mb-2">Outils :</h5>
-                            <ul class="space-y-1 text-xs">
-                                <li>
-                                    <a href="https://www.vmware.com/products/nsx.html" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="text-[#c7d5e0] hover:text-white hover:underline flex items-center gap-1">
-                                        <i class="fas fa-network-wired text-[#4e9eff]"></i>
-                                        VMware NSX
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.opennetworking.org/sdn/" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="text-[#c7d5e0] hover:text-white hover:underline flex items-center gap-1">
-                                        <i class="fas fa-code-branch text-[#4e9eff]"></i>
-                                        Open Networking Foundation
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carte 3 - Conteneurisation -->
-                <div class="card-bg rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-400 overflow-hidden group">
-                    <div class="h-40 bg-gradient-to-r from-[#4e9eff]/20 to-[#601cfc]/20 flex items-center justify-center">
-                        <i class="fas fa-box text-5xl text-white opacity-80 group-hover:scale-110 transition duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 rounded-full bg-[#4e9eff]/20 flex items-center justify-center">
-                                <i class="fas fa-cube text-[#4e9eff]"></i>
+                            
+                            <!-- Inconvénients -->
+                            <div>
+                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
+                                    <i class="fas fa-minus-circle text-red-400"></i>
+                                    Inconvénients
+                                </h5>
+                                <ul class="text-xs text-[#c7d5e0] space-y-1">
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Complexité accrue de l'infrastructure</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Exigences matérielles supplémentaires</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Licences spécifiques requises</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <h4 class="text-xl font-semibold text-white">Conteneurisation</h4>
                         </div>
-                        <p class="text-[#c7d5e0] mb-4">
-                            Docker, Kubernetes, orchestration de conteneurs, microservices, déploiement agile.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Docker</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Kubernetes</span>
-                            <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Podman</span>
-                        </div>
-                        
-                        <!-- Liens concrets -->
-                        <div class="pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <h5 class="text-white text-sm font-medium mb-2">Apprentissage :</h5>
-                            <ul class="space-y-1 text-xs">
-                                <li>
-                                    <a href="https://www.docker.com/get-started/" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="text-[#c7d5e0] hover:text-white hover:underline flex items-center gap-1">
-                                        <i class="fab fa-docker text-[#4e9eff]"></i>
-                                        Docker - Débuter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://kubernetes.io/fr/docs/tutorials/" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="text-[#c7d5e0] hover:text-white hover:underline flex items-center gap-1">
-                                        <i class="fas fa-ship text-[#4e9eff]"></i>
-                                        Kubernetes Tutorials
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Focus principal -->
-            <div class="card-bg rounded-xl shadow-lg mb-16 overflow-hidden animate-fadeInUp delay-500">
-                <div class="relative">
-                    <!-- Bannière en haut -->
-                    <div class="bg-gradient-to-r from-[#4e9eff] to-[#601cfc] p-6 text-center">
-                        <h3 class="text-2xl md:text-3xl font-bold text-white">Virtualisation :</h3>
-                        <p class="text-white/80 max-w-3xl mx-auto mt-2">
-                            Comment la virtualisation transforme la gestion des infrastructures IT et réduit les coûts
-                        </p>
                     </div>
                     
-                    <div class="p-8">
-                        <div class="grid lg:grid-cols-2 gap-10 items-start">
-                            <!-- Colonne gauche -->
-                            <div class="space-y-8">
-                                <div>
-                                    <div class="flex items-center gap-3 mb-4">
-                                        <div class="w-12 h-12 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
-                                            <i class="fas fa-chart-pie text-xl text-[#4e9eff]"></i>
-                                        </div>
-                                        <h4 class="text-xl font-semibold text-white">Avantages de la virtualisation</h4>
-                                    </div>
-                                    
-                                    <p class="text-[#c7d5e0] mb-6">
-                                        La virtualisation apporte de nombreux bénéfices pour les infrastructures :
-                                    </p>
+                    <!-- Nouveauté 3 -->
+                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300 hover:-translate-y-2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-700 flex items-center justify-center">
+                                <i class="fas fa-robot text-xl text-white"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-white">Intelligence Artificielle</h4>
+                        </div>
+                        <p class="text-sm text-[#c7d5e0] mb-4">
+                            VMware vSphere avec DPM intelligent pour l'optimisation automatique des ressources
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">IA/ML</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">Automatisation</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">Optimisation</span>
+                        </div>
+                        
+                        <!-- Avantages et Inconvénients -->
+                        <div class="space-y-4">
+                            <!-- Avantages -->
+                            <div>
+                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
+                                    <i class="fas fa-plus-circle text-green-400"></i>
+                                    Avantages
+                                </h5>
+                                <ul class="text-xs text-[#c7d5e0] space-y-1">
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Optimisation automatique des performances</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Réduction de la consommation énergétique</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
+                                        <span>Prédiction et prévention des incidents</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Inconvénients -->
+                            <div>
+                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
+                                    <i class="fas fa-minus-circle text-red-400"></i>
+                                    Inconvénients
+                                </h5>
+                                <ul class="text-xs text-[#c7d5e0] space-y-1">
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Dépendance aux algorithmes IA</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Phase d'apprentissage nécessaire</span>
+                                    </li>
+                                    <li class="flex items-start gap-1">
+                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
+                                        <span>Complexité de configuration initiale</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div class="bg-[rgba(255,255,255,0.05)] p-4 rounded-lg hover:bg-[rgba(255,255,255,0.08)] transition duration-300">
-                                            <a href="https://www.vmware.com/solutions/business-continuity.html" 
-                                               target="_blank"
-                                               rel="noopener noreferrer"
-                                               class="block hover:no-underline">
-                                                <div class="flex items-start gap-3">
-                                                    <i class="fas fa-sync-alt text-[#4e9eff] mt-1"></i>
-                                                    <div>
-                                                        <p class="font-medium text-white text-sm hover:text-[#4e9eff]">Haute Disponibilité</p>
-                                                        <p class="text-xs text-[#c7d5e0]">Migration live, reprise après sinistre</p>
-                                                        <span class="text-[#4e9eff] text-xs mt-1 block">→ VMware vSphere HA</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        
-                                        <div class="bg-[rgba(255,255,255,0.05)] p-4 rounded-lg hover:bg-[rgba(255,255,255,0.08)] transition duration-300">
-                                            <a href="https://www.vmware.com/products/vcenter-server.html" 
-                                               target="_blank"
-                                               rel="noopener noreferrer"
-                                               class="block hover:no-underline">
-                                                <div class="flex items-start gap-3">
-                                                    <i class="fas fa-tachometer-alt text-[#4e9eff] mt-1"></i>
-                                                    <div>
-                                                        <p class="font-medium text-white text-sm hover:text-[#4e9eff]">Gestion Centralisée</p>
-                                                        <p class="text-xs text-[#c7d5e0]">vCenter, monitoring, automation</p>
-                                                        <span class="text-[#4e9eff] text-xs mt-1 block">→ vCenter Server</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        
-                                        <div class="bg-[rgba(255,255,255,0.05)] p-4 rounded-lg hover:bg-[rgba(255,255,255,0.08)] transition duration-300">
-                                            <a href="https://www.veeam.com/vm-backup-recovery-replication-software.html" 
-                                               target="_blank"
-                                               rel="noopener noreferrer"
-                                               class="block hover:no-underline">
-                                                <div class="flex items-start gap-3">
-                                                    <i class="fas fa-hdd text-[#4e9eff] mt-1"></i>
-                                                    <div>
-                                                        <p class="font-medium text-white text-sm hover:text-[#4e9eff]">Sauvegarde & Restauration</p>
-                                                        <p class="text-xs text-[#c7d5e0]">Snapshots, clones, backup VMs</p>
-                                                        <span class="text-[#4e9eff] text-xs mt-1 block">→ Veeam Backup</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        
-                                        <div class="bg-[rgba(255,255,255,0.05)] p-4 rounded-lg hover:bg-[rgba(255,255,255,0.08)] transition duration-300">
-                                            <a href="https://www.vmware.com/products/vmotion.html" 
-                                               target="_blank"
-                                               rel="noopener noreferrer"
-                                               class="block hover:no-underline">
-                                                <div class="flex items-start gap-3">
-                                                    <i class="fas fa-exchange-alt text-[#4e9eff] mt-1"></i>
-                                                    <div>
-                                                        <p class="font-medium text-white text-sm hover:text-[#4e9eff]">Migration à chaud</p>
-                                                        <p class="text-xs text-[#c7d5e0]">vMotion, maintenance sans interruption</p>
-                                                        <span class="text-[#4e9eff] text-xs mt-1 block">→ VMware vMotion</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+            <!-- PowerShell - Administration -->
+            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#012456] to-[#00539f] flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">PS</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">PowerShell - Windows Server</h3>
+                        <p class="text-[#c7d5e0]">Scripts et commandes utilisés</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Commandes AD & DNS -->
+                    <div class="bg-[#1a1f36] rounded-xl overflow-hidden border border-[#2d3748]">
+                        <div class="bg-[#2d3748] px-6 py-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded bg-[#012456] flex items-center justify-center">
+                                    <span class="text-white font-bold">PS</span>
                                 </div>
+                                <span class="text-[#c7d5e0] ml-2 font-medium">Active Directory & DNS</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <pre class="text-sm text-blue-400 overflow-x-auto">
+<span class="text-gray-400"># Installer le rôle AD DS</span>
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 
-                                <!-- Tendances actuelles -->
-                                <div class="bg-gradient-to-r from-[#4e9eff]/10 to-transparent p-6 rounded-lg border-l-4 border-[#4e9eff]">
-                                    <div class="flex items-center gap-3 mb-3">
-                                        <i class="fas fa-chart-line text-xl text-[#4e9eff]"></i>
-                                        <h4 class="text-lg font-semibold text-white">Tendances actuelles</h4>
-                                    </div>
-                                    <p class="text-[#c7d5e0] text-sm mb-2">
-                                        <strong class="text-white">Hybrid Cloud</strong> : Intégration entre cloud public et infrastructure virtualisée on-premise.
-                                    </p>
-                                    <p class="text-[#c7d5e0] text-sm mb-2">
-                                        <strong class="text-white">Kubernetes sur VMs</strong> : Orchestration de conteneurs sur infrastructure virtualisée.
-                                    </p>
-                                    <p class="text-[#c7d5e0] text-sm">
-                                        <strong class="text-white">Edge Computing</strong> : Virtualisation pour les infrastructures en périphérie du réseau.
-                                    </p>
-                                    
-                                    <!-- Article récent -->
-                                    <div class="mt-4 p-3 bg-[rgba(0,0,0,0.2)] rounded">
-                                        <p class="text-xs text-[#c7d5e0]">
-                                            <i class="fas fa-newspaper text-[#4e9eff] mr-1"></i>
-                                            <strong>Article récent :</strong>
-                                            <a href="https://www.lemondeinformatique.fr/actualites/lire-la-virtualisation-fete-ses-20-ans-88309.html" 
-                                               target="_blank"
-                                               rel="noopener noreferrer"
-                                               class="text-[#4e9eff] hover:underline ml-1">
-                                               20 ans de virtualisation (Le Monde Informatique)
-                                            </a>
-                                        </p>
-                                    </div>
+<span class="text-gray-400"># Promouvoir en contrôleur de domaine</span>
+Install-ADDSForest -DomainName "entreprise.local" `
+  -DomainNetbiosName "ENTREPRISE" -InstallDNS
+
+<span class="text-gray-400"># Créer un nouvel utilisateur</span>
+New-ADUser -Name "Dupont Jean" -SamAccountName "jdupont" `
+  -UserPrincipalName "jdupont@entreprise.local" -Enabled $true
+
+<span class="text-gray-400"># Créer un groupe</span>
+New-ADGroup -Name "Admins Département" -GroupScope Global
+
+<span class="text-gray-400"># Vérifier les services DNS</span>
+Get-DnsServerZone | Format-Table ZoneName, ZoneType</pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Commandes DHCP & GPO -->
+                    <div class="bg-[#1a1f36] rounded-xl overflow-hidden border border-[#2d3748]">
+                        <div class="bg-[#2d3748] px-6 py-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded bg-[#012456] flex items-center justify-center">
+                                    <span class="text-white font-bold">PS</span>
+                                </div>
+                                <span class="text-[#c7d5e0] ml-2 font-medium">DHCP & GPO</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <pre class="text-sm text-green-400 overflow-x-auto">
+<span class="text-gray-400"># Installer le rôle DHCP</span>
+Install-WindowsFeature DHCP -IncludeManagementTools
+
+<span class="text-gray-400"># Créer une étendue DHCP</span>
+Add-DhcpServerV4Scope -Name "LAN Principal" `
+  -StartRange 192.168.1.100 -EndRange 192.168.1.200 `
+  -SubnetMask 255.255.255.0
+
+<span class="text-gray-400"># Réserver une adresse IP</span>
+Add-DhcpServerv4Reservation -ScopeId 192.168.1.0 `
+  -IPAddress 192.168.1.150 -ClientId "00-15-5D-02-4B-01"
+
+<span class="text-gray-400"># Créer une GPO</span>
+New-GPO -Name "Politique Sécurité Bureau"
+
+<span class="text-gray-400"># Lier une GPO à une OU</span>
+New-GPLink -Name "Politique Sécurité Bureau" `
+  -Target "OU=Utilisateurs,DC=entreprise,DC=local"</pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Autres commandes -->
+                <div class="mt-8 bg-[#1a1f36] rounded-xl overflow-hidden border border-[#2d3748]">
+                    <div class="bg-[#2d3748] px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-[#012456] flex items-center justify-center">
+                                <span class="text-white font-bold">PS</span>
+                            </div>
+                            <span class="text-[#c7d5e0] ml-2 font-medium">Monitoring & Administration</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <pre class="text-sm text-yellow-400 overflow-x-auto">
+<span class="text-gray-400"># Vérifier l'état des services</span>
+Get-Service | Where-Object {$_.Status -ne "Running"}
+
+<span class="text-gray-400"># Analyser l'espace disque</span>
+Get-WmiObject Win32_LogicalDisk | Select-Object DeviceID, `
+  @{Name="Size(GB)";Expression={[math]::Round($_.Size/1GB,2)}}, `
+  @{Name="Free(GB)";Expression={[math]::Round($_.FreeSpace/1GB,2)}}
+
+<span class="text-gray-400"># Vérifier les événements système</span>
+Get-EventLog -LogName System -Newest 20 | `
+  Select-Object TimeGenerated, EntryType, Source, Message
+
+<span class="text-gray-400"># Tester la connectivité réseau</span>
+Test-NetConnection -ComputerName "DC01" -Port 53
+Test-NetConnection -ComputerName "DC01" -Port 389</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analyse VMware -->
+            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
+                <h3 class="text-2xl font-semibold text-white mb-8 text-center">
+                    Analyse : Virtualisation VMware 
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Avantages -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center">
+                                <i class="fas fa-thumbs-up text-xl text-green-400"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-white">Avantages de VMware Workstation</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
+                                <i class="fas fa-flask text-green-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Environnement de test sécurisé</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Tests AD, GPO, DNS sans risque pour la production</p>
                                 </div>
                             </div>
-
-                            <!-- Colonne droite -->
-                            <div class="space-y-8">
-                                <!-- Outils avec images -->
-                                <div class="bg-[rgba(78,158,255,0.10)] p-6 rounded-lg border border-[#4e9eff]/30">
-                                    <div class="flex items-center gap-3 mb-6">
-                                        <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center">
-                                            <i class="fas fa-tools text-xl text-[#4e9eff]"></i>
-                                        </div>
-                                        <h4 class="font-semibold text-white text-lg">Principales solutions</h4>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 gap-4">
-                                        <a href="https://www.vmware.com/products/vsphere.html" 
-                                           target="_blank"
-                                           rel="noopener noreferrer"
-                                           class="block hover:no-underline">
-                                            <div class="bg-[rgba(255,255,255,0.08)] p-4 rounded-lg text-center hover:bg-[rgba(255,255,255,0.12)] transition duration-300 group">
-                                                <div class="w-12 h-12 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition duration-300">
-                                                    <i class="fab fa-vmware text-[#4e9eff]"></i>
-                                                </div>
-                                                <p class="text-sm font-semibold text-white mb-1 group-hover:text-[#4e9eff]">VMware vSphere</p>
-                                                <p class="text-xs text-[#c7d5e0]">Leader marché</p>
-                                                <span class="text-[#4e9eff] text-xs mt-1">Essai gratuit</span>
-                                            </div>
-                                        </a>
-                                        
-                                        <a href="https://www.microsoft.com/fr-fr/windows-server/virtualization" 
-                                           target="_blank"
-                                           rel="noopener noreferrer"
-                                           class="block hover:no-underline">
-                                            <div class="bg-[rgba(255,255,255,0.08)] p-4 rounded-lg text-center hover:bg-[rgba(255,255,255,0.12)] transition duration-300 group">
-                                                <div class="w-12 h-12 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition duration-300">
-                                                    <i class="fab fa-microsoft text-[#4e9eff]"></i>
-                                                </div>
-                                                <p class="text-sm font-semibold text-white mb-1 group-hover:text-[#4e9eff]">Hyper-V</p>
-                                                <p class="text-xs text-[#c7d5e0]">Intégré à Windows</p>
-                                                <span class="text-[#4e9eff] text-xs mt-1">Inclus dans Windows Server</span>
-                                            </div>
-                                        </a>
-                                        
-                                        <a href="https://www.proxmox.com/" 
-                                           target="_blank"
-                                           rel="noopener noreferrer"
-                                           class="block hover:no-underline">
-                                            <div class="bg-[rgba(255,255,255,0.08)] p-4 rounded-lg text-center hover:bg-[rgba(255,255,255,0.12)] transition duration-300 group">
-                                                <div class="w-12 h-12 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition duration-300">
-                                                    <i class="fas fa-code text-[#4e9eff]"></i>
-                                                </div>
-                                                <p class="text-sm font-semibold text-white mb-1 group-hover:text-[#4e9eff]">Proxmox VE</p>
-                                                <p class="text-xs text-[#c7d5e0]">Open Source</p>
-                                                <span class="text-[#4e9eff] text-xs mt-1">Alternative libre</span>
-                                            </div>
-                                        </a>
-                                        
-                                        <a href="https://www.citrix.com/fr-fr/products/citrix-hypervisor/" 
-                                           target="_blank"
-                                           rel="noopener noreferrer"
-                                           class="block hover:no-underline">
-                                            <div class="bg-[rgba(255,255,255,0.08)] p-4 rounded-lg text-center hover:bg-[rgba(255,255,255,0.12)] transition duration-300 group">
-                                                <div class="w-12 h-12 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition duration-300">
-                                                    <i class="fas fa-desktop text-[#4e9eff]"></i>
-                                                </div>
-                                                <p class="text-sm font-semibold text-white mb-1 group-hover:text-[#4e9eff]">Citrix Hypervisor</p>
-                                                <p class="text-xs text-[#c7d5e0]">VDI & virtualisation</p>
-                                                <span class="text-[#4e9eff] text-xs mt-1">Solution entreprise</span>
-                                            </div>
-                                        </a>
-                                    </div>
+                            
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
+                                <i class="fas fa-clone text-green-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Clonage et modèles</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Déploiement rapide de serveurs identiques</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
+                                <i class="fas fa-camera text-green-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Snapshots</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Retour à un état précédent avant modifications</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
+                                <i class="fas fa-laptop text-green-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Portabilité</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Infrastructure complète sur un seul poste</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Limites -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-lg bg-red-500/20 flex items-center justify-center">
+                                <i class="fas fa-exclamation-triangle text-xl text-red-400"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold text-white">Limites et Considérations</h4>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
+                                <i class="fas fa-microchip text-red-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Consommation ressources</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Nécessite un poste hôte puissant</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
+                                <i class="fas fa-tachometer-alt text-red-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Performance</h5>
+                                    <p class="text-sm text-[#c7d5e0]">I/O disque et réseau moins performants</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
+                                <i class="fas fa-shield-alt text-red-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Sécurité de l'hôte</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Si l'hôte est compromis, toutes les VMs le sont</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
+                                <i class="fas fa-graduation-cap text-red-400 mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-white">Apprentissage</h5>
+                                    <p class="text-sm text-[#c7d5e0]">Courbe d'apprentissage pour la gestion avancée</p>
                                 </div>
                             </div>
                         </div>
@@ -1064,245 +1368,181 @@
             </div>
 
             <!-- Sources de veille -->
-            <div class="animate-fadeInUp delay-600">
-                <div class="text-center mb-12">
-                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Mes sources de veille</h3>
-                    <p class="text-[#c7d5e0] max-w-2xl mx-auto">Les plateformes et sites que je consulte régulièrement pour ma veille sur la virtualisation</p>
+            <div class="animate-fadeInUp">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-semibold text-white mb-3">
+                        Sources De Ma Veille
+                    </h3>
+                    <p class="text-[#c7d5e0] max-w-2xl mx-auto">
+                        Documentation et ressources pour la virtualisation VMware
+                    </p>
                 </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <!-- Source 1 - VMware Blog -->
-                    <a href="https://blogs.vmware.com/" 
-                       target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#4e9eff]/10 rounded-full -translate-y-10 translate-x-10"></div>
-                        
-                        <div class="relative z-10">
-                            <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                                <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
-                                    <i class="fab fa-vmware text-white"></i>
-                                </div>
-                            </div>
-                            <h4 class="text-base font-semibold text-white mb-2 group-hover:text-[#4e9eff] transition duration-300">VMware Blog</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-2">Actualités et bonnes pratiques</p>
-                            <div class="flex items-center justify-center gap-1 text-xs text-[#4e9eff]">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Source officielle</span>
-                            </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Source 1 -->
+                    <a href="https://docs.vmware.com/fr/VMware-Workstation-Pro/index.html" target="_blank" rel="noopener noreferrer" 
+                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-book text-2xl text-[#4e9eff]"></i>
                         </div>
+                        <h4 class="font-semibold text-white mb-2">Documentation VMware</h4>
+                        <p class="text-sm text-[#c7d5e0]">Guides officiels Workstation Pro</p>
                     </a>
-
-                    <!-- Source 2 - Le Monde Informatique -->
-                    <a href="https://www.lemondeinformatique.fr/actualites/tags/virtualisation-322.html" 
-                       target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group relative overflow-hidden">
-                        <div class="absolute top-0 left-0 w-20 h-20 bg-[#601cfc]/10 rounded-full -translate-x-10 -translate-y-10"></div>
-                        
-                        <div class="relative z-10">
-                            <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                                <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center">
-                                    <span class="text-white font-bold text-xs">LMI</span>
-                                </div>
-                            </div>
-                            <h4 class="text-base font-semibold text-white mb-2 group-hover:text-[#4e9eff] transition duration-300">Le Monde Informatique</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-2">Actualités virtualisation</p>
-                            <div class="flex items-center justify-center gap-1 text-xs text-[#4e9eff]">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Analyses techniques</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Source 3 - Microsoft Virtualization -->
-                    <a href="https://techcommunity.microsoft.com/t5/virtualization/bg-p/Virtualization" 
-                       target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group relative overflow-hidden">
-                        <div class="absolute bottom-0 right-0 w-20 h-20 bg-[#4e9eff]/10 rounded-full translate-y-10 translate-x-10"></div>
-                        
-                        <div class="relative z-10">
-                            <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                                    <i class="fab fa-microsoft text-white"></i>
-                                </div>
-                            </div>
-                            <h4 class="text-base font-semibold text-white mb-2 group-hover:text-[#4e9eff] transition duration-300">Microsoft Tech Community</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-2">Hyper-V & virtualisation</p>
-                            <div class="flex items-center justify-center gap-1 text-xs text-[#4e9eff]">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Forum technique</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Source 4 - Proxmox -->
-                    <a href="https://forum.proxmox.com/" 
-                       target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group relative overflow-hidden">
-                        <div class="absolute top-0 left-0 w-20 h-20 bg-[#00bceb]/10 rounded-full -translate-x-8 -translate-y-8"></div>
-                        
-                        <div class="relative z-10">
-                            <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                                <div class="w-10 h-10 bg-gradient-to-br from-[#00bceb] to-[#049fd9] rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-code text-white"></i>
-                                </div>
-                            </div>
-                            <h4 class="text-base font-semibold text-white mb-2 group-hover:text-[#4e9eff] transition duration-300">Proxmox Forum</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-2">Virtualisation open source</p>
-                            <div class="flex items-center justify-center gap-1 text-xs text-[#4e9eff]">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>Communauté active</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Section vidéos et formations -->
-                <div class="card-bg rounded-xl p-8 mb-12">
-                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Ressources vidéos & formations gratuites</h3>
                     
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <!-- Vidéo 1 -->
-                        <div class="bg-[rgba(255,255,255,0.05)] rounded-lg p-5 hover:bg-[rgba(255,255,255,0.08)] transition duration-300">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0">
-                                    <i class="fab fa-youtube text-red-500"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-white mb-1">Introduction à VMware vSphere</h4>
-                                    <p class="text-sm text-[#c7d5e0] mb-2">Fonctionnalités et architecture</p>
-                                    <a href="https://www.youtube.com/watch?v=FZR0rG3HKIk" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="inline-flex items-center gap-1 text-[#4e9eff] text-sm hover:underline">
-                                        <i class="fas fa-play"></i>
-                                        Regarder (15 min)
-                                    </a>
-                                </div>
-                            </div>
+                    <!-- Source 2 -->
+                    <a href="https://docs.microsoft.com/fr-fr/windows-server/identity/ad-ds/ad-ds-getting-started" target="_blank" rel="noopener noreferrer"
+                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-windows text-2xl text-blue-400"></i>
                         </div>
-                        
-                        <!-- Vidéo 2 -->
-                        <div class="bg-[rgba(255,255,255,0.05)] rounded-lg p-5 hover:bg-[rgba(255,255,255,0.08)] transition duration-300">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-graduation-cap text-blue-500"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-white mb-1">Microsoft Learn - Virtualisation</h4>
-                                    <p class="text-sm text-[#c7d5e0] mb-2">Modules gratuits sur Hyper-V</p>
-                                    <a href="https://learn.microsoft.com/fr-fr/training/paths/virtualization-fundamentals/" 
-                                       target="_blank"
-                                       rel="noopener noreferrer"
-                                       class="inline-flex items-center gap-1 text-[#4e9eff] text-sm hover:underline">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Accéder aux cours
-                                    </a>
-                                </div>
-                            </div>
+                        <h4 class="font-semibold text-white mb-2">Documentation Windows Server</h4>
+                        <p class="text-sm text-[#c7d5e0]">Active Directory & Services</p>
+                    </a>
+                    
+                    <!-- Source 3 -->
+                    <a href="https://docs.netgate.com/pfsense/en/latest/" target="_blank" rel="noopener noreferrer"
+                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-orange-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-fire text-2xl text-orange-400"></i>
                         </div>
-                    </div>
+                        <h4 class="font-semibold text-white mb-2">Documentation pfSense</h4>
+                        <p class="text-sm text-[#c7d5e0]">Pare-feu & Sécurité réseau</p>
+                    </a>
+                    
+                    <!-- Source 4 -->
+                    <a href="https://docs.microsoft.com/fr-fr/powershell/" target="_blank" rel="noopener noreferrer"
+                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-[#012456]/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                            <span class="text-[#4e9eff] font-bold text-xl">PS</span>
+                        </div>
+                        <h4 class="font-semibold text-white mb-2">PowerShell Docs</h4>
+                        <p class="text-sm text-[#c7d5e0]">Scripting & Administration</p>
+                    </a>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Footer de la section -->
-                <div class="text-center">
-                    <div class="inline-flex flex-col md:flex-row items-center gap-4 px-6 py-4 rounded-xl bg-[rgba(78,158,255,0.1)] border border-[#4e9eff]/30">
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-sync-alt text-[#4e9eff] animate-spin-slow"></i>
-                            <span class="text-[#c7d5e0]">Veille technologique mise à jour régulièrement</span>
-                        </div>
-                        <div class="text-sm text-[#c7d5e0] bg-[rgba(0,0,0,0.3)] px-3 py-1 rounded-full">
-                            Dernière mise à jour : 2025
-                        </div>
-                    </div>
+    <!-- Modal pour le schéma en grand - CSS ONLY -->
+    <div id="schemaModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4">
+        <div class="relative w-full max-w-6xl max-h-[90vh] bg-[#1a1f36] rounded-2xl overflow-hidden border border-[#4e9eff]/30">
+            <!-- En-tête du modal -->
+            <div class="flex items-center justify-between p-6 bg-gradient-to-r from-[#4e9eff]/10 to-[#601cfc]/10 border-b border-[#4e9eff]/20">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-sitemap text-2xl text-[#4e9eff]"></i>
+                    <h3 class="text-xl font-semibold text-white">Architecture VMware - Projet AP3</h3>
                 </div>
+                <a href="#veille" class="w-10 h-10 rounded-full bg-[#4e9eff]/20 hover:bg-[#4e9eff]/30 transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-times text-white text-lg"></i>
+                </a>
             </div>
-        </div>
-    </div>
-</section>
-    
-   <!-- ==================== SECTION CONTACT ==================== -->
-<section id="contact" class="section">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Contactez-moi</h2>
-        <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100"></p>
-        
-        <div class="max-w-4xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Téléphone -->
-                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center animate-fadeInUp delay-100">
-                    <div class="text-[#4e9eff] text-3xl mb-4">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Téléphone</h3>
-                    <p class="text-[#c7d5e0]">+33 7 43 34 95 47</p>
-                </div>
-                
-                <!-- Email -->
-                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center animate-fadeInUp delay-200">
-                    <div class="text-[#4e9eff] text-3xl mb-4">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Email</h3>
-                    <p class="text-[#c7d5e0]">aymane.ayyadi@hotmail.com</p>
+            
+            <!-- Contenu du modal -->
+            <div class="p-4 md:p-6 overflow-auto max-h-[calc(90vh-80px)]">
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Image en grand -->
+                    <img src="Conception/Site/images/Schéma virtualisation.png" 
+                         alt="Schéma de virtualisation en grand" 
+                         class="w-full max-w-4xl h-auto object-contain rounded-lg">
                 </div>
             </div>
             
-            <!-- Formulaire de contact -->
-            <form action="https://formspree.io/f/mreezgvy" method="POST">
-                <!-- Champs cachés pour Formspree -->
-                <input type="hidden" name="_language" value="fr" />
-                <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio" />
-                <input type="hidden" name="_format" value="plain" />
-                <input type="text" name="_gotcha" style="display:none" /> <!-- Anti-spam -->
+            <!-- Pied du modal -->
+            <div class="p-4 bg-[#0a0e1a] border-t border-[#4e9eff]/20 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-mouse-pointer text-[#4e9eff] text-sm"></i>
+                    <span class="text-xs text-[#c7d5e0]">Cliquez en dehors de l'image pour fermer</span>
+                </div>
+                <a href="#veille" class="px-4 py-2 bg-gradient-to-r from-[#4e9eff] to-[#601cfc] text-white rounded-lg hover:opacity-90 transition duration-300 text-sm font-medium">
+                    Fermer
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SECTION CONTACT ==================== -->
+    <section id="contact" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Contactez-moi</h2>
+            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100"></p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Téléphone -->
+                    <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center animate-fadeInUp delay-100">
+                        <div class="text-[#4e9eff] text-3xl mb-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Téléphone</h3>
+                        <p class="text-[#c7d5e0]">+33 7 43 34 95 47</p>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center animate-fadeInUp delay-200">
+                        <div class="text-[#4e9eff] text-3xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Email</h3>
+                        <p class="text-[#c7d5e0]">aymane.ayyadi@hotmail.com</p>
+                    </div>
+                </div>
                 
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
+                <!-- Formulaire de contact -->
+                <form action="https://formspree.io/f/mreezgvy" method="POST">
+                    <!-- Champs cachés pour Formspree -->
+                    <input type="hidden" name="_language" value="fr" />
+                    <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio" />
+                    <input type="hidden" name="_format" value="plain" />
+                    <input type="text" name="_gotcha" style="display:none" /> <!-- Anti-spam -->
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <input type="text" 
+                                   name="name" 
+                                   placeholder="Votre nom" 
+                                   class="form-input w-full px-4 py-3 rounded-lg text-white"
+                                   required>
+                        </div>
+                        <div>
+                            <input type="email" 
+                                   name="email" 
+                                   placeholder="Votre email" 
+                                   class="form-input w-full px-4 py-3 rounded-lg text-white"
+                                   required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
                         <input type="text" 
-                               name="name" 
-                               placeholder="Votre nom" 
+                               name="subject" 
+                               placeholder="Sujet" 
                                class="form-input w-full px-4 py-3 rounded-lg text-white"
                                required>
                     </div>
-                    <div>
-                        <input type="email" 
-                               name="email" 
-                               placeholder="Votre email" 
-                               class="form-input w-full px-4 py-3 rounded-lg text-white"
-                               required>
+                    
+                    <div class="mb-6">
+                        <textarea name="message" 
+                                  placeholder="Votre message" 
+                                  rows="6" 
+                                  class="form-input w-full px-4 py-3 rounded-lg text-white resize-none"
+                                  required></textarea>
                     </div>
-                </div>
+                    
+                    <button type="submit" 
+                            class="gradient-bg text-white w-full py-4 rounded-full font-semibold flex items-center justify-center hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Envoyer le message
+                    </button>
+                </form>
                 
-                <div class="mb-6">
-                    <input type="text" 
-                           name="subject" 
-                           placeholder="Sujet" 
-                           class="form-input w-full px-4 py-3 rounded-lg text-white"
-                           required>
-                </div>
-                
-                <div class="mb-6">
-                    <textarea name="message" 
-                              placeholder="Votre message" 
-                              rows="6" 
-                              class="form-input w-full px-4 py-3 rounded-lg text-white resize-none"
-                              required></textarea>
-                </div>
-                
-                <button type="submit" 
-                        class="gradient-bg text-white w-full py-4 rounded-full font-semibold flex items-center justify-center hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                    <i class="fas fa-paper-plane mr-2"></i>
-                    Envoyer le message
-                </button>
-            </form>
-            
-            <!-- Note sur l'envoi -->
-            <p class="text-[#c7d5e0] text-sm text-center mt-4 animate-fadeInUp delay-300">
-                Après l'envoi, vous serez redirigé vers une page de confirmation Formspree.
-            </p>
+                <!-- Note sur l'envoi -->
+                <p class="text-[#c7d5e0] text-sm text-center mt-4 animate-fadeInUp delay-300">
+                    Après l'envoi, vous serez redirigé vers une page de confirmation Formspree.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-    
+    </section>
+
     <!-- ==================== FOOTER ==================== -->
     <footer class="py-8 border-t border-[rgba(255,255,255,0.1)]">
         <div class="container mx-auto px-6">
@@ -1329,7 +1569,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Back to top button -->
     <a href="#accueil" class="fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center rounded-full bg-[#4e9eff] text-white shadow-lg hover:bg-[#3d8ae8] hover:-translate-y-1 transition duration-300 z-40">
         <i class="fas fa-arrow-up"></i>
