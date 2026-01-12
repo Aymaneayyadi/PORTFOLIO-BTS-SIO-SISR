@@ -91,6 +91,8 @@
                         Etudiant en BTS SIO – Option SISR
                     </span>
                 </h1>
+<!-- Canvas particles -->
+<canvas id="heroParticles" class="absolute inset-0 z-10 pointer-events-none"></canvas>
 
                 <!-- Social Links -->
                 <div class="flex space-x-6 mt-8">
@@ -1606,5 +1608,109 @@ Test-NetConnection -ComputerName "DC01" -Port 389</pre>
             window.addEventListener('scroll', onScroll, { passive: true });
         });
     </script>
+    <script>
+/* =======================
+   HERO SECTION ANIMATION
+   ======================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ========= TYPING EFFECT ========= */
+    const title = document.querySelector("#accueil h1");
+    const subtitle = title.querySelector("span");
+
+    const titleText = "Portfolio Aymane Ayyadi";
+    const subtitleText = "Etudiant en BTS SIO – Option SISR";
+
+    let i = 0, j = 0;
+    title.childNodes[0].textContent = "";
+    subtitle.textContent = "";
+
+    function typeTitle() {
+        if (i < titleText.length) {
+            title.childNodes[0].textContent += titleText.charAt(i);
+            i++;
+            setTimeout(typeTitle, 70);
+        } else {
+            setTimeout(typeSubtitle, 400);
+        }
+    }
+
+    function typeSubtitle() {
+        if (j < subtitleText.length) {
+            subtitle.textContent += subtitleText.charAt(j);
+            j++;
+            setTimeout(typeSubtitle, 35);
+        }
+    }
+
+    typeTitle();
+
+
+    /* ========= PARALLAX BACKGROUND ========= */
+    const bg = document.querySelector("#accueil img");
+
+    window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        bg.style.transform = `translateY(${scrollY * 0.15}px)`;
+    }, { passive: true });
+
+
+    /* ========= PARTICLES BACKGROUND ========= */
+    const canvas = document.getElementById("heroParticles");
+    const ctx = canvas.getContext("2d");
+
+    let w, h;
+    function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    const particles = Array.from({ length: 70 }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 2 + 1,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: (Math.random() - 0.5) * 0.4
+    }));
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, w, h);
+        ctx.fillStyle = "rgba(78, 158, 255, 0.7)";
+
+        particles.forEach(p => {
+            p.x += p.dx;
+            p.y += p.dy;
+
+            if (p.x < 0 || p.x > w) p.dx *= -1;
+            if (p.y < 0 || p.y > h) p.dy *= -1;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fill();
+        });
+
+        requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+
+    /* ========= SCROLL ARROW ANIMATION ========= */
+    const arrow = document.querySelector(".scroll-arrow");
+    let direction = 1;
+    let offset = 0;
+
+    function animateArrow() {
+        offset += direction * 0.3;
+        if (offset > 8 || offset < 0) direction *= -1;
+        arrow.style.transform = `translate(-50%, ${offset}px)`;
+        requestAnimationFrame(animateArrow);
+    }
+    animateArrow();
+
+});
+</script>
 </body>
 </html>
