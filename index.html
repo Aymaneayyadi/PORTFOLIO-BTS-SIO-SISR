@@ -148,26 +148,31 @@
                         <div class="mt-8">
                             <h4 class="text-xl font-semibold text-[#4e9eff] mb-4">Les deux spécialités du BTS SIO :</h4>
                             
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <!-- SISR -->
-                                <div class="card-bg p-6 rounded-lg border-l-4 border-[#4e9eff] hover-scale">
-                                    <h5 class="text-lg font-semibold text-[#4e9eff] mb-2">SISR - Solutions d'Infrastructure, Systèmes et Réseaux</h5>
-                                    <p class="text-[#c7d5e0]">
-                                        Cette option forme aux métiers de l'administration et de la maintenance des systèmes et réseaux informatiques. 
-                                        Les étudiants développent des compétences dans l'installation, la configuration et la sécurisation des infrastructures IT.
-                                    </p>
-                                </div>
-                                
-                                <!-- SLAM -->
-                                <div class="card-bg p-6 rounded-lg border-l-4 border-[#4e9eff] hover-scale">
-                                    <h5 class="text-lg font-semibold text-[#4e9eff] mb-2">SLAM - Solutions Logicielles et Applications Métiers</h5>
-                                    <p class="text-[#c7d5e0]">
-                                        Cette option forme aux métiers de la programmation et du développement logiciel. 
-                                        Les étudiants acquièrent des compétences dans la conception et le développement d'applications, de sites web et de logiciels.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                            <!-- Dans la section Profil, remplacer les deux cartes SISR/SLAM par ceci : -->
+
+<div class="grid md:grid-cols-2 gap-6">
+    <!-- SISR -->
+    <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group">
+        <h5 class="text-lg font-semibold text-[#4e9eff] mb-2 group-hover:text-white transition-colors duration-300">
+            SISR - Solutions d'Infrastructure, Systèmes et Réseaux
+        </h5>
+        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
+            Cette option forme aux métiers de l'administration et de la maintenance des systèmes et réseaux informatiques. 
+            Les étudiants développent des compétences dans l'installation, la configuration et la sécurisation des infrastructures IT.
+        </p>
+    </div>
+    
+    <!-- SLAM -->
+    <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group">
+        <h5 class="text-lg font-semibold text-[#4e9eff] mb-2 group-hover:text-white transition-colors duration-300">
+            SLAM - Solutions Logicielles et Applications Métiers
+        </h5>
+        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
+            Cette option forme aux métiers de la programmation et du développement logiciel. 
+            Les étudiants acquièrent des compétences dans la conception et le développement d'applications, de sites web et de logiciels.
+        </p>
+    </div>
+</div>
                         
                         <!-- Télécharger CV -->
                         <div class="mt-8 animate-fadeInUp delay-300">
@@ -183,129 +188,223 @@
     </section>
 
     <!-- ==================== SECTION CENTRES D'INTÉRÊT ==================== -->
-    <section class="section">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fadeInUp">
-                <h2 class="text-3xl md:text-4xl font-bold">Mes <span class="gradient-text">centres d'intérêt</span></h2>
-                <p class="text-[#c7d5e0] max-w-2xl mx-auto mt-4">Découvrez mes passions en dehors du domaine informatique</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <!-- Karaté -->
-                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-100 text-center">
-                    <div class="mb-6">
-                        <i class="fas fa-shield-alt text-5xl text-[#4e9eff]"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-[#4e9eff]">Karaté</h3>
-                    <p class="text-[#c7d5e0]">Pratique régulière du karaté depuis plusieurs années. Ce sport m'a enseigné la discipline, la persévérance et la concentration.</p>
-                    <div class="mt-4 flex flex-wrap gap-2 justify-center">
-                        <span class="tag px-3 py-1 rounded-full text-sm font-medium">Discipline</span>
-                        <span class="tag px-3 py-1 rounded-full text-sm font-medium">Persévérance</span>
+<section class="section">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 animate-fadeInUp">
+            <h2 class="text-3xl md:text-4xl font-bold">Mes <span class="gradient-text">centres d'intérêt</span></h2>
+            <p class="text-[#c7d5e0] max-w-2xl mx-auto mt-4">Découvrez mes passions en dehors du domaine informatique</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <!-- Karaté -->
+            <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 animate-fadeInUp delay-100 text-center border border-transparent hover:border-[#4e9eff]/30 group">
+                <div class="mb-6">
+                    <div class="relative inline-block">
+                        <div class="absolute inset-0 bg-[#4e9eff] rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <i class="fas fa-shield-alt text-5xl text-[#4e9eff] relative z-10 group-hover:text-white transition-colors duration-300"></i>
                     </div>
                 </div>
-                
-                <!-- Gaming -->
-                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-200 text-center">
-                    <div class="mb-6">
-                        <i class="fas fa-gamepad text-5xl text-[#4e9eff]"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-[#4e9eff]">Gaming</h3>
-                    <p class="text-[#c7d5e0]">Passionné de jeux vidéo, particulièrement intéressé par les jeux de stratégie et les jeux de rôle. Cela développe ma réflexion stratégique.</p>
-                    <div class="mt-4 flex flex-wrap gap-2 justify-center">
-                        <span class="tag px-3 py-1 rounded-full text-sm font-medium">Stratégie</span>
-                        <span class="tag px-3 py-1 rounded-full text-sm font-medium">Réflexion</span>
-                    </div>
-                </div>
-                
-                <!-- Veille technologique -->
-                <div class="card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 animate-fadeInUp delay-300 text-center">
-                    <div class="mb-6">
-                        <i class="fas fa-laptop-code text-5xl text-[#4e9eff]"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-[#4e9eff]">Veille technologique</h3>
-                    <p class="text-[#c7d5e0]">Suivi régulier des dernières innovations en cybersécurité, intelligence artificielle et nouvelles technologies.</p>
-                    <div class="mt-4 flex flex-wrap gap-2 justify-center">
-                        <span class="tag px-3 py-1 rounded-full text-sm font-medium">Innovation</span>
-                        <span class="tag px-3 py-1 rounded-full text-sm font-medium">Cybersécurité</span>
-                    </div>
+                <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#4e9eff] transition-colors duration-300">Karaté</h3>
+                <p class="text-[#c7d5e0] mb-4">Pratique régulière du karaté depuis plusieurs années. Ce sport m'a enseigné la discipline, la persévérance et la concentration.</p>
+                <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                    <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff] border border-[#4e9eff]/30">Discipline</span>
+                    <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff] border border-[#4e9eff]/30">Persévérance</span>
                 </div>
             </div>
             
-            <div class="mt-12 text-center animate-fadeInUp delay-400">
-                <p class="text-[#c7d5e0] max-w-2xl mx-auto">
-                    Ces activités complètent ma formation technique en développant des compétences transversales comme 
-                    la gestion du stress, la pensée critique et la capacité d'adaptation, essentielles dans le domaine des systèmes et réseaux.
-                </p>
+            <!-- Gaming -->
+            <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 animate-fadeInUp delay-200 text-center border border-transparent hover:border-[#601cfc]/30 group">
+                <div class="mb-6">
+                    <div class="relative inline-block">
+                        <div class="absolute inset-0 bg-[#601cfc] rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <i class="fas fa-gamepad text-5xl text-[#4e9eff] relative z-10 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#601cfc] transition-colors duration-300">Gaming</h3>
+                <p class="text-[#c7d5e0] mb-4">Passionné de jeux vidéo, particulièrement intéressé par les jeux de stratégie et les jeux de rôle. Cela développe ma réflexion stratégique.</p>
+                <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                    <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#601cfc]/20 text-[#601cfc] border border-[#601cfc]/30">Stratégie</span>
+                    <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#601cfc]/20 text-[#601cfc] border border-[#601cfc]/30">Réflexion</span>
+                </div>
+            </div>
+            
+            <!-- Veille technologique -->
+            <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 animate-fadeInUp delay-300 text-center border border-transparent hover:border-[#00d4ff]/30 group">
+                <div class="mb-6">
+                    <div class="relative inline-block">
+                        <div class="absolute inset-0 bg-[#00d4ff] rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <i class="fas fa-laptop-code text-5xl text-[#4e9eff] relative z-10 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#00d4ff] transition-colors duration-300">Veille technologique</h3>
+                <p class="text-[#c7d5e0] mb-4">Suivi régulier des dernières innovations en cybersécurité, intelligence artificielle et nouvelles technologies.</p>
+                <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                    <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#00d4ff]/20 text-[#00d4ff] border border-[#00d4ff]/30">Innovation</span>
+                    <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#00d4ff]/20 text-[#00d4ff] border border-[#00d4ff]/30">Cybersécurité</span>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
         <!-- ==================== SECTION PARCOURS ==================== -->
-    <section id="parcours" class="section">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fadeInUp">
-                <h2 class="text-3xl md:text-4xl font-bold">Mon <span class="gradient-text">parcours scolaire</span></h2>
-                <p class="text-[#c7d5e0] max-w-2xl mx-auto mt-4">Découvrez mon parcours académique et mes expériences professionnelles</p>
-            </div>
+<section id="parcours" class="section">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 animate-fadeInUp">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Mon <span class="gradient-text">parcours</span></h2>
+            <p class="text-[#c7d5e0] max-w-2xl mx-auto">Découvrez mon parcours scolaire et mes expériences éducatives</p>
+        </div>
+        
+        <!-- Timeline verticale -->
+        <div class="relative max-w-4xl mx-auto">
+            <!-- Ligne verticale centrale -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#4e9eff]/20 via-[#4e9eff]/50 to-[#4e9eff]/20 hidden md:block"></div>
             
-            <div class="relative max-w-4xl mx-auto">
-                <div class="space-y-12">
-                    <!-- IFIDE SUP-FORMATION - 2ème année (2025/2026) -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-100">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="Conception/Site/images/IFIDEStrasPhoto.jpg" alt="IFIDE SUP" class="w-12 h-12 rounded-full object-cover">
+            <div class="space-y-12 md:space-y-16">
+                <!-- IFIDE SUP-FORMATION - 2ème année (2025/2026) -->
+                <div class="timeline-item animate-fadeInUp delay-100">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Partie gauche (Desktop) / Haut (Mobile) -->
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                            <div class="inline-flex items-center gap-4">
+                                <div class="hidden md:block flex-1 h-px bg-gradient-to-l from-[#4e9eff]/30 to-transparent"></div>
+                                <div class="timeline-icon w-16 h-16 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                                    <img src="Conception/Site/images/IFIDEStrasPhoto.jpg" alt="IFIDE SUP" class="w-10 h-10 rounded-full object-cover">
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">IFIDE SUP-FORMATION</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2025/2026</span>
-                            <p class="text-[#c7d5e0]">Deuxième année BTS SIO option SISR.</p>
+                        <!-- Cercle central sur la ligne -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4e9eff] border-4 border-[#0a0e1a] z-20 hidden md:block"></div>
+                        
+                        <!-- Partie droite (Desktop) / Bas (Mobile) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="card-bg p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 border-l-4 border-[#4e9eff] md:border-l-0 md:border-r-4">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/10 flex items-center justify-center">
+                                        <i class="fas fa-graduation-cap text-[#4e9eff]"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-[#4e9eff]">IFIDE SUP-FORMATION</h3>
+                                        <span class="text-sm text-[#4e9eff] font-medium">2025/2026</span>
+                                    </div>
+                                </div>
+                                <p class="text-[#c7d5e0]">Deuxième année BTS SIO option SISR</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- IFIDE SUP-FORMATION - 1ère année (2024/2025) -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-200">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="Conception/Site/images/IFIDEStrasPhoto.jpg" alt="IFIDE SUP" class="w-12 h-12 rounded-full object-cover">
+                </div>
+                
+                <!-- IFIDE SUP-FORMATION - 1ère année (2024/2025) -->
+                <div class="timeline-item animate-fadeInUp delay-200">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Partie droite (Desktop) / Haut (Mobile) -->
+                        <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-2 md:order-1">
+                            <div class="card-bg p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 border-l-4 border-[#4e9eff]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/10 flex items-center justify-center">
+                                        <i class="fas fa-university text-[#4e9eff]"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-[#4e9eff]">IFIDE SUP-FORMATION</h3>
+                                        <span class="text-sm text-[#4e9eff] font-medium">2024/2025</span>
+                                    </div>
+                                </div>
+                                <p class="text-[#c7d5e0]">Première année BTS SIO - Fondements des systèmes et réseaux</p>
+                            </div>
                         </div>
                         
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">IFIDE SUP-FORMATION</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2024/2025</span>
-                            <p class="text-[#c7d5e0]">Première année BTS SIO.</p>
+                        <!-- Cercle central sur la ligne -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4e9eff] border-4 border-[#0a0e1a] z-20 hidden md:block"></div>
+                        
+                        <!-- Partie gauche (Desktop) / Bas (Mobile) -->
+                        <div class="md:w-1/2 md:pr-12 text-right order-1 md:order-2">
+                            <div class="inline-flex items-center gap-4">
+                                <div class="timeline-icon w-16 h-16 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                                    <img src="Conception/Site/images/IFIDEStrasPhoto.jpg" alt="IFIDE SUP" class="w-10 h-10 rounded-full object-cover">
+                                </div>
+                                <div class="hidden md:block flex-1 h-px bg-gradient-to-r from-[#4e9eff]/30 to-transparent"></div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- LYCÉE SELMANE EL FARISSI (2023/2024) -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-300">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-12 h-12 rounded-full object-cover">
+                </div>
+                
+                <!-- LYCÉE SELMANE EL FARISSI (2023/2024) -->
+                <div class="timeline-item animate-fadeInUp delay-300">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Partie gauche (Desktop) / Haut (Mobile) -->
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                            <div class="inline-flex items-center gap-4">
+                                <div class="hidden md:block flex-1 h-px bg-gradient-to-l from-[#4e9eff]/30 to-transparent"></div>
+                                <div class="timeline-icon w-16 h-16 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-10 h-10 rounded-full object-cover">
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2023/2024</span>
-                            <p class="text-[#c7d5e0]">Deuxième année Bac Sciences physiques.</p>
+                        <!-- Cercle central sur la ligne -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4e9eff] border-4 border-[#0a0e1a] z-20 hidden md:block"></div>
+                        
+                        <!-- Partie droite (Desktop) / Bas (Mobile) -->
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="card-bg p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 border-l-4 border-[#4e9eff] md:border-l-0 md:border-r-4">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/10 flex items-center justify-center">
+                                        <i class="fas fa-school text-[#4e9eff]"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
+                                        <span class="text-sm text-[#4e9eff] font-medium">2023/2024</span>
+                                    </div>
+                                </div>
+                                <p class="text-[#c7d5e0]">Deuxième année - Baccalauréat Sciences Physiques</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- LYCÉE SELMANE EL FARISSI (2022/2023) -->
-                    <div class="timeline-item relative flex items-center animate-fadeInUp delay-400">
-                        <div class="timeline-icon w-20 h-20 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
-                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-12 h-12 rounded-full object-cover">
+                </div>
+                
+                <!-- LYCÉE SELMANE EL FARISSI (2022/2023) -->
+                <div class="timeline-item animate-fadeInUp delay-400">
+                    <div class="flex flex-col md:flex-row items-start md:items-center">
+                        <!-- Partie droite (Desktop) / Haut (Mobile) -->
+                        <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-2 md:order-1">
+                            <div class="card-bg p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 border-l-4 border-[#4e9eff]">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/10 flex items-center justify-center">
+                                        <i class="fas fa-book-open text-[#4e9eff]"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
+                                        <span class="text-sm text-[#4e9eff] font-medium">2022/2023</span>
+                                    </div>
+                                </div>
+                                <p class="text-[#c7d5e0]">Première année - Baccalauréat Sciences Expérimentales</p>
+                            </div>
                         </div>
+                        <!-- Cercle central sur la ligne -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4e9eff] border-4 border-[#0a0e1a] z-20 hidden md:block"></div>
                         
-                        <div class="timeline-content ml-8 card-bg p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex-1">
-                            <h3 class="text-xl font-semibold text-[#4e9eff]">LYCÉE SELMANE EL FARISSI</h3>
-                            <span class="text-[#c7d5e0] block mb-2">2022/2023</span>
-                            <p class="text-[#c7d5e0]">Première année Bac Sciences Expérimentales.</p>
+                        <!-- Partie gauche (Desktop) / Bas (Mobile) -->
+                        <div class="md:w-1/2 md:pr-12 text-right order-1 md:order-2">
+                            <div class="inline-flex items-center gap-4">
+                                <div class="timeline-icon w-16 h-16 rounded-full border-4 border-[#4e9eff] bg-[#252a3d] flex items-center justify-center shadow-lg z-10">
+                                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=100&h=100&fit=crop" alt="Lycée" class="w-10 h-10 rounded-full object-cover">
+                                </div>
+                                <div class="hidden md:block flex-1 h-px bg-gradient-to-r from-[#4e9eff]/30 to-transparent"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Point de départ -->
+            <div class="text-center mt-12 animate-fadeInUp delay-500">
+                <div class="inline-flex items-center gap-3 px-6 py-3 bg-[#4e9eff]/10 rounded-full">
+                    <i class="fas fa-rocket text-[#4e9eff]"></i>
+                    <span class="text-[#c7d5e0]">Début de mon parcours</span>
+                </div>
+            </div>
         </div>
-    </section>
-
         <!-- ==================== SECTION PROJETS ==================== -->
     <section id="projets" class="section">
         <div class="container mx-auto px-6">
@@ -607,859 +706,562 @@
         </div>
     </section>
 
-    <!-- ==================== SECTION VEILLE TECHNOLOGIQUE ==================== -->
-    <section id="veille" class="section bg-gradient-to-b from-[#0a0e1a] to-[#0f1324]">
-        <div class="container mx-auto px-6 max-w-7xl">
-            <!-- Titre principal -->
-            <div class="text-center mb-16 animate-fadeInUp">
-                <div class="inline-block relative mb-6">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-[#4e9eff]/20 to-[#601cfc]/20 blur-xl rounded-full"></div>
-                    <div class="relative w-24 h-24 rounded-full gradient-bg flex items-center justify-center mx-auto">
-                        <i class="fas fa-server text-3xl text-white"></i>
-                    </div>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                    Veille <span class="gradient-text">Technologique</span>
-                </h2>
-                <p class="text-[#c7d5e0] text-xl max-w-3xl mx-auto">
-                    Virtualisation avec VMware et Administration Windows Server
+<!-- ==================== SECTION VEILLE TECHNOLOGIQUE SIMPLIFIÉE ==================== -->
+<section id="veille" class="section bg-gradient-to-b from-[#0a0e1a] to-[#0f1324]">
+    <div class="container mx-auto px-6 max-w-7xl">
+        <!-- Titre principal -->
+        <div class="text-center mb-12 animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Veille <span class="gradient-text">Technologique</span>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-[#c7d5e0] text-lg leading-relaxed">
+                    La veille technologique consiste à se tenir informé des nouvelles technologies et de leur évolution.
+                    Elle permet de suivre les changements dans le domaine informatique afin de mieux comprendre les outils utilisés en entreprise.
                 </p>
             </div>
+        </div>
 
-            <!-- Qu'est-ce que la veille technologique ? -->
-            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-700 flex items-center justify-center">
-                        <i class="fas fa-binoculars text-2xl text-white"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-white">Qu'est-ce que la Veille Technologique ?</h3>
-                        <p class="text-[#c7d5e0]">Définition et importance pour un administrateur SISR</p>
-                    </div>
+        <!-- Thème principal -->
+        <div class="mb-16 animate-fadeInUp">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-xl text-[#4e9eff]"></i>
                 </div>
-                
-                <div class="grid lg:grid-cols-2 gap-8">
-                    <div class="space-y-4">
-                        <p class="text-[#c7d5e0]">
-                            La <strong class="text-white">veille technologique</strong> est un processus continu de surveillance, 
-                            d'analyse et de collecte d'informations sur les évolutions technologiques dans son domaine d'expertise.
-                        </p>
-                        
-                        <div class="bg-[#1a1f36] rounded-xl p-6 border border-purple-500/20">
-                            <h4 class="text-white font-medium mb-3">Objectifs principaux :</h4>
-                            <ul class="space-y-2 text-sm text-[#c7d5e0] list-disc pl-5">
-                                <li>Anticiper les nouvelles technologies et tendances</li>
-                                <li>Maintenir et actualiser ses compétences techniques</li>
-                                <li>Identifier les opportunités d'amélioration de l'infrastructure</li>
-                                <li>Comprendre les évolutions des solutions existantes</li>
-                                <li>Préparer les migrations et évolutions du parc informatique</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <p class="text-[#c7d5e0]">
-                            Pour un <strong class="text-[#4e9eff]">administrateur SISR</strong>, la veille technologique est essentielle pour :
-                        </p>
-                        
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
-                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
-                                    <i class="fas fa-shield-alt text-[#4e9eff]"></i>
-                                </div>
-                                <p class="text-sm text-white">Sécurité des systèmes</p>
-                            </div>
-                            
-                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
-                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
-                                    <i class="fas fa-tachometer-alt text-[#4e9eff]"></i>
-                                </div>
-                                <p class="text-sm text-white">Optimisation des performances</p>
-                            </div>
-                            
-                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
-                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
-                                    <i class="fas fa-cogs text-[#4e9eff]"></i>
-                                </div>
-                                <p class="text-sm text-white">Automatisation des tâches</p>
-                            </div>
-                            
-                            <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
-                                <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center mb-2">
-                                    <i class="fas fa-cloud text-[#4e9eff]"></i>
-                                </div>
-                                <p class="text-sm text-white">Évolution vers le cloud</p>
-                            </div>
-                        </div>
-                        
-                        <p class="text-[#c7d5e0] text-sm mt-4">
-                            Dans ce cadre, ma veille se concentre particulièrement sur la <strong>virtualisation VMware</strong> 
-                            et l'administration des services Windows Server.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Introduction du projet -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-20 items-center">
-                <div class="animate-fadeInUp">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
-                            <i class="fab fa-windows text-2xl text-[#4e9eff]"></i>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-white">
-                            C'est quoi la Virtualisation ?
-                        </h3>
-                    </div>
-                    
-                    <div class="space-y-4 text-[#c7d5e0]">
-                        <p>
-                            La <strong class="text-white">virtualisation</strong> est une technologie qui permet de créer plusieurs environnements 
-                            informatiques simulés (machines virtuelles) à partir d'un seul système physique.
-                        </p>
-                        
-                        <p>
-                            Dans le cadre de mon <strong class="text-[#4e9eff]">projet AP3</strong>, j'ai déployé une infrastructure complète 
-                            sous VMware Workstation Professional, incluant plusieurs machines virtuelles Windows Server 2022 
-                            pour simuler un environnement d'entreprise réel.
-                        </p>
-                        
-                        <div class="bg-[#0a0e1a] rounded-lg p-4 border border-[#4e9eff]/20">
-                            <h5 class="text-white font-medium mb-2">Pourquoi virtualiser ?</h5>
-                            <ul class="text-sm text-[#c7d5e0] space-y-1 list-disc pl-5">
-                                <li>Optimisation des ressources matérielles</li>
-                                <li>Isolation des environnements</li>
-                                <li>Facilité de déploiement et de migration</li>
-                                <li>Récupération rapide après incident (snapshots)</li>
-                                <li>Réduction des coûts matériels</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="animate-fadeInUp delay-100">
-                    <!-- Architecture visuelle - CLICKABLE -->
-                    <div class="relative group">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-[#4e9eff] to-[#601cfc] rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition duration-500"></div>
-                        <a href="#schemaModal" class="relative bg-[#1a1f36] rounded-xl p-6 border border-[#4e9eff]/30 hover:border-[#4e9eff] transition duration-300 cursor-pointer block">
-                            <div class="aspect-video rounded-lg overflow-hidden mb-4 bg-[#0a0e1a] flex items-center justify-center group-hover:scale-[1.02] transition duration-300">
-                                <div class="text-center p-2 w-full h-full flex flex-col items-center justify-center">
-                                    <!-- Image avec effet de zoom au survol -->
-                                    <img src="Conception/Site/images/Schéma virtualisation.png" 
-                                         alt="Schéma de virtualisation" 
-                                         class="w-full h-full object-contain max-h-[280px] group-hover:scale-105 transition duration-300">
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#4e9eff]/10 rounded-full">
-                                    <i class="fas fa-sitemap text-[#4e9eff]"></i>
-                                    <span class="text-[#c7d5e0] text-sm">Cliquez pour Voir le schéma</span>
-                                </div>                   
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <h3 class="text-3xl font-semibold text-white">Thème : Le rôle du firewall dans la sécurité des réseaux d'entreprise</h3>
             </div>
             
-            <!-- Section : Les types de virtualisation -->
-            <div class="mb-16 animate-fadeInUp">
-                <div class="text-center mb-10">
-                    <div class="flex items-center justify-center gap-3 mb-4">
-                        <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
-                            <i class="fas fa-layer-group text-xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-white">
-                            Les Différents Types de Virtualisation
-                        </h3>
-                    </div>
-                    <p class="text-[#c7d5e0] max-w-3xl mx-auto">
-                        La virtualisation peut être catégorisée selon plusieurs approches, chacune répondant à des besoins spécifiques
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Type 1 : Virtualisation de serveurs -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
-                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-server text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation de Serveurs</h4>
-                        <p class="text-sm text-[#c7d5e0] text-center">
-                            Création de plusieurs machines virtuelles sur un seul serveur physique
+            <div class="grid lg:grid-cols-2 gap-10">
+                <!-- Qu'est-ce qu'un firewall ? -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Qu'est-ce qu'un firewall ?</h4>
+                    <div class="space-y-4 text-[#c7d5e0]">
+                        <p>
+                            Un firewall, aussi appelé pare-feu, est un outil de sécurité informatique.
+                            Il permet de contrôler le trafic réseau entrant et sortant et de bloquer les connexions non autorisées.
+                            Il protège le réseau de l'entreprise contre les attaques.
                         </p>
-                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <p class="text-xs text-[#4e9eff] text-center">
-                                <i class="fas fa-desktop mr-1"></i>
-                                Ex: VMware vSphere, Microsoft Hyper-V
-                            </p>
-                        </div>
                     </div>
-                    
-                    <!-- Type 2 : Virtualisation de postes de travail -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
-                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-desktop text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation de Postes</h4>
-                        <p class="text-sm text-[#c7d5e0] text-center">
-                            Exécution d'environnements de bureau virtualisés sur un PC local
+                </div>
+                
+                <!-- Pourquoi les firewalls ont évolué ? -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Pourquoi les firewalls ont évolué ?</h4>
+                    <div class="space-y-4 text-[#c7d5e0]">
+                        <p>
+                            Les firewalls ont évolué car les menaces informatiques sont de plus en plus nombreuses.
+                            Les entreprises utilisent aujourd'hui le cloud, le télétravail et Internet en permanence.
+                            Les firewalls modernes permettent une meilleure protection du réseau.
                         </p>
-                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <p class="text-xs text-green-400 text-center">
-                                <i class="fas fa-laptop mr-1"></i>
-                                Ex: VMware Workstation, VirtualBox
-                            </p>
-                        </div>
                     </div>
-                    
-                    <!-- Type 3 : Virtualisation de réseau -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
-                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-cyan-700 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-network-wired text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation Réseau</h4>
-                        <p class="text-sm text-[#c7d5e0] text-center">
-                            Création de réseaux virtuels indépendants de la topologie physique
-                        </p>
-                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <p class="text-xs text-blue-400 text-center">
-                                <i class="fas fa-wifi mr-1"></i>
-                                Ex: VMware NSX, VLANs, SD-WAN
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Type 4 : Virtualisation de stockage -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300">
-                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-700 flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-hdd text-2xl text-white"></i>
-                        </div>
-                        <h4 class="text-lg font-semibold text-white text-center mb-3">Virtualisation Stockage</h4>
-                        <p class="text-sm text-[#c7d5e0] text-center">
-                            Agrégation de ressources de stockage physiques en pools virtuels
-                        </p>
-                        <div class="mt-4 pt-4 border-t border-[rgba(255,255,255,0.1)]">
-                            <p class="text-xs text-purple-400 text-center">
-                                <i class="fas fa-database mr-1"></i>
-                                Ex: VMware vSAN, RAID virtuel
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section : Hyperviseurs Type 1 vs Type 2 -->
-            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
-                <h3 class="text-2xl font-semibold text-white mb-8 text-center">
-                    Hyperviseurs : Type 1 vs Type 2
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-10">
-                    <!-- Hyperviseur Type 1 -->
-                    <div class="bg-[#1a1f36] rounded-xl p-6 border border-green-500/20">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center">
-                                <i class="fas fa-bolt text-xl text-green-400"></i>
-                            </div>
-                            <h4 class="text-xl font-semibold text-white">Hyperviseur Type 1 (Bare Metal)</h4>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <p class="text-[#c7d5e0]">
-                                S'installe directement sur le matériel physique. Aucun système d'exploitation hôte requis.
-                            </p>
-                            
-                            <div class="bg-[#0a0e1a] rounded-lg p-4">
-                                <h5 class="text-white font-medium mb-2">Caractéristiques :</h5>
-                                <ul class="text-sm text-[#c7d5e0] space-y-2">
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-check text-green-400 mt-1"></i>
-                                        <span>Performance maximale (accès direct au matériel)</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-check text-green-400 mt-1"></i>
-                                        <span>Stabilité et sécurité accrues</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-check text-green-400 mt-1"></i>
-                                        <span>Utilisé en production et data centers</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <div class="flex items-center gap-2 text-sm text-[#c7d5e0]">
-                                <i class="fab fa-vmware text-green-400"></i>
-                                <span>Exemples : VMware ESXi, Microsoft Hyper-V, Xen, KVM</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Hyperviseur Type 2 -->
-                    <div class="bg-[#1a1f36] rounded-xl p-6 border border-[#4e9eff]/20">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
-                                <i class="fas fa-layer-group text-xl text-[#4e9eff]"></i>
-                            </div>
-                            <h4 class="text-xl font-semibold text-white">Hyperviseur Type 2 (Hosted)</h4>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <p class="text-[#c7d5e0]">
-                                S'installe comme une application sur un système d'exploitation hôte.
-                            </p>
-                            
-                            <div class="bg-[#0a0e1a] rounded-lg p-4">
-                                <h5 class="text-white font-medium mb-2">Caractéristiques :</h5>
-                                <ul class="text-sm text-[#c7d5e0] space-y-2">
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-check text-[#4e9eff] mt-1"></i>
-                                        <span>Facile à installer et configurer</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-check text-[#4e9eff] mt-1"></i>
-                                        <span>Idéal pour développement, tests, labs</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i class="fas fa-check text-[#4e9eff] mt-1"></i>
-                                        <span>Performance moindre (via OS hôte)</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <div class="flex items-center gap-2 text-sm text-[#c7d5e0]">
-                                <i class="fab fa-vmware text-[#4e9eff]"></i>
-                                <span>Exemples : VMware Workstation, Oracle VirtualBox, Parallels</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-8 p-6 bg-[#0a0e1a] rounded-xl border border-yellow-500/20">
-                    <div class="flex items-start gap-3">
-                        <i class="fas fa-lightbulb text-yellow-400 text-xl mt-1"></i>
-                        <div>
-                            <h5 class="text-white font-medium mb-2">Dans le cadre de mon projet :</h5>
-                            <p class="text-sm text-[#c7d5e0]">
-                                J'ai utilisé <strong class="text-[#4e9eff]">VMware Workstation (Type 2)</strong> pour créer un environnement de test 
-                                complet sur mon poste local. Ce choix permet une grande flexibilité pour les tests, snapshots 
-                                et la portabilité de l'infrastructure complète.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nouveautés VMware - AVEC AVANTAGES/INCONVÉNIENTS -->
-            <div class="mb-16 animate-fadeInUp">
-                <div class="text-center mb-10">
-                    <div class="flex items-center justify-center gap-3 mb-4">
-                        <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
-                            <i class="fab fa-vmware text-xl text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-white">
-                            Nouvelles Fonctionnalités VMware
-                        </h3>
-                    </div>
-                    <p class="text-[#c7d5e0] max-w-3xl mx-auto">
-                        VMware continue d'innover avec de nouvelles fonctionnalités pour la virtualisation et le cloud
-                    </p>
-                </div>
-                
-                <div class="grid lg:grid-cols-3 gap-8">
-                    <!-- Nouveauté 1 -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300 hover:-translate-y-2">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
-                                <i class="fas fa-cloud text-xl text-white"></i>
-                            </div>
-                            <h4 class="text-lg font-semibold text-white">VMware Cloud Foundation</h4>
-                        </div>
-                        <p class="text-sm text-[#c7d5e0] mb-4">
-                            Plateforme cloud hybride intégrée combinant vSphere, vSAN et NSX
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Cloud Hybride</span>
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Infrastructure as Code</span>
-                        </div>
-                        
-                        <!-- Avantages et Inconvénients -->
-                        <div class="space-y-4">
-                            <!-- Avantages -->
-                            <div>
-                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
-                                    <i class="fas fa-plus-circle text-green-400"></i>
-                                    Avantages
-                                </h5>
-                                <ul class="text-xs text-[#c7d5e0] space-y-1">
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Plateforme unifiée pour gestion cloud hybride</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Automatisation et orchestration complète</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Sécurité intégrée et gestion centralisée</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Inconvénients -->
-                            <div>
-                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
-                                    <i class="fas fa-minus-circle text-red-400"></i>
-                                    Inconvénients
-                                </h5>
-                                <ul class="text-xs text-[#c7d5e0] space-y-1">
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Coût élevé de mise en œuvre</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Courbe d'apprentissage importante</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Dépendance forte à l'écosystème VMware</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Nouveauté 2 -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300 hover:-translate-y-2">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center">
-                                <i class="fas fa-shield-alt text-xl text-white"></i>
-                            </div>
-                            <h4 class="text-lg font-semibold text-white">vSphere avec Tanzu</h4>
-                        </div>
-                        <p class="text-sm text-[#c7d5e0] mb-4">
-                            Intégration native de Kubernetes dans vSphere pour les applications conteneurisées
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">Kubernetes</span>
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">Conteneurs</span>
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">DevOps</span>
-                        </div>
-                        
-                        <!-- Avantages et Inconvénients -->
-                        <div class="space-y-4">
-                            <!-- Avantages -->
-                            <div>
-                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
-                                    <i class="fas fa-plus-circle text-green-400"></i>
-                                    Avantages
-                                </h5>
-                                <ul class="text-xs text-[#c7d5e0] space-y-1">
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Intégration native Kubernetes/vSphere</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Gestion unifiée VMs et conteneurs</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Déploiement simplifié des workloads modernes</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Inconvénients -->
-                            <div>
-                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
-                                    <i class="fas fa-minus-circle text-red-400"></i>
-                                    Inconvénients
-                                </h5>
-                                <ul class="text-xs text-[#c7d5e0] space-y-1">
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Complexité accrue de l'infrastructure</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Exigences matérielles supplémentaires</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Licences spécifiques requises</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Nouveauté 3 -->
-                    <div class="card-bg rounded-xl p-6 border border-[#4e9eff]/20 hover:border-[#4e9eff] transition duration-300 hover:-translate-y-2">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-700 flex items-center justify-center">
-                                <i class="fas fa-robot text-xl text-white"></i>
-                            </div>
-                            <h4 class="text-lg font-semibold text-white">Intelligence Artificielle</h4>
-                        </div>
-                        <p class="text-sm text-[#c7d5e0] mb-4">
-                            VMware vSphere avec DPM intelligent pour l'optimisation automatique des ressources
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">IA/ML</span>
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">Automatisation</span>
-                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">Optimisation</span>
-                        </div>
-                        
-                        <!-- Avantages et Inconvénients -->
-                        <div class="space-y-4">
-                            <!-- Avantages -->
-                            <div>
-                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
-                                    <i class="fas fa-plus-circle text-green-400"></i>
-                                    Avantages
-                                </h5>
-                                <ul class="text-xs text-[#c7d5e0] space-y-1">
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Optimisation automatique des performances</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Réduction de la consommation énergétique</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-check text-green-400 mt-0.5 text-xs"></i>
-                                        <span>Prédiction et prévention des incidents</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Inconvénients -->
-                            <div>
-                                <h5 class="text-white font-medium mb-2 text-sm flex items-center gap-2">
-                                    <i class="fas fa-minus-circle text-red-400"></i>
-                                    Inconvénients
-                                </h5>
-                                <ul class="text-xs text-[#c7d5e0] space-y-1">
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Dépendance aux algorithmes IA</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Phase d'apprentissage nécessaire</span>
-                                    </li>
-                                    <li class="flex items-start gap-1">
-                                        <i class="fas fa-times text-red-400 mt-0.5 text-xs"></i>
-                                        <span>Complexité de configuration initiale</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PowerShell - Administration -->
-            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
-                <div class="flex items-center gap-4 mb-8">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#012456] to-[#00539f] flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">PS</span>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-white">PowerShell - Windows Server</h3>
-                        <p class="text-[#c7d5e0]">Scripts et commandes utilisés</p>
-                    </div>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Commandes AD & DNS -->
-                    <div class="bg-[#1a1f36] rounded-xl overflow-hidden border border-[#2d3748]">
-                        <div class="bg-[#2d3748] px-6 py-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-8 h-8 rounded bg-[#012456] flex items-center justify-center">
-                                    <span class="text-white font-bold">PS</span>
-                                </div>
-                                <span class="text-[#c7d5e0] ml-2 font-medium">Active Directory & DNS</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <pre class="text-sm text-blue-400 overflow-x-auto">
-<span class="text-gray-400"># Installer le rôle AD DS</span>
-Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-
-<span class="text-gray-400"># Promouvoir en contrôleur de domaine</span>
-Install-ADDSForest -DomainName "entreprise.local" `
-  -DomainNetbiosName "ENTREPRISE" -InstallDNS
-
-<span class="text-gray-400"># Créer un nouvel utilisateur</span>
-New-ADUser -Name "Dupont Jean" -SamAccountName "jdupont" `
-  -UserPrincipalName "jdupont@entreprise.local" -Enabled $true
-
-<span class="text-gray-400"># Créer un groupe</span>
-New-ADGroup -Name "Admins Département" -GroupScope Global
-
-<span class="text-gray-400"># Vérifier les services DNS</span>
-Get-DnsServerZone | Format-Table ZoneName, ZoneType</pre>
-                        </div>
-                    </div>
-                    
-                    <!-- Commandes DHCP & GPO -->
-                    <div class="bg-[#1a1f36] rounded-xl overflow-hidden border border-[#2d3748]">
-                        <div class="bg-[#2d3748] px-6 py-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-8 h-8 rounded bg-[#012456] flex items-center justify-center">
-                                    <span class="text-white font-bold">PS</span>
-                                </div>
-                                <span class="text-[#c7d5e0] ml-2 font-medium">DHCP & GPO</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <pre class="text-sm text-green-400 overflow-x-auto">
-<span class="text-gray-400"># Installer le rôle DHCP</span>
-Install-WindowsFeature DHCP -IncludeManagementTools
-
-<span class="text-gray-400"># Créer une étendue DHCP</span>
-Add-DhcpServerV4Scope -Name "LAN Principal" `
-  -StartRange 192.168.1.100 -EndRange 192.168.1.200 `
-  -SubnetMask 255.255.255.0
-
-<span class="text-gray-400"># Réserver une adresse IP</span>
-Add-DhcpServerv4Reservation -ScopeId 192.168.1.0 `
-  -IPAddress 192.168.1.150 -ClientId "00-15-5D-02-4B-01"
-
-<span class="text-gray-400"># Créer une GPO</span>
-New-GPO -Name "Politique Sécurité Bureau"
-
-<span class="text-gray-400"># Lier une GPO à une OU</span>
-New-GPLink -Name "Politique Sécurité Bureau" `
-  -Target "OU=Utilisateurs,DC=entreprise,DC=local"</pre>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Autres commandes -->
-                <div class="mt-8 bg-[#1a1f36] rounded-xl overflow-hidden border border-[#2d3748]">
-                    <div class="bg-[#2d3748] px-6 py-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded bg-[#012456] flex items-center justify-center">
-                                <span class="text-white font-bold">PS</span>
-                            </div>
-                            <span class="text-[#c7d5e0] ml-2 font-medium">Monitoring & Administration</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <pre class="text-sm text-yellow-400 overflow-x-auto">
-<span class="text-gray-400"># Vérifier l'état des services</span>
-Get-Service | Where-Object {$_.Status -ne "Running"}
-
-<span class="text-gray-400"># Analyser l'espace disque</span>
-Get-WmiObject Win32_LogicalDisk | Select-Object DeviceID, `
-  @{Name="Size(GB)";Expression={[math]::Round($_.Size/1GB,2)}}, `
-  @{Name="Free(GB)";Expression={[math]::Round($_.FreeSpace/1GB,2)}}
-
-<span class="text-gray-400"># Vérifier les événements système</span>
-Get-EventLog -LogName System -Newest 20 | `
-  Select-Object TimeGenerated, EntryType, Source, Message
-
-<span class="text-gray-400"># Tester la connectivité réseau</span>
-Test-NetConnection -ComputerName "DC01" -Port 53
-Test-NetConnection -ComputerName "DC01" -Port 389</pre>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Analyse VMware -->
-            <div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
-                <h3 class="text-2xl font-semibold text-white mb-8 text-center">
-                    Analyse : Virtualisation VMware 
-                </h3>
-                
-                <div class="grid md:grid-cols-2 gap-10">
-                    <!-- Avantages -->
-                    <div>
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center">
-                                <i class="fas fa-thumbs-up text-xl text-green-400"></i>
-                            </div>
-                            <h4 class="text-xl font-semibold text-white">Avantages de VMware Workstation</h4>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
-                                <i class="fas fa-flask text-green-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Environnement de test sécurisé</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Tests AD, GPO, DNS sans risque pour la production</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
-                                <i class="fas fa-clone text-green-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Clonage et modèles</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Déploiement rapide de serveurs identiques</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
-                                <i class="fas fa-camera text-green-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Snapshots</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Retour à un état précédent avant modifications</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-green-500/5 border border-green-500/20">
-                                <i class="fas fa-laptop text-green-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Portabilité</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Infrastructure complète sur un seul poste</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Limites -->
-                    <div>
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-lg bg-red-500/20 flex items-center justify-center">
-                                <i class="fas fa-exclamation-triangle text-xl text-red-400"></i>
-                            </div>
-                            <h4 class="text-xl font-semibold text-white">Limites et Considérations</h4>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
-                                <i class="fas fa-microchip text-red-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Consommation ressources</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Nécessite un poste hôte puissant</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
-                                <i class="fas fa-tachometer-alt text-red-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Performance</h5>
-                                    <p class="text-sm text-[#c7d5e0]">I/O disque et réseau moins performants</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
-                                <i class="fas fa-shield-alt text-red-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Sécurité de l'hôte</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Si l'hôte est compromis, toutes les VMs le sont</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start gap-3 p-4 rounded-lg bg-red-500/5 border border-red-500/20">
-                                <i class="fas fa-graduation-cap text-red-400 mt-1"></i>
-                                <div>
-                                    <h5 class="font-medium text-white">Apprentissage</h5>
-                                    <p class="text-sm text-[#c7d5e0]">Courbe d'apprentissage pour la gestion avancée</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sources de veille -->
-            <div class="animate-fadeInUp">
-                <div class="text-center mb-10">
-                    <h3 class="text-2xl font-semibold text-white mb-3">
-                        Sources De Ma Veille
-                    </h3>
-                    <p class="text-[#c7d5e0] max-w-2xl mx-auto">
-                        Documentation et ressources pour la virtualisation VMware
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Source 1 -->
-                    <a href="https://docs.vmware.com/fr/VMware-Workstation-Pro/index.html" target="_blank" rel="noopener noreferrer" 
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
-                        <div class="w-14 h-14 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                            <i class="fas fa-book text-2xl text-[#4e9eff]"></i>
-                        </div>
-                        <h4 class="font-semibold text-white mb-2">Documentation VMware</h4>
-                        <p class="text-sm text-[#c7d5e0]">Guides officiels Workstation Pro</p>
-                    </a>
-                    
-                    <!-- Source 2 -->
-                    <a href="https://docs.microsoft.com/fr-fr/windows-server/identity/ad-ds/ad-ds-getting-started" target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
-                        <div class="w-14 h-14 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                            <i class="fab fa-windows text-2xl text-blue-400"></i>
-                        </div>
-                        <h4 class="font-semibold text-white mb-2">Documentation Windows Server</h4>
-                        <p class="text-sm text-[#c7d5e0]">Active Directory & Services</p>
-                    </a>
-                    
-                    <!-- Source 3 -->
-                    <a href="https://docs.netgate.com/pfsense/en/latest/" target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
-                        <div class="w-14 h-14 rounded-full bg-orange-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                            <i class="fas fa-fire text-2xl text-orange-400"></i>
-                        </div>
-                        <h4 class="font-semibold text-white mb-2">Documentation pfSense</h4>
-                        <p class="text-sm text-[#c7d5e0]">Pare-feu & Sécurité réseau</p>
-                    </a>
-                    
-                    <!-- Source 4 -->
-                    <a href="https://docs.microsoft.com/fr-fr/powershell/" target="_blank" rel="noopener noreferrer"
-                       class="card-bg rounded-xl p-6 text-center hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
-                        <div class="w-14 h-14 rounded-full bg-[#012456]/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
-                            <span class="text-[#4e9eff] font-bold text-xl">PS</span>
-                        </div>
-                        <h4 class="font-semibold text-white mb-2">PowerShell Docs</h4>
-                        <p class="text-sm text-[#c7d5e0]">Scripting & Administration</p>
-                    </a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Modal pour le schéma en grand - CSS ONLY -->
-    <div id="schemaModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4">
-        <div class="relative w-full max-w-6xl max-h-[90vh] bg-[#1a1f36] rounded-2xl overflow-hidden border border-[#4e9eff]/30">
-            <!-- En-tête du modal -->
-            <div class="flex items-center justify-between p-6 bg-gradient-to-r from-[#4e9eff]/10 to-[#601cfc]/10 border-b border-[#4e9eff]/20">
-                <div class="flex items-center gap-3">
-                    <i class="fas fa-sitemap text-2xl text-[#4e9eff]"></i>
-                    <h3 class="text-xl font-semibold text-white">Architecture VMware - Projet AP3</h3>
+        <!-- Firewalls nouvelle génération - Version détaillée -->
+<div class="card-bg rounded-2xl p-8 mb-16 animate-fadeInUp">
+    <div class="text-center mb-10">
+        <h3 class="text-3xl font-semibold text-white mb-6">Les firewalls nouvelle génération (NGFW)</h3>
+        
+        <div class="max-w-4xl mx-auto">
+            <p class="text-[#c7d5e0] text-lg leading-relaxed mb-6">
+                Les firewalls nouvelle génération représentent une évolution significative des pare-feux traditionnels. 
+                Ils combinent filtrage de paquets, inspection approfondie et capacités de sécurité avancées pour offrir 
+                une protection complète contre les menaces modernes.
+            </p>
+            <p class="text-[#c7d5e0] leading-relaxed">
+                Contrairement aux firewalls traditionnels qui se limitent au port et au protocole, les NGFW analysent 
+                le contenu des paquets, identifient les applications et surveillent le comportement des utilisateurs 
+                pour une sécurité plus intelligente et proactive.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Caractéristiques principales -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Caractéristique 1 -->
+        <div class="text-center group hover:-translate-y-1 transition duration-300">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-search text-2xl text-white"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Analyse approfondie</h4>
+            <p class="text-sm text-[#c7d5e0]">
+                Inspection détaillée du trafic réseau pour détecter les menaces, analyse du contenu des paquets (DPI) et contrôle applicatif.
+            </p>
+        </div>
+        
+        <!-- Caractéristique 2 -->
+        <div class="text-center group hover:-translate-y-1 transition duration-300">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-shield-check text-2xl text-white"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Sécurité renforcée</h4>
+            <p class="text-sm text-[#c7d5e0]">
+                Protection contre les cyberattaques modernes, prévention des intrusions (IPS) et filtrage basé sur les menaces.
+            </p>
+        </div>
+        
+        <!-- Caractéristique 3 -->
+        <div class="text-center group hover:-translate-y-1 transition duration-300">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-700 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-building text-2xl text-white"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Adapté aux entreprises</h4>
+            <p class="text-sm text-[#c7d5e0]">
+                Répond aux besoins actuels des organisations avec support du cloud, télétravail et gestion centralisée.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Avantages et inconvénients -->
+    <div class="mt-12">
+        <h4 class="text-xl font-semibold text-white mb-6 text-center">Avantages et considérations des NGFW</h4>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Avantages -->
+            <div class="bg-[#1a1f36]/50 rounded-xl p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                    </div>
+                    <h5 class="text-lg font-semibold text-white">Avantages</h5>
                 </div>
-                <a href="#veille" class="w-10 h-10 rounded-full bg-[#4e9eff]/20 hover:bg-[#4e9eff]/30 transition duration-300 flex items-center justify-center">
-                    <i class="fas fa-times text-white text-lg"></i>
-                </a>
+                
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Visibilité complète :</strong> Surveillance de tout le trafic réseau, y compris chiffré
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Protection avancée :</strong> Détection des menaces zero-day et attaques sophistiquées
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Contrôle granulaires :</strong> Politiques basées sur l'utilisateur et l'application
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Simplicité d'administration :</strong> Interface unique pour toutes les fonctions de sécurité
+                        </span>
+                    </li>
+                </ul>
             </div>
             
-            <!-- Contenu du modal -->
-            <div class="p-4 md:p-6 overflow-auto max-h-[calc(90vh-80px)]">
-                <div class="flex flex-col items-center justify-center">
-                    <!-- Image en grand -->
-                    <img src="Conception/Site/images/Schéma virtualisation.png" 
-                         alt="Schéma de virtualisation en grand" 
-                         class="w-full max-w-4xl h-auto object-contain rounded-lg">
+            <!-- Considérations/Inconvénients -->
+            <div class="bg-[#1a1f36]/50 rounded-xl p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
+                        <i class="fas fa-exclamation-triangle text-yellow-400"></i>
+                    </div>
+                    <h5 class="text-lg font-semibold text-white">Considérations</h5>
                 </div>
-            </div>
-            
-            <!-- Pied du modal -->
-            <div class="p-4 bg-[#0a0e1a] border-t border-[#4e9eff]/20 flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                    <i class="fas fa-mouse-pointer text-[#4e9eff] text-sm"></i>
-                    <span class="text-xs text-[#c7d5e0]">Cliquez en dehors de l'image pour fermer</span>
-                </div>
-                <a href="#veille" class="px-4 py-2 bg-gradient-to-r from-[#4e9eff] to-[#601cfc] text-white rounded-lg hover:opacity-90 transition duration-300 text-sm font-medium">
-                    Fermer
-                </a>
+                
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-exclamation text-yellow-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Coût plus élevé :</strong> Investissement initial et maintenance supérieurs aux solutions traditionnelles
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-exclamation text-yellow-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Complexité technique :</strong> Nécessite des compétences spécifiques pour la configuration et la gestion
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-exclamation text-yellow-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Impact sur les performances :</strong> L'inspection approfondie peut ralentir le trafic réseau
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-exclamation text-yellow-400 mt-1"></i>
+                        <span class="text-[#c7d5e0] text-sm">
+                            <strong>Compatibilité :</strong> Vérification nécessaire avec l'infrastructure existante
+                        </span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Utilisation des firewalls en entreprise - Version détaillée -->
+<div class="mb-16 animate-fadeInUp">
+    <div class="text-center mb-10">
+        <h3 class="text-3xl font-semibold text-white mb-6">Utilisation des firewalls en entreprise</h3>
+        
+        <div class="max-w-4xl mx-auto">
+            <p class="text-[#c7d5e0] text-lg leading-relaxed">
+                Les firewalls sont des composants essentiels de la sécurité informatique en entreprise. 
+                Ils protègent les actifs numériques, contrôlent les accès et préviennent les cyberattaques 
+                dans un environnement où les menaces évoluent constamment.
+            </p>
+        </div>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Protection Internet -->
+        <div class="card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition duration-300">
+            <div class="w-14 h-14 rounded-full bg-[#4e9eff]/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-globe text-2xl text-[#4e9eff]"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Protéger l'accès à Internet</h4>
+            <p class="text-sm text-[#c7d5e0] mb-4">
+                Contrôle du trafic entre le réseau interne et Internet, filtrage des sites malveillants et prévention des fuites de données.
+            </p>
+            <div class="text-xs text-[#c7d5e0] text-left bg-[#0a0e1a]/30 p-3 rounded-lg">
+                <div class="flex items-center gap-2 mb-1">
+                    <i class="fas fa-plus-circle text-green-400"></i>
+                    <span class="font-medium">Avantage :</span>
+                </div>
+                <p class="mb-2">Empêche l'accès aux sites dangereux et contrôle la bande passante</p>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-minus-circle text-yellow-400"></i>
+                    <span class="font-medium">Défi :</span>
+                </div>
+                <p>Configuration complexe des règles d'accès</p>
+            </div>
+        </div>
+        
+        <!-- Télétravail -->
+        <div class="card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition duration-300">
+            <div class="w-14 h-14 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-laptop-house text-2xl text-green-400"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Sécuriser le télétravail</h4>
+            <p class="text-sm text-[#c7d5e0] mb-4">
+                Protection des connexions à distance via VPN, authentification multi-facteurs et segmentation réseau.
+            </p>
+            <div class="text-xs text-[#c7d5e0] text-left bg-[#0a0e1a]/30 p-3 rounded-lg">
+                <div class="flex items-center gap-2 mb-1">
+                    <i class="fas fa-plus-circle text-green-400"></i>
+                    <span class="font-medium">Avantage :</span>
+                </div>
+                <p class="mb-2">Sécurise l'accès distant aux ressources de l'entreprise</p>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-minus-circle text-yellow-400"></i>
+                    <span class="font-medium">Défi :</span>
+                </div>
+                <p>Gestion des nombreux points d'accès distants</p>
+            </div>
+        </div>
+        
+        <!-- Serveurs et données -->
+        <div class="card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition duration-300">
+            <div class="w-14 h-14 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-database text-2xl text-blue-400"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-3">Protéger les serveurs et les données</h4>
+            <p class="text-sm text-[#c7d5e0] mb-4">
+                Sécurité des informations sensibles de l'entreprise, segmentation des réseaux et protection contre les attaques ciblées.
+            </p>
+            <div class="text-xs text-[#c7d5e0] text-left bg-[#0a0e1a]/30 p-3 rounded-lg">
+                <div class="flex items-center gap-2 mb-1">
+                    <i class="fas fa-plus-circle text-green-400"></i>
+                    <span class="font-medium">Avantage :</span>
+                </div>
+                <p class="mb-2">Protection des données critiques et conformité réglementaire</p>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-minus-circle text-yellow-400"></i>
+                    <span class="font-medium">Défi :</span>
+                </div>
+                <p>Maintenance des règles de sécurité pour des données sensibles</p>
+            </div>
+        </div>
+    </div>
+       <!-- Section ARTICLES - Version corrigée avec images -->
+<div class="animate-fadeInUp">
+    <h3 class="text-3xl font-semibold text-white mb-10 text-center">Articles</h3>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Article 1 - ZERO TRUST -->
+        <a href="https://www.zdnet.fr/actualites/se-detourner-des-vpn-en-faveur-de-l-acces-reseau-zero-trust-39920411.htm" 
+           target="_blank" rel="noopener noreferrer" 
+           class="block card-bg rounded-xl overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-1 group">
+            
+            <!-- Image de l'article -->
+            <div class="relative aspect-[4/3] rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-900/30 to-purple-900/30">
+                <!-- Image de remplacement si l'URL ne fonctionne pas -->
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Image article Zero Trust" 
+                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                     onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                
+                <!-- Overlay gradient -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                
+                <!-- Badge source -->
+                <div class="absolute top-4 left-4 z-10">
+                    <span class="bg-[#4e9eff] text-white px-3 py-1 rounded-full text-xs font-medium">ZDNet</span>
+                </div>
+                
+                <!-- Overlay d'icône -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                        <i class="fas fa-external-link-alt text-2xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenu de l'article -->
+            <div class="p-5">
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">Zero Trust</span>
+                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">SASE</span>
+                </div>
+                
+                <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-[#4e9eff] transition duration-300">
+                    Zero Trust : réinventer la sécurité périmétrique
+                </h4>
+                
+                <p class="text-sm text-[#c7d5e0] mb-4 line-clamp-3">
+                    Les entreprises adoptent de plus en plus les architectures Zero Trust Network Access (ZTNA), remplaçant les VPN traditionnels.
+                </p>
+                
+                <div class="flex items-center justify-between text-xs text-[#c7d5e0]">
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>15-09-2023</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-user-edit"></i>
+                        <span>Pierre Martin</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <!-- Article 2 - IA DANS LES FIREWALLS -->
+        <a href="https://researchnester.com/fr/reports/smart-firewall-market/3098" 
+           target="_blank" rel="noopener noreferrer" 
+           class="block card-bg rounded-xl overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-1 group">
+            
+            <!-- Image de l'article -->
+            <div class="relative aspect-[4/3] rounded-t-xl overflow-hidden bg-gradient-to-br from-blue-900/30 to-cyan-900/30">
+                <!-- Image de remplacement -->
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Image article IA Firewalls" 
+                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                     onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                
+                <!-- Overlay gradient -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                
+                <!-- Badge source -->
+                <div class="absolute top-4 left-4 z-10">
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Silicon.fr</span>
+                </div>
+                
+                <!-- Overlay d'icône -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                        <i class="fas fa-external-link-alt text-2xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenu de l'article -->
+            <div class="p-5">
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400">IA/ML</span>
+                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">NGFW</span>
+                </div>
+                
+                <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-[#4e9eff] transition duration-300">
+                    L'IA révolutionne la détection des menaces
+                </h4>
+                
+                <p class="text-sm text-[#c7d5e0] mb-4 line-clamp-3">
+                    Les éditeurs intègrent l'IA pour détecter les attaques zero-day et les menaces avancées persistantes (APT).
+                </p>
+                
+                <div class="flex items-center justify-between text-xs text-[#c7d5e0]">
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22-03-2024</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-user-edit"></i>
+                        <span>Marc Dubois</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <!-- Article 3 - FIREWALLS CLOUD -->
+        <a href="https://www.cio-online.com/actualites/lire-le-marche-des-firewalls-cloud-fwaas-en-forte-croissance-123456.html" 
+           target="_blank" rel="noopener noreferrer" 
+           class="block card-bg rounded-xl overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-1 group">
+            
+            <!-- Image de l'article -->
+            <div class="relative aspect-[4/3] rounded-t-xl overflow-hidden bg-gradient-to-br from-cyan-900/30 to-emerald-900/30">
+                <!-- Image de remplacement -->
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Image article Firewalls Cloud" 
+                     class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                     onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                
+                <!-- Overlay gradient -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                
+                <!-- Badge source -->
+                <div class="absolute top-4 left-4 z-10">
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium">CIO Online</span>
+                </div>
+                
+                <!-- Overlay d'icône -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-10">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                        <i class="fas fa-external-link-alt text-2xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenu de l'article -->
+            <div class="p-5">
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-400">Cloud</span>
+                    <span class="px-3 py-1 rounded-full text-xs font-medium bg-[#4e9eff]/20 text-[#4e9eff]">FWaaS</span>
+                </div>
+                
+                <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-[#4e9eff] transition duration-300">
+                    Firewalls cloud (FWaaS) en forte croissance
+                </h4>
+                
+                <p class="text-sm text-[#c7d5e0] mb-4 line-clamp-3">
+                    Gartner prévoit une croissance de 35% du marché des Firewall as a Service en 2024.
+                </p>
+                
+                <div class="flex items-center justify-between text-xs text-[#c7d5e0]">
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>05-11-2023</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-user-edit"></i>
+                        <span>Thomas Leroy</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+        <!-- Section VIDÉOS - Version originale -->
+        <div class="mt-16 animate-fadeInUp">
+            <h3 class="text-3xl font-semibold text-white mb-10 text-center">Vidéos</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Vidéo 1 - ZERO TRUST -->
+                <a href="https://www.youtube.com/watch?v=sZwWAHbHNJM" target="_blank" rel="noopener noreferrer" class="block card-bg rounded-xl overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="aspect-video bg-gradient-to-br from-[#0a0e1a] to-[#1a1f36] flex items-center justify-center relative">
+                        <!-- Miniature de la vidéo ZERO TRUST -->
+                        <img src="https://img.youtube.com/vi/sZwWAHbHNJM/maxresdefault.jpg" alt="Miniature vidéo Zero Trust" class="absolute inset-0 w-full h-full object-cover opacity-40 hover:opacity-50 transition duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-[#4e9eff] flex items-center justify-center hover:scale-110 transition duration-300 z-10">
+                                <i class="fas fa-play text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 z-10">
+                            <span class="bg-black/70 text-white px-2 py-1 rounded text-sm">10:25</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2 hover:text-[#4e9eff] transition duration-300">Comprendre les architectures Zero Trust</h4>
+                        <p class="text-sm text-[#c7d5e0] mb-3">
+                            Explication des principes Zero Trust et leur mise en œuvre avec les firewalls nouvelle génération.
+                        </p>
+                        <div class="text-xs text-[#c7d5e0] italic">
+                            Vidéo Palo Alto Networks, publié le 10 Mars 2023
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Vidéo 2 - ÉVOLUTION DES FIREWALLS -->
+                <a href="https://www.youtube.com/watch?v=4lV-QlLAav0" target="_blank" rel="noopener noreferrer" class="block card-bg rounded-xl overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="aspect-video bg-gradient-to-br from-[#0a0e1a] to-[#1a1f36] flex items-center justify-center relative">
+                        <!-- Miniature de la vidéo ÉVOLUTION DES FIREWALLS -->
+                        <img src="https://img.youtube.com/vi/4lV-QlLAav0/maxresdefault.jpg" alt="Miniature vidéo Évolution Firewalls" class="absolute inset-0 w-full h-full object-cover opacity-40 hover:opacity-50 transition duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-[#4e9eff] flex items-center justify-center hover:scale-110 transition duration-300 z-10">
+                                <i class="fas fa-play text-2xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 z-10">
+                            <span class="bg-black/70 text-white px-2 py-1 rounded text-sm">15:42</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="text-lg font-semibold text-white mb-2 hover:text-[#4e9eff] transition duration-300">L'évolution des firewalls : des ACL aux NGFW</h4>
+                        <p class="text-sm text-[#c7d5e0] mb-3">
+                            Rétrospective sur 30 ans d'évolution des technologies de firewall et perspectives futures.
+                        </p>
+                        <div class="text-xs text-[#c7d5e0] italic">
+                            Vidéo Fortinet, publié le 8 Septembre 2023
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <!-- Outils de veille simplifiés -->
+        <div class="mt-16 animate-fadeInUp">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-semibold text-white mb-3">
+                    Outils de veille
+                </h3>
+                <p class="text-[#c7d5e0] max-w-2xl mx-auto">
+                    Pour ma veille, j'ai utilisé :
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <!-- Outil 1 -->
+                <div class="card-bg rounded-xl p-5 text-center">
+                    <div class="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-exclamation-triangle text-xl text-red-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">CERT-FR</h4>
+                    <p class="text-sm text-[#c7d5e0]">Pour les alertes de sécurité</p>
+                </div>
+                
+                <!-- Outil 2 -->
+                <div class="card-bg rounded-xl p-5 text-center">
+                    <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-newspaper text-xl text-blue-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">Silicon.fr</h4>
+                    <p class="text-sm text-[#c7d5e0]">Pour les actualités informatiques</p>
+                </div>
+                
+                <!-- Outil 3 -->
+                <div class="card-bg rounded-xl p-5 text-center">
+                    <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-laptop-code text-xl text-green-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">LeMagIT</h4>
+                    <p class="text-sm text-[#c7d5e0]">Pour les actualités informatiques</p>
+                </div>
+                
+                <!-- Outil 4 -->
+                <div class="card-bg rounded-xl p-5 text-center">
+                    <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-check-circle text-xl text-purple-400"></i>
+                    </div>
+                    <h4 class="font-semibold text-white mb-1">Sites spécialisés</h4>
+                    <p class="text-sm text-[#c7d5e0]">Sources fiables reconnues</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ==================== SECTION CONTACT ==================== -->
     <section id="contact" class="section">
