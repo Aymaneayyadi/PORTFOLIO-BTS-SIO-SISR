@@ -967,6 +967,509 @@ body:has(#schemaModal:target) {
 .interest-card:nth-child(5) { animation-delay: 0.5s; }
 .interest-card:nth-child(6) { animation-delay: 0.6s; }
 
+/* ===========================================
+   BOUTONS FLOTTANTS - THÈME & RETOUR EN HAUT
+   =========================================== */
+
+/* Conteneur des boutons flottants */
+.fixed.bottom-8.right-8.flex {
+    z-index: 9999;
+}
+
+/* Animation de pulse personnalisée */
+@keyframes ping-slow {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    75%, 100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.animate-ping-slow {
+    animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Styles du bouton thème */
+#themeToggle {
+    background: rgba(37, 42, 61, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(78, 158, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#themeToggle:hover {
+    background: rgba(78, 158, 255, 0.2) !important;
+    border-color: rgba(78, 158, 255, 0.5);
+    box-shadow: 0 12px 40px rgba(78, 158, 255, 0.2);
+}
+
+/* Gestion des icônes */
+#sunIcon, #moonIcon {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Mode nuit - lune visible */
+body:not([data-theme="light"]) #moonIcon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+body:not([data-theme="light"]) #sunIcon {
+    opacity: 0;
+    transform: scale(0) rotate(180deg);
+}
+
+/* Mode jour - soleil visible */
+[data-theme="light"] #sunIcon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    color: #f59e0b;
+}
+
+[data-theme="light"] #moonIcon {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+}
+
+/* Animation du bouton retour en haut */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+.group:hover .fa-arrow-up {
+    animation: bounce 1s infinite;
+}
+
+/* Effet de glow sur le bouton thème */
+#themeToggle::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, 
+        rgba(78, 158, 255, 0.3), 
+        rgba(96, 28, 252, 0.3),
+        rgba(78, 158, 255, 0.3));
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#themeToggle:hover::after {
+    opacity: 1;
+}
+
+/* Tooltip visuel pour les boutons */
+#themeToggle::before,
+.fixed.bottom-8.right-8 a::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+#themeToggle:hover::before,
+.fixed.bottom-8.right-8 a:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+/* Responsive pour les boutons flottants */
+@media (max-width: 768px) {
+    .fixed.bottom-8.right-8 {
+        bottom: 6rem;
+        right: 1.5rem;
+    }
+}
+
+/* ===========================================
+   STYLES POUR LE MODE JOUR
+   =========================================== */
+
+[data-theme="light"] #themeToggle {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] #themeToggle:hover {
+    background: rgba(37, 99, 235, 0.1) !important;
+    border-color: rgba(37, 99, 235, 0.5);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="light"] #themeToggle::after {
+    background: linear-gradient(45deg, 
+        rgba(251, 191, 36, 0.3), 
+        rgba(245, 158, 11, 0.3),
+        rgba(251, 191, 36, 0.3));
+}
+
+[data-theme="light"] #themeToggle::before,
+[data-theme="light"] .fixed.bottom-8.right-8 a::before {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .fixed.bottom-8.right-8 a {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+[data-theme="light"] .fixed.bottom-8.right-8 a:hover {
+    background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+/* ===========================================
+   MODE JOUR AMÉLIORÉ - MEILLEURS CONTRASTES
+   =========================================== */
+
+[data-theme="light"] {
+    /* Background principal avec bon contraste */
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+}
+
+/* Amélioration des contrastes des textes */
+[data-theme="light"] .text-\[#c7d5e0\] {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] span:not(.tag) {
+    color: #334155 !important;
+    font-weight: 450;
+}
+
+/* Titres plus foncés */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+    color: #0f172a !important;
+    font-weight: 700;
+}
+
+/* Cartes avec bordures plus visibles */
+[data-theme="light"] .interest-card,
+[data-theme="light"] .card-bg,
+[data-theme="light"] .project-card,
+[data-theme="light"] .certificate-card,
+[data-theme="light"] .timeline-item .interest-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-left: 4px solid #2563eb !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    color: #1e293b !important;
+}
+
+/* Texte dans les cartes - PLUS FONCÉ */
+[data-theme="light"] .interest-card p,
+[data-theme="light"] .interest-card span:not(.tag),
+[data-theme="light"] .project-card p,
+[data-theme="light"] .certificate-card p {
+    color: #334155 !important;
+    font-weight: 450;
+}
+
+/* Section Profil - Améliorations spécifiques */
+[data-theme="light"] #profil {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+}
+
+[data-theme="light"] #profil .text-lg.text-white {
+    color: #0f172a !important;
+    font-weight: 600;
+}
+
+[data-theme="light"] #profil .space-y-4.text-\[#c7d5e0\] p {
+    color: #475569 !important;
+    font-weight: 450;
+}
+
+/* Section Centres d'intérêt - Meilleur contraste */
+[data-theme="light"] .section .text-center h2 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .interest-card h3.text-white {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .interest-card p.text-\[#c7d5e0\] {
+    color: #475569 !important;
+    font-weight: 450;
+}
+
+/* Section Parcours - Timeline plus lisible */
+[data-theme="light"] #parcours .timeline-item .interest-card h3 {
+    color: #2563eb !important;
+}
+
+[data-theme="light"] #parcours .timeline-item .interest-card p {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .text-center .text-\[#c7d5e0\] {
+    color: #64748b !important;
+    font-weight: 500;
+}
+
+/* Section Projets - Titres plus visibles */
+[data-theme="light"] #projets .project-card h3 {
+    color: #0f172a !important;
+    font-weight: 700;
+}
+
+[data-theme="light"] #projets .project-card p {
+    color: #475569 !important;
+}
+
+/* Section Certificats */
+[data-theme="light"] #certificats {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+}
+
+[data-theme="light"] #certificats .certificate-card h3 {
+    color: #0f172a !important;
+    font-weight: 700;
+}
+
+[data-theme="light"] #certificats .certificate-card p {
+    color: #475569 !important;
+}
+
+/* Section Veille Technologique - Améliorations */
+[data-theme="light"] #veille {
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9) !important;
+}
+
+[data-theme="light"] #veille .text-white {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] #veille .text-\[#c7d5e0\] {
+    color: #475569 !important;
+    font-weight: 450;
+}
+
+[data-theme="light"] #veille .interest-card .text-white {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] #veille .interest-card .text-\[#c7d5e0\] {
+    color: #475569 !important;
+}
+
+/* Articles et Vidéos - Meilleure lisibilité */
+[data-theme="light"] .interest-card.block h4 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .interest-card.block p {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .text-xs.text-\[#c7d5e0\] {
+    color: #64748b !important;
+    font-weight: 500;
+}
+
+/* Section Contact */
+[data-theme="light"] #contact .interest-card h3 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] #contact .interest-card p {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+/* Formulaires avec meilleur contraste */
+[data-theme="light"] .form-input {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #0f172a !important;
+    font-weight: 450;
+}
+
+[data-theme="light"] .form-input::placeholder {
+    color: #94a3b8 !important;
+    font-weight: 400;
+}
+
+[data-theme="light"] .form-input:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    outline: none;
+}
+
+/* Footer */
+[data-theme="light"] footer {
+    background: #f1f5f9 !important;
+    border-top: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] footer p {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+[data-theme="light"] footer a {
+    color: #2563eb !important;
+    font-weight: 500;
+}
+
+/* Tags - Plus contrastés */
+[data-theme="light"] .tag {
+    background: rgba(37, 99, 235, 0.15) !important;
+    border: 1px solid rgba(37, 99, 235, 0.3) !important;
+    color: #1d4ed8 !important;
+    font-weight: 600;
+}
+
+/* Icônes avec meilleure visibilité */
+[data-theme="light"] .fa,
+[data-theme="light"] .fas,
+[data-theme="light"] .fab {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .text-\[#4e9eff\] {
+    color: #2563eb !important;
+}
+
+/* Accueil section */
+[data-theme="light"] #accueil {
+    background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 50%, #dbeafe 100%) !important;
+}
+
+[data-theme="light"] #accueil h1 {
+    color: #0f172a !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] #accueil span.text-\[#c7d5e0\] {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+/* Logo et Header */
+[data-theme="light"] .header {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] .header a.text-2xl {
+    color: #2563eb !important;
+}
+
+[data-theme="light"] .nav-link {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+[data-theme="light"] .nav-link:hover {
+    color: #2563eb !important;
+}
+
+/* Gradient text plus visible */
+[data-theme="light"] .gradient-text {
+    background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    font-weight: 700;
+}
+
+/* Boutons avec meilleur contraste */
+[data-theme="light"] .gradient-bg {
+    background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+    color: white !important;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar mode jour */
+[data-theme="light"] ::-webkit-scrollbar-track {
+    background: #f1f5f9 !important;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: #94a3b8 !important;
+    border-radius: 4px;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+    background: #64748b !important;
+}
+
+/* Texte dans les overlays */
+[data-theme="light"] .project-overlay a,
+[data-theme="light"] .certificate-overlay a {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+[data-theme="light"] .project-overlay a:hover,
+[data-theme="light"] .certificate-overlay a:hover {
+    background: #f8fafc !important;
+    border-color: #2563eb;
+}
+
+/* Correction spécifique pour les sous-titres trop clairs */
+[data-theme="light"] .text-xl.md\:text-2xl.font-normal {
+    color: #475569 !important;
+    font-weight: 500;
+}
+
+/* Correction pour les span dans les sections */
+[data-theme="light"] span:not(.gradient-text):not(.tag) {
+    color: #475569 !important;
+}
+
+/* Amélioration des contrastes pour les éléments de liste */
+[data-theme="light"] li,
+[data-theme="light"] ul,
+[data-theme="light"] ol {
+    color: #334155 !important;
+}
+
+/* Texte dans les tooltips des boutons flottants */
+[data-theme="light"] #themeToggle::before,
+[data-theme="light"] .fixed.bottom-8.right-8 a::before {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+}
 
 
 
