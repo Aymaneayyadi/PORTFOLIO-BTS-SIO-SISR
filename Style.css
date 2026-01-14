@@ -873,7 +873,99 @@ body:has(#schemaModal:target) {
     transform: translateY(-2px);
 }
 
+/* ===========================================
+   EFFETS AMÉLIORÉS POUR TOUTES LES CARTES
+   =========================================== */
 
+.interest-card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(37, 42, 61, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(78, 158, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.interest-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(78, 158, 255, 0.8), 
+        rgba(96, 28, 252, 0.8), 
+        transparent);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+    z-index: 1;
+}
+
+.interest-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(78, 158, 255, 0.15),
+                0 0 60px rgba(96, 28, 252, 0.1) !important;
+    border-color: rgba(78, 158, 255, 0.3) !important;
+}
+
+.interest-card:hover::before {
+    transform: translateX(100%);
+}
+
+.interest-card:hover i,
+.interest-card:hover .fa {
+    transform: scale(1.1);
+    color: #4e9eff !important;
+}
+
+.interest-card:hover h3,
+.interest-card:hover h4,
+.interest-card:hover h5 {
+    color: #4e9eff !important;
+}
+
+.interest-card:hover p,
+.interest-card:hover span:not(.tag) {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.interest-card .tag {
+    transition: all 0.3s ease;
+    background: rgba(78, 158, 255, 0.2) !important;
+    border: 1px solid rgba(78, 158, 255, 0.3);
+}
+
+.interest-card:hover .tag {
+    background: rgba(78, 158, 255, 0.3) !important;
+    border-color: rgba(78, 158, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 158, 255, 0.2);
+}
+
+@keyframes cardEnter {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.interest-card {
+    animation: cardEnter 0.6s ease-out forwards;
+}
+
+.interest-card:nth-child(1) { animation-delay: 0.1s; }
+.interest-card:nth-child(2) { animation-delay: 0.2s; }
+.interest-card:nth-child(3) { animation-delay: 0.3s; }
+.interest-card:nth-child(4) { animation-delay: 0.4s; }
+.interest-card:nth-child(5) { animation-delay: 0.5s; }
+.interest-card:nth-child(6) { animation-delay: 0.6s; }
 
 
 
