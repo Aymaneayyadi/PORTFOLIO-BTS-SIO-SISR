@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- ==================== META BASIQUE ==================== -->
+    <!-- ==================== MÉTADONNÉES DE BASE ==================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- ==================== SEO & META ==================== -->
+    <!-- ==================== SEO & MÉTADONNÉES SOCIALES ==================== -->
     <title>Portfolio Aymane Ayyadi | BTS SIO SISR</title>
     
-    <!-- SEO Meta Tags -->
+    <!-- Meta pour le référencement -->
     <meta name="description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
-    <!-- Open Graph Meta -->
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
     <meta property="og:description" content="Portfolio professionnel d'Aymane Ayyadi – Étudiant BTS SIO SISR">
     <meta property="og:site_name" content="Portfolio Aymane Ayyadi">
@@ -22,21 +22,26 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     
-    <!-- Twitter Meta -->
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
     <meta name="twitter:description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
     <meta name="twitter:image" content="https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/Conception/Site/images/image.png">
     
-    <!-- ==================== STYLES & ICONS ==================== -->
+    <!-- ==================== FEUILLES DE STYLE ==================== -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Styles personnalisés -->
     <link rel="stylesheet" href="Style.css">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Favicon -->
     <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
     
-    <!-- ==================== JSON-LD SCHEMA ==================== -->
+    <!-- ==================== DONNÉES STRUCTURÉES (JSON-LD) ==================== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -48,8 +53,8 @@
     </script>
 </head>
 
-<body class="antialiased">
-    <!-- ==================== HEADER & NAVIGATION ==================== -->
+<body class="antialiased" data-theme="dark">
+    <!-- ==================== EN-TÊTE & NAVIGATION ==================== -->
     <header class="header fixed top-0 left-0 w-full z-50 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <!-- Logo et nom -->
@@ -1056,9 +1061,74 @@
                         </div>
                     </a>
                 </div>
+                
+                <!-- 8) Outils de veille - CARTES CLIQUABLES -->
+<div class="mt-16 animate-fadeInUp">
+    <div class="text-center mb-10">
+        <h3 class="text-2xl font-semibold text-white mb-3">
+            Outils utilisés pour la veille
+        </h3>
+        <p class="text-[#c7d5e0] max-w-2xl mx-auto">
+            Cliquez sur un outil pour accéder directement au site :
+        </p>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto justify-items-center">
+        <!-- Outil 1 - Google Alerts -->
+        <a href="https://www.google.com/alerts" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs">
+            
+            <div class="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition duration-300">
+                <i class="fab fa-google text-xl text-red-400"></i>
             </div>
-        </div>
-    </section>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-[#4e9eff] transition duration-300">Google Alerts</h4>
+            <p class="text-sm text-[#c7d5e0] mb-2 group-hover:text-white/80 transition-colors duration-300">
+                Alertes par e-mail sur des mots-clés
+            </p>
+            <div class="text-xs text-[#4e9eff] font-medium">
+                Cliquer pour visiter →
+            </div>
+        </a>
+        
+        <!-- Outil 2 - CNIL -->
+        <a href="https://www.cnil.fr" 
+           target="_blank"
+           rel="noopener noreferrer"
+           class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs">
+            
+            <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-shield-alt text-xl text-blue-400"></i>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-[#4e9eff] transition duration-300">CNIL</h4>
+            <p class="text-sm text-[#c7d5e0] mb-2 group-hover:text-white/80 transition-colors duration-300">
+                Guides et bonnes pratiques sécurité
+            </p>
+            <div class="text-xs text-[#4e9eff] font-medium">
+                Cliquer pour visiter →
+            </div>
+        </a>
+        
+        <!-- Outil 3 - Silicon.fr -->
+        <a href="https://www.silicon.fr" 
+           target="_blank"
+           rel="noopener noreferrer"
+           class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs">
+            
+            <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition duration-300">
+                <i class="fas fa-laptop-code text-xl text-purple-400"></i>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-[#4e9eff] transition duration-300">Silicon.fr</h4>
+            <p class="text-sm text-[#c7d5e0] mb-2 group-hover:text-white/80 transition-colors duration-300">
+                Actualités informatique entreprise
+            </p>
+            <div class="text-xs text-[#4e9eff] font-medium">
+                Cliquer pour visiter →
+            </div>
+        </a>
+    </div>
+</div>
 
     <!-- ==================== SECTION CONTACT ==================== -->
     <section id="contact" class="section">
@@ -1143,7 +1213,7 @@
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
+    <!-- ==================== PIED DE PAGE ==================== -->
     <footer class="py-8 border-t border-[rgba(255,255,255,0.1)]">
         <div class="container mx-auto px-6">
             <div class="flex flex-col items-center text-center">
@@ -1170,8 +1240,7 @@
         </div>
     </footer>
 
-    <!-- ==================== BOUTONS FLOTTANTS CORRIGÉS ==================== -->
-    <!-- Boutons flottants -->
+    <!-- ==================== BOUTONS FLOTTANTS ==================== -->
     <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-40">
         <!-- Bouton Thème Jour/Nuit (EN HAUT) -->
         <button id="themeToggle" 
@@ -1201,7 +1270,8 @@
         </a>
     </div>
 
-    <!-- ==================== SCRIPT JAVASCRIPT ==================== -->
+    <!-- ==================== SCRIPTS JAVASCRIPT ==================== -->
+    <!-- Script principal de l'interface -->
     <script>
         // Small UI helpers: header shadow on scroll + active nav link
         document.addEventListener('DOMContentLoaded', function () {
@@ -1233,110 +1303,112 @@
             window.addEventListener('scroll', onScroll, { passive: true });
         });
     </script>
+    
+    <!-- Script pour l'animation de la section d'accueil -->
     <script>
-/* =======================
-   HERO SECTION ANIMATION
-   ======================= */
+    /* =======================
+       HERO SECTION ANIMATION
+       ======================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
 
-    /* ========= TYPING EFFECT ========= */
-    const title = document.querySelector("#accueil h1");
-    const subtitle = title.querySelector("span");
+        /* ========= TYPING EFFECT ========= */
+        const title = document.querySelector("#accueil h1");
+        const subtitle = title.querySelector("span");
 
-    const titleText = "Portfolio Aymane Ayyadi";
-    const subtitleText = "Etudiant en BTS SIO – Option SISR";
+        const titleText = "Portfolio Aymane Ayyadi";
+        const subtitleText = "Etudiant en BTS SIO – Option SISR";
 
-    let i = 0, j = 0;
-    title.childNodes[0].textContent = "";
-    subtitle.textContent = "";
+        let i = 0, j = 0;
+        title.childNodes[0].textContent = "";
+        subtitle.textContent = "";
 
-    function typeTitle() {
-        if (i < titleText.length) {
-            title.childNodes[0].textContent += titleText.charAt(i);
-            i++;
-            setTimeout(typeTitle, 70);
-        } else {
-            setTimeout(typeSubtitle, 400);
+        function typeTitle() {
+            if (i < titleText.length) {
+                title.childNodes[0].textContent += titleText.charAt(i);
+                i++;
+                setTimeout(typeTitle, 70);
+            } else {
+                setTimeout(typeSubtitle, 400);
+            }
         }
-    }
 
-    function typeSubtitle() {
-        if (j < subtitleText.length) {
-            subtitle.textContent += subtitleText.charAt(j);
-            j++;
-            setTimeout(typeSubtitle, 35);
+        function typeSubtitle() {
+            if (j < subtitleText.length) {
+                subtitle.textContent += subtitleText.charAt(j);
+                j++;
+                setTimeout(typeSubtitle, 35);
+            }
         }
-    }
 
-    typeTitle();
-
-
-    /* ========= PARALLAX BACKGROUND ========= */
-    const bg = document.querySelector("#accueil img");
-
-    window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        bg.style.transform = `translateY(${scrollY * 0.15}px)`;
-    }, { passive: true });
+        typeTitle();
 
 
-    /* ========= PARTICLES BACKGROUND ========= */
-    const canvas = document.getElementById("heroParticles");
-    const ctx = canvas.getContext("2d");
+        /* ========= PARALLAX BACKGROUND ========= */
+        const bg = document.querySelector("#accueil img");
 
-    let w, h;
-    function resize() {
-        w = canvas.width = window.innerWidth;
-        h = canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener("resize", resize);
-
-    const particles = Array.from({ length: 70 }, () => ({
-        x: Math.random() * w,
-        y: Math.random() * h,
-        r: Math.random() * 2 + 1,
-        dx: (Math.random() - 0.5) * 0.4,
-        dy: (Math.random() - 0.5) * 0.4
-    }));
-
-    function animateParticles() {
-        ctx.clearRect(0, 0, w, h);
-        ctx.fillStyle = "rgba(78, 158, 255, 0.7)";
-
-        particles.forEach(p => {
-            p.x += p.dx;
-            p.y += p.dy;
-
-            if (p.x < 0 || p.x > w) p.dx *= -1;
-            if (p.y < 0 || p.y > h) p.dy *= -1;
-
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fill();
-        });
-
-        requestAnimationFrame(animateParticles);
-    }
-    animateParticles();
+        window.addEventListener("scroll", () => {
+            const scrollY = window.scrollY;
+            bg.style.transform = `translateY(${scrollY * 0.15}px)`;
+        }, { passive: true });
 
 
-    /* ========= SCROLL ARROW ANIMATION ========= */
-    const arrow = document.querySelector(".scroll-arrow");
-    let direction = 1;
-    let offset = 0;
+        /* ========= PARTICLES BACKGROUND ========= */
+        const canvas = document.getElementById("heroParticles");
+        const ctx = canvas.getContext("2d");
 
-    function animateArrow() {
-        offset += direction * 0.3;
-        if (offset > 8 || offset < 0) direction *= -1;
-        arrow.style.transform = `translate(-50%, ${offset}px)`;
-        requestAnimationFrame(animateArrow);
-    }
-    animateArrow();
+        let w, h;
+        function resize() {
+            w = canvas.width = window.innerWidth;
+            h = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener("resize", resize);
 
-});
-</script>
+        const particles = Array.from({ length: 70 }, () => ({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            r: Math.random() * 2 + 1,
+            dx: (Math.random() - 0.5) * 0.4,
+            dy: (Math.random() - 0.5) * 0.4
+        }));
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, w, h);
+            ctx.fillStyle = "rgba(78, 158, 255, 0.7)";
+
+            particles.forEach(p => {
+                p.x += p.dx;
+                p.y += p.dy;
+
+                if (p.x < 0 || p.x > w) p.dx *= -1;
+                if (p.y < 0 || p.y > h) p.dy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+
+        /* ========= SCROLL ARROW ANIMATION ========= */
+        const arrow = document.querySelector(".scroll-arrow");
+        let direction = 1;
+        let offset = 0;
+
+        function animateArrow() {
+            offset += direction * 0.3;
+            if (offset > 8 || offset < 0) direction *= -1;
+            arrow.style.transform = `translate(-50%, ${offset}px)`;
+            requestAnimationFrame(animateArrow);
+        }
+        animateArrow();
+
+    });
+    </script>
 
     <!-- Script pour le bouton thème -->
     <script>
