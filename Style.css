@@ -1206,3 +1206,132 @@ body:not([data-theme="light"]) #sunIcon {
     border: 1px solid #e2e8f0;
     font-weight: 500;
 }
+
+/* ===== SECTION TABLEAU DE SYNTHÈSE - VERSION COMPACTE ===== */
+
+.btn-synthese {
+    background: linear-gradient(135deg, #4e9eff, #601cfc);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-synthese:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78, 158, 255, 0.4);
+}
+
+.btn-synthese:active {
+    transform: translateY(0);
+}
+
+.btn-synthese.excel {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.btn-synthese.excel:hover {
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+}
+
+.btn-synthese.fullscreen {
+    background: linear-gradient(135deg, #475569, #334155);
+}
+
+.btn-synthese.fullscreen:hover {
+    box-shadow: 0 8px 20px rgba(71, 85, 105, 0.4);
+}
+
+.pdf-preview-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.pdf-preview {
+    border-radius: 10px;
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .btn-synthese {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .pdf-preview {
+        height: 250px !important;
+    }
+}
+
+[data-theme="light"] .btn-synthese {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .btn-synthese:hover {
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+[data-theme="light"] .btn-synthese.fullscreen {
+    background: linear-gradient(135deg, #64748b, #475569);
+}
+
+[data-theme="light"] .pdf-preview-container {
+    background: #f1f5f9;
+}
+/* ===== CORRECTION POUR LE MODE CLAIR - SECTION TABLEAU DE SYNTHÈSE ===== */
+
+/* Force le fond de la section tableau de synthèse en mode clair */
+[data-theme="light"] #Tableau\ de\ synthèse {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+}
+
+[data-theme="light"] #Tableau\ de\ synthèse .section-bg {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+}
+
+/* Correction pour toutes les sections avec classe section-bg en mode clair */
+[data-theme="light"] .section-bg {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+}
+
+/* Fond du conteneur intérieur en mode clair */
+[data-theme="light"] #Tableau\ de\ synthèse .interest-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fond du conteneur PDF en mode clair */
+[data-theme="light"] .pdf-preview-container {
+    background: #f1f5f9 !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Couleur du texte en mode clair pour la section */
+[data-theme="light"] #Tableau\ de\ synthèse .text-\[#c7d5e0\] {
+    color: #475569 !important;
+}
+
+[data-theme="light"] #Tableau\ de\ synthèse h2,
+[data-theme="light"] #Tableau\ de\ synthèse h3 {
+    color: #0f172a !important;
+}
+
+/* Message d'information en mode clair */
+[data-theme="light"] #Tableau\ de\ synthèse .text-\[#c7d5e0\]\/60 {
+    color: #64748b !important;
+}
