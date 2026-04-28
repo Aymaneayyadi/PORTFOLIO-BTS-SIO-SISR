@@ -39,17 +39,6 @@
     
     <!-- Favicon -->
     <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
-    
-    <!-- ==================== DONNÉES STRUCTURÉES (JSON-LD) ==================== -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Portfolio Aymane Ayyadi",
-        "alternateName": "Aymane Ayyadi | BTS SIO SISR",
-        "url": "https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/"
-    }
-    </script>
 </head>
 
 <body class="antialiased" data-theme="dark">
@@ -73,7 +62,8 @@
                 <a href="#profil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
                 <a href="#parcours" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Parcours</a>
                 <a href="#projets" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Projets</a>
-                <a href="#Tableau de synthèse" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Tableau de synthèse</a>
+                <a href="#epreuve-e5" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Epreuve E5</a>
+                <a href="#epreuve-e6" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Epreuve E6</a>
                 <a href="#certificats" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Certificats</a>
                 <a href="#veille" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
                 <a href="#contact" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
@@ -483,71 +473,205 @@
         </div>
     </section>
 
-    <!-- ==================== SECTION TABLEAU DE SYNTHÈSE ==================== -->
-    <section id="Tableau de synthèse" class="section section-bg">
-        <div class="container mx-auto px-6">
-            
-            <div class="text-center mb-8 animate-fadeInUp">
-                <h2 class="text-3xl md:text-4xl font-bold">
-                    Tableau de <span class="gradient-text">synthèse</span>
-                </h2>
-                <p class="text-[#c7d5e0] mt-3">
-                    Tableau de synthèse des compétences et réalisations professionnelles BTS SIO
-                </p>
+   <!-- ==================== SECTION EPREUVE E5 ==================== -->
+<section id="epreuve-e5" class="section section-bg">
+    <div class="container mx-auto px-6">
+        
+        <div class="text-center mb-8 animate-fadeInUp">
+            <h2 class="text-3xl md:text-4xl font-bold">
+                Epreuve <span class="gradient-text">E5 du BTS SIO SISR</span>
+            </h2>
+            <p class="text-[#c7d5e0] mt-3">
+                Tableau de synthèse des compétences et réalisations professionnelles BTS SIO
+            </p>
+        </div>
+
+        <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg animate-fadeInUp max-w-5xl mx-auto">
+
+            <!-- Aperçu PDF - HAUTEUR RÉDUITE -->
+            <div class="mb-4">
+                <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
+                    <iframe 
+                        src="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
+                        width="100%" 
+                        height="350px"
+                        class="pdf-preview"
+                        style="background: white;"
+                        title="Tableau de synthèse BTS SIO">
+                        Votre navigateur ne supporte pas l'affichage des PDF.
+                    </iframe>
+                </div>
             </div>
 
-            <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg animate-fadeInUp max-w-5xl mx-auto">
+            <!-- Boutons d'action -->
+            <div class="flex flex-wrap gap-3 justify-center">
 
-                <!-- Aperçu PDF - HAUTEUR RÉDUITE -->
-                <div class="mb-4">
-                    <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
-                        <iframe 
-                            src="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
-                            width="100%" 
-                            height="350px"
-                            class="pdf-preview"
-                            style="background: white;"
-                            title="Tableau de synthèse BTS SIO">
-                            Votre navigateur ne supporte pas l'affichage des PDF.
-                        </iframe>
-                    </div>
+                <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
+                   download
+                   target="_blank"
+                   class="btn-synthese">
+                    <i class="fas fa-file-pdf mr-2"></i>
+                    Télécharger PDF
+                </a>
+
+                <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.xlsx" 
+                   download
+                   target="_blank"
+                   class="btn-synthese excel">
+                    <i class="fas fa-file-excel mr-2"></i>
+                    Télécharger Excel
+                </a>
+
+                <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
+                   target="_blank"
+                   class="btn-synthese fullscreen">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Ouvrir dans un nouvel onglet
+                </a>
+
+            </div>
+
+            <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
+                <i class="fas fa-info-circle mr-1"></i>
+                Aperçu réduit du tableau - Cliquez sur "Ouvrir dans un nouvel onglet" pour mieux visualiser
+            </div>
+
+        </div>
+
+<!-- ==================== ATTESTATIONS DE STAGE ==================== -->
+<div class="mt-12 animate-fadeInUp max-w-5xl mx-auto">
+    <div class="text-center mb-8">
+        <h3 class="text-2xl md:text-3xl font-bold">
+            Mes <span class="gradient-text">Attestations de stage</span>
+        </h3>
+        <p class="text-[#c7d5e0] mt-2">
+            Stages effectués en première et deuxième année de BTS SIO
+        </p>
+    </div>
+
+    <div class="interest-card p-5 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+            <div class="flex-shrink-0">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                    <i class="fas fa-file-pdf text-white text-2xl"></i>
                 </div>
-
-                <!-- Boutons d'action -->
-                <div class="flex flex-wrap gap-3 justify-center">
-
-                    <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
-                       download
-                       class="btn-synthese">
-                        <i class="fas fa-file-pdf mr-2"></i>
-                        Télécharger PDF
-                    </a>
-
-                    <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.xlsx" 
-                       download
-                       class="btn-synthese excel">
-                        <i class="fas fa-file-excel mr-2"></i>
-                        Télécharger Excel
-                    </a>
-
-                    <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
-                       target="_blank"
-                       class="btn-synthese fullscreen">
-                        <i class="fas fa-external-link-alt mr-2"></i>
-                        Ouvrir dans un nouvel onglet
-                    </a>
-
+            </div>
+            <div class="flex-1">
+                <h4 class="text-xl font-semibold text-white group-hover:text-[#4e9eff] transition-colors duration-300">
+                    Attestations de stage BTS SIO SISR
+                </h4>
+                <p class="text-[#c7d5e0] text-sm mt-1">
+                    Document contenant les attestations de stage de 1ère et 2ème année
+                </p>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="tag px-2 py-0.5 text-xs rounded-full">Stage 2024-2025</span>
+                    <span class="tag px-2 py-0.5 text-xs rounded-full">Stage 2025-2026</span>
                 </div>
-
-                <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
-                    <i class="fas fa-info-circle mr-1"></i>
-                    Aperçu réduit du tableau - Cliquez sur "Ouvrir dans un nouvel onglet" pour mieux visualiser
-                </div>
-
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <button onclick="document.getElementById('attestationsModal').style.display='flex'" 
+                        class="btn-synthese text-sm py-2 px-4">
+                    <i class="fas fa-eye mr-2"></i>
+                    Voir les attestations
+                </button>
+                <a href="Conception/Site/images/Attestation%20de%20stage%20pour%20les%20deux%20ann%C3%A9es%20du%20BTS.pdf" 
+                   download
+                   target="_blank"
+                   class="btn-synthese text-sm py-2 px-4" 
+                   style="background: linear-gradient(135deg, #475569, #334155);">
+                    <i class="fas fa-download mr-2"></i>
+                    Télécharger
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</div>
 
+<!-- Modal unique pour les attestations de stage -->
+<div id="attestationsModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 10000; align-items: center; justify-content: center; padding: 20px;" onclick="if(event.target===this) this.style.display='none'">
+    <div class="relative max-w-4xl w-full bg-[#1a1f2e] rounded-xl overflow-hidden shadow-2xl" style="animation: modalFadeIn 0.3s ease-out;">
+        <button onclick="document.getElementById('attestationsModal').style.display='none'" 
+                class="absolute top-4 right-4 w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition duration-300 z-10 shadow-lg">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="p-6">
+            <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                    <i class="fas fa-file-pdf text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Attestations de stage BTS SIO</h3>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden" style="min-height: 500px;">
+                <iframe src="Conception/Site/images/Attestation%20de%20stage%20pour%20les%20deux%20ann%C3%A9es%20du%20BTS.pdf" 
+                        width="100%" 
+                        height="550px"
+                        style="border: none;"
+                        title="Attestations de stage BTS SIO">
+                    Votre navigateur ne supporte pas l'affichage des PDF.
+                </iframe>
+            </div>
+            <div class="mt-4 text-center text-[#c7d5e0] text-sm">
+                <i class="fas fa-info-circle mr-1"></i>
+                Document contenant les attestations de stage de 1ère et 2ème année
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================== EPREUVE E6 DU BTS SIO SISR ==================== -->
+<section id="epreuve-e6" class="section section-bg">
+    <div class="container mx-auto px-6">
+        
+        <div class="text-center mb-8 animate-fadeInUp">
+            <h2 class="text-3xl md:text-4xl font-bold">
+                Epreuve <span class="gradient-text">E6 du BTS SIO SISR</span>
+            </h2>
+            <p class="text-[#c7d5e0] mt-3">
+                Dossier des deux réalisations professionnelles
+            </p>
+        </div>
+
+        <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg animate-fadeInUp max-w-5xl mx-auto">
+
+            <!-- Aperçu PDF -->
+            <div class="mb-4">
+                <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
+                    <iframe 
+                        src="Conception/Site/images/Dossier_realisations_professionnelles.pdf" 
+                        width="100%" 
+                        height="450px"
+                        class="pdf-preview"
+                        style="background: white;"
+                        title="Dossier des réalisations professionnelles BTS SIO">
+                        Votre navigateur ne supporte pas l'affichage des PDF.
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="flex flex-wrap gap-3 justify-center">
+                <a href="Conception/Site/images/Dossier_realisations_professionnelles.pdf" 
+                   download
+                   class="btn-synthese">
+                    <i class="fas fa-file-pdf mr-2"></i>
+                    Télécharger le dossier
+                </a>
+
+                <a href="Conception/Site/images/Dossier_realisations_professionnelles.pdf" 
+                   target="_blank"
+                   class="btn-synthese fullscreen">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Ouvrir dans un nouvel onglet
+                </a>
+            </div>
+
+            <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
+                <i class="fas fa-info-circle mr-1"></i>
+                Dossier des réalisations professionnelles - 1ère et 2ème année
+            </div>
+
+        </div>
+    </div>
+</section>
     <!-- ==================== SECTION CERTIFICATS ==================== -->
     <section id="certificats" class="section section-bg">
         <div class="container mx-auto px-6">
