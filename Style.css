@@ -1335,3 +1335,78 @@ iframe {
 [data-theme="light"] #Tableau\ de\ synthèse .text-\[#c7d5e0\]\/60 {
     color: #64748b !important;
 }
+/* ============================================
+   LIGHTFALL ANIMATION - STYLES
+   ============================================ */
+
+/* Conteneur principal de l'animation */
+#lightfall-wrapper {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 5 !important;
+    pointer-events: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Canvas généré par l'animation */
+#lightfall-wrapper canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    pointer-events: none !important;
+}
+
+/* Fallback si l'animation ne charge pas */
+#lightfall-wrapper.fallback {
+    background: radial-gradient(ellipse at center, rgba(78, 158, 255, 0.15) 0%, transparent 70%);
+}
+
+/* Pour que le contenu texte reste au-dessus */
+#accueil .container.mx-auto.px-6 {
+    position: relative;
+    z-index: 20;
+}
+
+/* Animation de fondu pour l'apparition du canvas */
+@keyframes lightfallFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#lightfall-wrapper canvas {
+    animation: lightfallFadeIn 1.5s ease-out forwards;
+}
+
+/* ============================================
+   MODE CLAIR - Adaptation Lightfall
+   ============================================ */
+
+[data-theme="light"] #lightfall-wrapper canvas {
+    opacity: 0.7 !important;
+}
+
+[data-theme="light"] #lightfall-wrapper.fallback {
+    background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+}
+
+/* ============================================
+   RESPONSIVE - Lightfall
+   ============================================ */
+
+@media (max-width: 768px) {
+    #lightfall-wrapper canvas {
+        opacity: 0.6 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #lightfall-wrapper canvas {
+        opacity: 0.4 !important;
+    }
+}
