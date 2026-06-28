@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- ==================== MÉTADONNÉES DE BASE ==================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ==================== SEO & MÉTADONNÉES SOCIALES ==================== -->
     <title>Portfolio Aymane Ayyadi | BTS SIO SISR</title>
-    
     <meta name="description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- Open Graph (Facebook, LinkedIn) -->
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
     <meta property="og:description" content="Portfolio professionnel d'Aymane Ayyadi – Étudiant BTS SIO SISR">
     <meta property="og:site_name" content="Portfolio Aymane Ayyadi">
@@ -20,47 +16,53 @@
     <meta property="og:image" content="https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/Conception/Site/images/image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Portfolio Aymane Ayyadi | BTS SIO SISR">
     <meta name="twitter:description" content="Portfolio d'Aymane Ayyadi, étudiant en BTS SIO option SISR. Projets, compétences, certifications et veille informatique.">
     <meta name="twitter:image" content="https://aymaneayyadi.github.io/PORTFOLIO-BTS-SIO-SISR/Conception/Site/images/image.png">
-    
-    <!-- ==================== FEUILLES DE STYLE ==================== -->
+
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Styles personnalisés (fichier séparé) -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <!-- Styles personnalisés -->
     <link rel="stylesheet" href="Style.css">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
-    <!--Avant la fermeture du </head> -->
-<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/ogl@0.0.13/dist/ogl.min.js"></script>
+
+    <!-- React & OGL -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js">
+    </script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js">
+    </script>
+    <script src="https://unpkg.com/ogl@0.0.13/dist/ogl.min.js">
+    </script>
 </head>
 
 <body class="antialiased" data-theme="dark">
-    <!-- ==================== EN-TÊTE & NAVIGATION ==================== -->
+    <!-- CURSEUR PERSONNALISÉ -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- ==================== EN-TÊTE ==================== -->
     <header class="header fixed top-0 left-0 w-full z-50 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <!-- Logo et nom -->
             <div class="flex items-center gap-3">
                 <div class="logo">
                     <img src="Conception/Site/images/favicon.ico" alt="Logo AYMANE AYYADI" class="logo-img">
                     <div class="logo-fallback">AA</div>
                 </div>
-                <a href="#" class="text-2xl font-bold text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
+                <a href="#" class="text-2xl font-bold text-[#4e9eff] hover:text-[#601cfc] transition duration-300 logo-text">
                     AYMANE AYYADI
                 </a>
             </div>
-            
-            <!-- Navigation Desktop -->
+
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="#accueil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Accueil</a>
                 <a href="#profil" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
@@ -76,99 +78,95 @@
         </div>
     </header>
 
-    <!-- ==================== SECTION ACCUEIL ==================== -->
-<section id="accueil" class="min-h-screen flex items-center relative bg-[#0a0e1a] overflow-hidden">
-    
-    <!-- CONTENEUR DE L'ANIMATION LIGHTFALL -->
-    <div id="lightfall-wrapper" class="absolute inset-0 z-0"></div>
-    
-    <!-- Image de fond de secours (si l'animation ne charge pas) -->
-    <div class="absolute inset-0 z-0 opacity-20">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop" alt="Network background" class="w-full h-full object-cover">
-    </div>
+    <!-- ==================== ACCUEIL ==================== -->
+    <section id="accueil" class="min-h-screen flex items-center relative bg-[#0a0e1a] overflow-hidden">
+        <div id="lightfall-wrapper" class="absolute inset-0 z-0"></div>
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop" alt="Network background" class="w-full h-full object-cover">
+        </div>
 
-    <div class="container mx-auto px-6 z-20">
-        <div class="max-w-2xl animate-fadeInUp mx-auto text-center flex flex-col items-center">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                Portfolio Aymane Ayyadi<br>
-                <span class="text-xl md:text-2xl font-normal text-[#c7d5e0]">
-                    Etudiant en BTS SIO – Option SISR
-                </span>
-            </h1>
+        <div class="container mx-auto px-6 z-20">
+            <div class="max-w-2xl animate-fadeInUp mx-auto text-center flex flex-col items-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 accueil-title">
+                    Portfolio Aymane Ayyadi<br>
+                    <span class="text-xl md:text-2xl font-normal accueil-subtitle">
+                        Etudiant en BTS SIO – Option SISR
+                    </span>
+                </h1>
 
-            <div class="flex space-x-6 mt-8">
-                <a href="https://www.linkedin.com/in/aymane-ayyadi-52b62a340/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#4e9eff] text-white hover:bg-[#4e9eff] hover:scale-110 transition duration-300">
-                    <i class="fab fa-linkedin text-xl"></i>
-                </a>
-                <a href="https://github.com/Aymaneayyadi" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#4e9eff] text-white hover:bg-[#4e9eff] hover:scale-110 transition duration-300">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
+                <div class="flex space-x-6 mt-8">
+                    <a href="https://www.linkedin.com/in/aymane-ayyadi-52b62a340/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#4e9eff] text-white hover:bg-[#4e9eff] hover:scale-110 transition duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Aymaneayyadi" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-[#4e9eff] text-white hover:bg-[#4e9eff] hover:scale-110 transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <a href="#profil" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-arrow">
-        <div class="w-0.5 h-8 bg-[#4e9eff] relative">
-            <div class="absolute bottom-0 left-0 w-2 h-2 border-r-2 border-b-2 border-[#4e9eff] transform rotate-45 -ml-1"></div>
-        </div>
-    </a>
-</section>
 
-    <!-- ==================== SECTION PROFIL ==================== -->
-    <section id="profil" class="section section-bg relative">
+        <a href="#profil" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-arrow">
+            <div class="w-0.5 h-8 bg-[#4e9eff] relative">
+                <div class="absolute bottom-0 left-0 w-2 h-2 border-r-2 border-b-2 border-[#4e9eff] transform rotate-45 -ml-1"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- ==================== PROFIL ==================== -->
+    <section id="profil" class="section section-bg relative scroll-animate">
         <div class="absolute inset-0 z-0 opacity-10">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&fit=crop" alt="Network background" class="w-full h-full object-cover">
         </div>
-        
+
         <div class="container mx-auto px-6 relative z-10">
             <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/3 flex justify-center animate-fadeInUp delay-100">
+                <div class="lg:w-1/3 flex justify-center scroll-animate left delay-1">
                     <img src="Conception/Site/images/image aymane.png" alt="Photo de profil AYMANE AYYADI" class="profile-img w-64 h-64 md:w-80 md:h-80 rounded-full object-cover">
                 </div>
-                
-                <div class="lg:w-2/3 animate-fadeInUp delay-200">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8">À propos <span class="gradient-text">de moi</span></h2>
-                    
-                    <div class="space-y-4 text-[#c7d5e0]">
-                        <p class="text-lg text-white">
-                            Je me présente, je m'appelle AYMANE AYYADI, J'ai 20 ans et je suis actuellement étudiant en deuxième année 
-                            BTS Services Informatiques aux Organisations option Solutions d'Infrastructure, Systèmes et Réseaux (SIO SISR) 
+
+                <div class="lg:w-2/3 scroll-animate right delay-2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 section-title">À propos <span class="gradient-text">de moi</span></h2>
+
+                    <div class="space-y-4 section-text">
+                        <p class="text-lg section-text-white">
+                            Je me présente, je m'appelle AYMANE AYYADI, J'ai 20 ans et je suis actuellement étudiant en deuxième année
+                            BTS Services Informatiques aux Organisations option Solutions d'Infrastructure, Systèmes et Réseaux (SIO SISR)
                             à IFIDE SUP-FORMATION Alsace de Strasbourg.
                         </p>
-                        
-                        <p>
-                            Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2, accessible après le baccalauréat, 
-                            qui forme des techniciens spécialisés dans les métiers de l'informatique. Ce BTS s'adresse aux étudiants intéressés 
+
+                        <p class="section-text">
+                            Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2, accessible après le baccalauréat,
+                            qui forme des techniciens spécialisés dans les métiers de l'informatique. Ce BTS s'adresse aux étudiants intéressés
                             par les technologies numériques, la programmation, la gestion des réseaux et le développement d'applications.
                         </p>
-                        
+
                         <div class="mt-8">
                             <h4 class="text-xl font-semibold text-[#4e9eff] mb-4">Les deux spécialités du BTS SIO :</h4>
-                            
+
                             <div class="grid md:grid-cols-2 gap-6">
-                                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group">
+                                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group scroll-animate left delay-3">
                                     <h5 class="text-lg font-semibold text-[#4e9eff] mb-2 group-hover:text-white transition-colors duration-300">
                                         SISR - Solutions d'Infrastructure, Systèmes et Réseaux
                                     </h5>
                                     <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
-                                        Cette option forme aux métiers de l'administration et de la maintenance des systèmes et réseaux informatiques. 
+                                        Cette option forme aux métiers de l'administration et de la maintenance des systèmes et réseaux informatiques.
                                         Les étudiants développent des compétences dans l'installation, la configuration et la sécurisation des infrastructures IT.
                                     </p>
                                 </div>
-                                
-                                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group">
+
+                                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group scroll-animate right delay-4">
                                     <h5 class="text-lg font-semibold text-[#4e9eff] mb-2 group-hover:text-white transition-colors duration-300">
                                         SLAM - Solutions Logicielles et Applications Métiers
                                     </h5>
                                     <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
-                                        Cette option forme aux métiers de la programmation et du développement logiciel. 
+                                        Cette option forme aux métiers de la programmation et du développement logiciel.
                                         Les étudiants acquièrent des compétences dans la conception et le développement d'applications, de sites web et de logiciels.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="mt-8 animate-fadeInUp delay-300">
+
+                        <div class="mt-8 scroll-animate scale delay-5">
                             <a href="Conception/Site/images/CV  Aymane AYYADI.pdf" class="gradient-bg text-white px-8 py-3 rounded-full font-semibold inline-flex items-center hover:shadow-lg hover:-translate-y-1 transition duration-300">
                                 <i class="fas fa-download mr-2"></i>
                                 Télécharger mon CV
@@ -180,54 +178,54 @@
         </div>
     </section>
 
-    <!-- ==================== SECTION CENTRES D'INTÉRÊT ==================== -->
+    <!-- ==================== CENTRES D'INTÉRÊT ==================== -->
     <section class="section">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fadeInUp">
-                <h2 class="text-3xl md:text-4xl font-bold">Mes <span class="gradient-text">centres d'intérêt</span></h2>
-                <p class="text-[#c7d5e0] max-w-2xl mx-auto mt-4">Découvrez mes passions en dehors du domaine informatique</p>
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-3xl md:text-4xl font-bold section-title">Mes <span class="gradient-text">centres d'intérêt</span></h2>
+                <p class="section-text max-w-2xl mx-auto mt-4">Découvrez mes passions en dehors du domaine informatique</p>
             </div>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 animate-fadeInUp delay-100 text-center border border-transparent hover:border-[#4e9eff]/30 group">
+                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center border border-transparent hover:border-[#4e9eff]/30 group scroll-animate scale delay-1">
                     <div class="mb-6">
                         <div class="relative inline-block">
                             <div class="absolute inset-0 bg-[#4e9eff] rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                             <i class="fas fa-shield-alt text-5xl text-[#4e9eff] relative z-10 group-hover:text-white transition-colors duration-300"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#4e9eff] transition-colors duration-300">Karaté</h3>
-                    <p class="text-[#c7d5e0] mb-4">Pratique régulière du karaté depuis plusieurs années. Ce sport m'a enseigné la discipline, la persévérance et la concentration.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#4e9eff] transition-colors duration-300 interest-title">Karaté</h3>
+                    <p class="section-text mb-4">Pratique régulière du karaté depuis plusieurs années. Ce sport m'a enseigné la discipline, la persévérance et la concentration.</p>
                     <div class="mt-4 flex flex-wrap gap-2 justify-center">
                         <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff] border border-[#4e9eff]/30">Discipline</span>
                         <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#4e9eff]/20 text-[#4e9eff] border border-[#4e9eff]/30">Persévérance</span>
                     </div>
                 </div>
-                
-                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 animate-fadeInUp delay-200 text-center border border-transparent hover:border-[#601cfc]/30 group">
+
+                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center border border-transparent hover:border-[#601cfc]/30 group scroll-animate scale delay-2">
                     <div class="mb-6">
                         <div class="relative inline-block">
                             <div class="absolute inset-0 bg-[#601cfc] rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                             <i class="fas fa-gamepad text-5xl text-[#4e9eff] relative z-10 group-hover:text-white transition-colors duration-300"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#601cfc] transition-colors duration-300">Gaming</h3>
-                    <p class="text-[#c7d5e0] mb-4">Passionné de jeux vidéo, particulièrement intéressé par les jeux de stratégie et les jeux de rôle. Cela développe ma réflexion stratégique.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#601cfc] transition-colors duration-300 interest-title">Gaming</h3>
+                    <p class="section-text mb-4">Passionné de jeux vidéo, particulièrement intéressé par les jeux de stratégie et les jeux de rôle. Cela développe ma réflexion stratégique.</p>
                     <div class="mt-4 flex flex-wrap gap-2 justify-center">
                         <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#601cfc]/20 text-[#601cfc] border border-[#601cfc]/30">Stratégie</span>
                         <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#601cfc]/20 text-[#601cfc] border border-[#601cfc]/30">Réflexion</span>
                     </div>
                 </div>
-                
-                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 animate-fadeInUp delay-300 text-center border border-transparent hover:border-[#00d4ff]/30 group">
+
+                <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center border border-transparent hover:border-[#00d4ff]/30 group scroll-animate scale delay-3">
                     <div class="mb-6">
                         <div class="relative inline-block">
                             <div class="absolute inset-0 bg-[#00d4ff] rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                             <i class="fas fa-laptop-code text-5xl text-[#4e9eff] relative z-10 group-hover:text-white transition-colors duration-300"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#00d4ff] transition-colors duration-300">Veille technologique</h3>
-                    <p class="text-[#c7d5e0] mb-4">Suivi régulier des dernières innovations en cybersécurité, intelligence artificielle et nouvelles technologies.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-[#00d4ff] transition-colors duration-300 interest-title">Veille technologique</h3>
+                    <p class="section-text mb-4">Suivi régulier des dernières innovations en cybersécurité, intelligence artificielle et nouvelles technologies.</p>
                     <div class="mt-4 flex flex-wrap gap-2 justify-center">
                         <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#00d4ff]/20 text-[#00d4ff] border border-[#00d4ff]/30">Innovation</span>
                         <span class="tag px-3 py-1 rounded-full text-sm font-medium bg-[#00d4ff]/20 text-[#00d4ff] border border-[#00d4ff]/30">Cybersécurité</span>
@@ -237,19 +235,19 @@
         </div>
     </section>
 
-    <!-- ==================== SECTION PARCOURS ==================== -->
+    <!-- ==================== PARCOURS ==================== -->
     <section id="parcours" class="section">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fadeInUp">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mon <span class="gradient-text">parcours</span></h2>
-                <p class="text-[#c7d5e0] max-w-2xl mx-auto">Découvrez mon parcours scolaire et mes expériences éducatives</p>
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">Mon <span class="gradient-text">parcours</span></h2>
+                <p class="section-text max-w-2xl mx-auto">Découvrez mon parcours scolaire et mes expériences éducatives</p>
             </div>
-            
+
             <div class="relative max-w-4xl mx-auto">
                 <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#4e9eff]/20 via-[#4e9eff]/50 to-[#4e9eff]/20 hidden md:block"></div>
-                
+
                 <div class="space-y-12 md:space-y-16">
-                    <div class="timeline-item animate-fadeInUp delay-100">
+                    <div class="timeline-item scroll-animate left delay-1">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
                             <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
                                 <div class="inline-flex items-center gap-4">
@@ -267,17 +265,17 @@
                                             <i class="fas fa-graduation-cap text-[#4e9eff] group-hover:text-white transition-colors duration-300"></i>
                                         </div>
                                         <div>
-                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300">IFIDE SUP-FORMATION</h3>
+                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300 timeline-title">IFIDE SUP-FORMATION</h3>
                                             <span class="text-sm text-[#4e9eff] font-medium group-hover:text-white/80 transition-colors duration-300">2025/2026</span>
                                         </div>
                                     </div>
-                                    <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">Deuxième année BTS SIO option SISR</p>
+                                    <p class="section-text group-hover:text-white/80 transition-colors duration-300">Deuxième année BTS SIO option SISR</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item animate-fadeInUp delay-200">
+
+                    <div class="timeline-item scroll-animate right delay-2">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
                             <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-2 md:order-1">
                                 <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group">
@@ -286,11 +284,11 @@
                                             <i class="fas fa-university text-[#4e9eff] group-hover:text-white transition-colors duration-300"></i>
                                         </div>
                                         <div>
-                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300">IFIDE SUP-FORMATION</h3>
+                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300 timeline-title">IFIDE SUP-FORMATION</h3>
                                             <span class="text-sm text-[#4e9eff] font-medium group-hover:text-white/80 transition-colors duration-300">2024/2025</span>
                                         </div>
                                     </div>
-                                    <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">Première année BTS SIO</p>
+                                    <p class="section-text group-hover:text-white/80 transition-colors duration-300">Première année BTS SIO</p>
                                 </div>
                             </div>
                             <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4e9eff] border-4 border-[#0a0e1a] z-20 hidden md:block"></div>
@@ -304,8 +302,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item animate-fadeInUp delay-300">
+
+                    <div class="timeline-item scroll-animate left delay-3">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
                             <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
                                 <div class="inline-flex items-center gap-4">
@@ -323,17 +321,17 @@
                                             <i class="fas fa-school text-[#4e9eff] group-hover:text-white transition-colors duration-300"></i>
                                         </div>
                                         <div>
-                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300">LYCÉE SELMANE EL FARISSI</h3>
+                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300 timeline-title">LYCÉE SELMANE EL FARISSI</h3>
                                             <span class="text-sm text-[#4e9eff] font-medium group-hover:text-white/80 transition-colors duration-300">2023/2024</span>
                                         </div>
                                     </div>
-                                    <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">Deuxième année - Baccalauréat Sciences Physiques</p>
+                                    <p class="section-text group-hover:text-white/80 transition-colors duration-300">Deuxième année - Baccalauréat Sciences Physiques</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item animate-fadeInUp delay-400">
+
+                    <div class="timeline-item scroll-animate right delay-4">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
                             <div class="md:w-1/2 md:pl-12 mb-6 md:mb-0 order-2 md:order-1">
                                 <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border-l-4 border-[#4e9eff] group">
@@ -342,11 +340,11 @@
                                             <i class="fas fa-book-open text-[#4e9eff] group-hover:text-white transition-colors duration-300"></i>
                                         </div>
                                         <div>
-                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300">LYCÉE SELMANE EL FARISSI</h3>
+                                            <h3 class="text-xl font-semibold text-[#4e9eff] group-hover:text-white transition-colors duration-300 timeline-title">LYCÉE SELMANE EL FARISSI</h3>
                                             <span class="text-sm text-[#4e9eff] font-medium group-hover:text-white/80 transition-colors duration-300">2022/2023</span>
                                         </div>
                                     </div>
-                                    <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">Première année - Baccalauréat Sciences Expérimentales</p>
+                                    <p class="section-text group-hover:text-white/80 transition-colors duration-300">Première année - Baccalauréat Sciences Expérimentales</p>
                                 </div>
                             </div>
                             <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#4e9eff] border-4 border-[#0a0e1a] z-20 hidden md:block"></div>
@@ -361,25 +359,25 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="text-center mt-12 animate-fadeInUp delay-500">
+
+                <div class="text-center mt-12 scroll-animate scale delay-5">
                     <div class="inline-flex items-center gap-3 px-6 py-3 bg-[#4e9eff]/10 rounded-full">
                         <i class="fas fa-rocket text-[#4e9eff]"></i>
-                        <span class="text-[#c7d5e0]">Début de mon parcours</span>
+                        <span class="section-text">Début de mon parcours</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== SECTION PROJETS ==================== -->
+    <!-- ==================== PROJETS ==================== -->
     <section id="projets" class="section">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes <span class="gradient-text">Projets Réalisés</span></h2>
-            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Découvrez mes projets personnels et professionnels</p>
-            
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 scroll-animate section-title">Mes <span class="gradient-text">Projets Réalisés</span></h2>
+            <p class="section-text text-center max-w-2xl mx-auto mb-16 scroll-animate delay-1">Découvrez mes projets personnels et professionnels</p>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="interest-card project-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fadeInUp delay-100">
+                <div class="interest-card project-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group scroll-animate scale delay-1">
                     <div class="relative h-64 overflow-hidden">
                         <img src="Conception/Site/images/logo-parcus-membre-agisport.jpg" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
@@ -397,7 +395,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300">AP2 - Projet Parcus</h3>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300 project-title">AP2 - Projet Parcus</h3>
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">GLPI</span>
@@ -406,13 +404,13 @@
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">BitLocker</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Debian</span>
                         </div>
-                        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
+                        <p class="section-text group-hover:text-white/80 transition-colors duration-300">
                             Mise en place complète de l'infrastructure informatique PARCUS : Active Directory, GPO, gestion de parc GLPI, déploiement système avec FOG, assistance à distance via RustDesk et chiffrement BitLocker.
                         </p>
                     </div>
                 </div>
-                
-                <div class="interest-card project-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fadeInUp delay-100">
+
+                <div class="interest-card project-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group scroll-animate scale delay-2">
                     <div class="relative h-64 overflow-hidden">
                         <img src="Conception/Site/images/Projet ifide.png" alt="Parcus" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
@@ -430,7 +428,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300">AP3 - Projet IFIDE</h3>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300 project-title">AP3 - Projet IFIDE</h3>
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
@@ -439,13 +437,13 @@
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">DFSR</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">GPO</span>
                         </div>
-                        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
+                        <p class="section-text group-hover:text-white/80 transition-colors duration-300">
                             Mise en place d'une infrastructure complète avec Active Directory, DNS, DHCP, GPO, DFS, réplication inter-site et connexion VPN IPSec entre Strasbourg et Mulhouse.
                         </p>
                     </div>
                 </div>
-                
-                <div class="interest-card project-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fadeInUp delay-100">
+
+                <div class="interest-card project-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group scroll-animate scale delay-3">
                     <div class="relative h-64 overflow-hidden">
                         <img src="Conception/Site/images/image Sécurité civile.png" alt="Windows Server 2022" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div class="project-overlay absolute inset-0 flex items-center justify-center">
@@ -463,7 +461,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300">AP4 - PROJET SECURITE CIVILE</h3>
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300 project-title">AP4 - PROJET SECURITE CIVILE</h3>
                         <div class="flex flex-wrap gap-2 mb-3">
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">DNS</span>
@@ -473,7 +471,7 @@
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Supervision</span>
                             <span class="tag px-3 py-1 rounded-full text-sm font-medium">Téléphonie</span>
                         </div>
-                        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">
+                        <p class="section-text group-hover:text-white/80 transition-colors duration-300">
                             Mise en place d'une infrastructure sécurisée et Déploiement d'un Active Directory, d'un serveur de messagerie, d'une solution VPN (OpenVPN), d'une DMZ, ainsi que d'un système de supervision et de téléphonie, permettant un accès sécurisé aux services.
                         </p>
                     </div>
@@ -482,213 +480,145 @@
         </div>
     </section>
 
-   <!-- ==================== SECTION EPREUVE E5 ==================== -->
-<section id="epreuve-e5" class="section section-bg">
-    <div class="container mx-auto px-6">
-        
-        <div class="text-center mb-8 animate-fadeInUp">
-            <h2 class="text-3xl md:text-4xl font-bold">
-                Epreuve <span class="gradient-text">E5 du BTS SIO SISR</span>
-            </h2>
-            <p class="text-[#c7d5e0] mt-3">
-                Tableau de synthèse des compétences et réalisations professionnelles BTS SIO
-            </p>
-        </div>
-
-        <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg animate-fadeInUp max-w-5xl mx-auto">
-
-            <!-- Aperçu PDF - HAUTEUR RÉDUITE -->
-            <div class="mb-4">
-                <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
-                    <iframe 
-                        src="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
-                        width="100%" 
-                        height="350px"
-                        class="pdf-preview"
-                        style="background: white;"
-                        title="Tableau de synthèse BTS SIO">
-                        Votre navigateur ne supporte pas l'affichage des PDF.
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- Boutons d'action -->
-            <div class="flex flex-wrap gap-3 justify-center">
-
-                <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
-                   download
-                   target="_blank"
-                   class="btn-synthese">
-                    <i class="fas fa-file-pdf mr-2"></i>
-                    Télécharger PDF
-                </a>
-
-                <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.xlsx" 
-                   download
-                   target="_blank"
-                   class="btn-synthese excel">
-                    <i class="fas fa-file-excel mr-2"></i>
-                    Télécharger Excel
-                </a>
-
-                <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" 
-                   target="_blank"
-                   class="btn-synthese fullscreen">
-                    <i class="fas fa-external-link-alt mr-2"></i>
-                    Ouvrir dans un nouvel onglet
-                </a>
-
-            </div>
-
-            <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
-                <i class="fas fa-info-circle mr-1"></i>
-                Aperçu réduit du tableau - Cliquez sur "Ouvrir dans un nouvel onglet" pour mieux visualiser
-            </div>
-
-        </div>
-
-<!-- ==================== ATTESTATIONS DE STAGE ==================== -->
-<div class="mt-12 animate-fadeInUp max-w-5xl mx-auto">
-    <div class="text-center mb-8">
-        <h3 class="text-2xl md:text-3xl font-bold">
-            Mes <span class="gradient-text">Attestations de stage</span>
-        </h3>
-        <p class="text-[#c7d5e0] mt-2">
-            Stages effectués en première et deuxième année de BTS SIO
-        </p>
-    </div>
-
-    <div class="interest-card p-5 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
-        <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
-            <div class="flex-shrink-0">
-                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
-                    <i class="fas fa-file-pdf text-white text-2xl"></i>
-                </div>
-            </div>
-            <div class="flex-1">
-                <h4 class="text-xl font-semibold text-white group-hover:text-[#4e9eff] transition-colors duration-300">
-                    Attestations de stage BTS SIO SISR
-                </h4>
-                <p class="text-[#c7d5e0] text-sm mt-1">
-                    Document contenant les attestations de stage de 1ère et 2ème année
-                </p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                    <span class="tag px-2 py-0.5 text-xs rounded-full">Stage 2024-2025</span>
-                    <span class="tag px-2 py-0.5 text-xs rounded-full">Stage 2025-2026</span>
-                </div>
-            </div>
-            <div class="flex flex-wrap gap-3">
-                <button onclick="document.getElementById('attestationsModal').style.display='flex'" 
-                        class="btn-synthese text-sm py-2 px-4">
-                    <i class="fas fa-eye mr-2"></i>
-                    Voir les attestations
-                </button>
-                <a href="Conception/Site/images/Attestation%20de%20stage%20pour%20les%20deux%20ann%C3%A9es%20du%20BTS.pdf" 
-                   download
-                   target="_blank"
-                   class="btn-synthese text-sm py-2 px-4" 
-                   style="background: linear-gradient(135deg, #475569, #334155);">
-                    <i class="fas fa-download mr-2"></i>
-                    Télécharger
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal unique pour les attestations de stage -->
-<div id="attestationsModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 10000; align-items: center; justify-content: center; padding: 20px;" onclick="if(event.target===this) this.style.display='none'">
-    <div class="relative max-w-4xl w-full bg-[#1a1f2e] rounded-xl overflow-hidden shadow-2xl" style="animation: modalFadeIn 0.3s ease-out;">
-        <button onclick="document.getElementById('attestationsModal').style.display='none'" 
-                class="absolute top-4 right-4 w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition duration-300 z-10 shadow-lg">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="p-6">
-            <div class="flex items-center gap-3 mb-5">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
-                    <i class="fas fa-file-pdf text-white"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-white">Attestations de stage BTS SIO</h3>
-            </div>
-            <div class="bg-white rounded-lg overflow-hidden" style="min-height: 500px;">
-                <iframe src="Conception/Site/images/Attestation%20de%20stage%20pour%20les%20deux%20ann%C3%A9es%20du%20BTS.pdf" 
-                        width="100%" 
-                        height="550px"
-                        style="border: none;"
-                        title="Attestations de stage BTS SIO">
-                    Votre navigateur ne supporte pas l'affichage des PDF.
-                </iframe>
-            </div>
-            <div class="mt-4 text-center text-[#c7d5e0] text-sm">
-                <i class="fas fa-info-circle mr-1"></i>
-                Document contenant les attestations de stage de 1ère et 2ème année
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ==================== EPREUVE E6 DU BTS SIO SISR ==================== -->
-<section id="epreuve-e6" class="section section-bg">
-    <div class="container mx-auto px-6">
-        
-        <div class="text-center mb-8 animate-fadeInUp">
-            <h2 class="text-3xl md:text-4xl font-bold">
-                Epreuve <span class="gradient-text">E6 du BTS SIO SISR</span>
-            </h2>
-            <p class="text-[#c7d5e0] mt-3">
-                Dossier des deux réalisations professionnelles
-            </p>
-        </div>
-
-        <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg animate-fadeInUp max-w-5xl mx-auto">
-
-            <!-- Aperçu PDF -->
-            <div class="mb-4">
-                <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
-                    <iframe 
-                        src="Conception/Site/images/Les deux réalisations professionnelles.pdf" 
-                        width="100%" 
-                        height="450px"
-                        class="pdf-preview"
-                        style="background: white;"
-                        title="Dossier des réalisations professionnelles BTS SIO">
-                        Votre navigateur ne supporte pas l'affichage des PDF.
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- Boutons d'action -->
-            <div class="flex flex-wrap gap-3 justify-center">
-                <a href="Conception/Site/images/Les deux réalisations professionnelles.pdf" 
-                   download
-                   class="btn-synthese">
-                    <i class="fas fa-file-pdf mr-2"></i>
-                    Télécharger le dossier
-                </a>
-
-                <a href="Conception/Site/images/Les deux réalisations professionnelles.pdf" 
-                   target="_blank"
-                   class="btn-synthese fullscreen">
-                    <i class="fas fa-external-link-alt mr-2"></i>
-                    Ouvrir dans un nouvel onglet
-                </a>
-            </div>
-
-            <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
-                <i class="fas fa-info-circle mr-1"></i>
-                Dossier des réalisations professionnelles - 1ère et 2ème année
-            </div>
-
-        </div>
-    </div>
-</section>
-    <!-- ==================== SECTION CERTIFICATS ==================== -->
-    <section id="certificats" class="section section-bg">
+    <!-- ==================== EPREUVE E5 ==================== -->
+    <section id="epreuve-e5" class="section section-bg scroll-animate">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Mes <span class="gradient-text">certificats</span></h2>
-            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100">Les certifications que j'ai obtenues dans le cadre de ma formation</p>
-            
+            <div class="text-center mb-8 scroll-animate">
+                <h2 class="text-3xl md:text-4xl font-bold section-title">Epreuve <span class="gradient-text">E5 du BTS SIO SISR</span></h2>
+                <p class="section-text mt-3">Tableau de synthèse des compétences et réalisations professionnelles BTS SIO</p>
+            </div>
+
+            <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg max-w-5xl mx-auto scroll-animate scale delay-1">
+                <div class="mb-4">
+                    <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
+                        <iframe src="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" width="100%" height="350px" class="pdf-preview" style="background: white;" title="Tableau de synthèse BTS SIO">
+                            Votre navigateur ne supporte pas l'affichage des PDF.
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" download target="_blank" class="btn-synthese">
+                        <i class="fas fa-file-pdf mr-2"></i> Télécharger PDF
+                    </a>
+                    <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.xlsx" download target="_blank" class="btn-synthese excel">
+                        <i class="fas fa-file-excel mr-2"></i> Télécharger Excel
+                    </a>
+                    <a href="Conception/Site/images/Copie de BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthese_2026-2.pdf" target="_blank" class="btn-synthese fullscreen">
+                        <i class="fas fa-external-link-alt mr-2"></i> Ouvrir dans un nouvel onglet
+                    </a>
+                </div>
+
+                <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
+                    <i class="fas fa-info-circle mr-1"></i>
+                    Aperçu réduit du tableau - Cliquez sur "Ouvrir dans un nouvel onglet" pour mieux visualiser
+                </div>
+            </div>
+
+            <!-- Attestations de stage -->
+            <div class="mt-12 max-w-5xl mx-auto scroll-animate right delay-2">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl md:text-3xl font-bold section-title">Mes <span class="gradient-text">Attestations de stage</span></h3>
+                    <p class="section-text mt-2">Stages effectués en première et deuxième année de BTS SIO</p>
+                </div>
+
+                <div class="interest-card p-5 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                                <i class="fas fa-file-pdf text-white text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-semibold text-white group-hover:text-[#4e9eff] transition-colors duration-300 attestation-title">Attestations de stage BTS SIO SISR</h4>
+                            <p class="section-text text-sm mt-1">Document contenant les attestations de stage de 1ère et 2ème année</p>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="tag px-2 py-0.5 text-xs rounded-full">Stage 2024-2025</span>
+                                <span class="tag px-2 py-0.5 text-xs rounded-full">Stage 2025-2026</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <button onclick="document.getElementById('attestationsModal').style.display='flex'" class="btn-synthese text-sm py-2 px-4">
+                                <i class="fas fa-eye mr-2"></i> Voir les attestations
+                            </button>
+                            <a href="Conception/Site/images/Attestation%20de%20stage%20pour%20les%20deux%20ann%C3%A9es%20du%20BTS.pdf" download target="_blank" class="btn-synthese text-sm py-2 px-4" style="background: linear-gradient(135deg, #475569, #334155);">
+                                <i class="fas fa-download mr-2"></i> Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal attestations -->
+            <div id="attestationsModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 10000; align-items: center; justify-content: center; padding: 20px;" onclick="if(event.target===this) this.style.display='none'">
+                <div class="relative max-w-4xl w-full bg-[#1a1f2e] rounded-xl overflow-hidden shadow-2xl" style="animation: modalFadeIn 0.3s ease-out;">
+                    <button onclick="document.getElementById('attestationsModal').style.display='none'" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center hover:bg-red-600 transition duration-300 z-10 shadow-lg">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center">
+                                <i class="fas fa-file-pdf text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Attestations de stage BTS SIO</h3>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden" style="min-height: 500px;">
+                            <iframe src="Conception/Site/images/Attestation%20de%20stage%20pour%20les%20deux%20ann%C3%A9es%20du%20BTS.pdf" width="100%" height="550px" style="border: none;" title="Attestations de stage BTS SIO">
+                                Votre navigateur ne supporte pas l'affichage des PDF.
+                            </iframe>
+                        </div>
+                        <div class="mt-4 text-center section-text text-sm">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            Document contenant les attestations de stage de 1ère et 2ème année
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EPREUVE E6 ==================== -->
+    <section id="epreuve-e6" class="section section-bg scroll-animate">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8 scroll-animate">
+                <h2 class="text-3xl md:text-4xl font-bold section-title">Epreuve <span class="gradient-text">E6 du BTS SIO SISR</span></h2>
+                <p class="section-text mt-3">Dossier des deux réalisations professionnelles</p>
+            </div>
+
+            <div class="interest-card p-4 md:p-5 rounded-xl shadow-lg max-w-5xl mx-auto scroll-animate scale delay-1">
+                <div class="mb-4">
+                    <div class="pdf-preview-container rounded-lg overflow-hidden border border-[#4e9eff]/20 bg-white/5">
+                        <iframe src="Conception/Site/images/Les deux réalisations professionnelles.pdf" width="100%" height="450px" class="pdf-preview" style="background: white;" title="Dossier des réalisations professionnelles BTS SIO">
+                            Votre navigateur ne supporte pas l'affichage des PDF.
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <a href="Conception/Site/images/Les deux réalisations professionnelles.pdf" download class="btn-synthese">
+                        <i class="fas fa-file-pdf mr-2"></i> Télécharger le dossier
+                    </a>
+                    <a href="Conception/Site/images/Les deux réalisations professionnelles.pdf" target="_blank" class="btn-synthese fullscreen">
+                        <i class="fas fa-external-link-alt mr-2"></i> Ouvrir dans un nouvel onglet
+                    </a>
+                </div>
+
+                <div class="text-center mt-4 text-xs text-[#c7d5e0]/60">
+                    <i class="fas fa-info-circle mr-1"></i>
+                    Dossier des réalisations professionnelles - 1ère et 2ème année
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICATS ==================== -->
+    <section id="certificats" class="section section-bg scroll-animate">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 scroll-animate section-title">Mes <span class="gradient-text">certificats</span></h2>
+            <p class="section-text text-center max-w-2xl mx-auto mb-16 scroll-animate delay-1">Les certifications que j'ai obtenues dans le cadre de ma formation</p>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="interest-card certificate-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fadeInUp delay-100">
+                <div class="interest-card certificate-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group scroll-animate scale delay-1">
                     <div class="relative h-48 overflow-hidden">
                         <img src="Conception/Site/images/certificat 1.png" alt="Certificat Réseaux" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium z-10">
@@ -701,12 +631,12 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300">Implémenter et gérer des services de certificats ActiveDirectory</h3>
-                        <div class="flex items-center text-[#c7d5e0] mb-3">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300 certificate-title">Implémenter et gérer des services de certificats ActiveDirectory</h3>
+                        <div class="flex items-center section-text mb-3">
                             <i class="fas fa-calendar-alt mr-2 text-sm"></i>
                             <span class="text-sm">Obtenu en 2024</span>
                         </div>
-                        <p class="text-[#c7d5e0] mb-4 group-hover:text-white/80 transition-colors duration-300">Certification sur la mise en place et gestion des services de certificats dans Active Directory.</p>
+                        <p class="section-text mb-4 group-hover:text-white/80 transition-colors duration-300">Certification sur la mise en place et gestion des services de certificats dans Active Directory.</p>
                         <div class="flex justify-between items-center">
                             <div class="flex flex-wrap gap-2">
                                 <span class="tag px-3 py-1 rounded-full text-sm font-medium">Active Directory</span>
@@ -718,8 +648,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="interest-card certificate-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fadeInUp delay-200">
+
+                <div class="interest-card certificate-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group scroll-animate scale delay-2">
                     <div class="relative h-48 overflow-hidden">
                         <img src="Conception/Site/images/certificat 2.png" alt="Certificat Sécurité" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium z-10">
@@ -732,12 +662,12 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300">Gérer les fonctionnalités avancées d'AD DS</h3>
-                        <div class="flex items-center text-[#c7d5e0] mb-3">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300 certificate-title">Gérer les fonctionnalités avancées d'AD DS</h3>
+                        <div class="flex items-center section-text mb-3">
                             <i class="fas fa-calendar-alt mr-2 text-sm"></i>
                             <span class="text-sm">Obtenu en 2025</span>
                         </div>
-                        <p class="text-[#c7d5e0] mb-4 group-hover:text-white/80 transition-colors duration-300">Certification sur les fonctionnalités avancées d'Active Directory Domain Services.</p>
+                        <p class="section-text mb-4 group-hover:text-white/80 transition-colors duration-300">Certification sur les fonctionnalités avancées d'Active Directory Domain Services.</p>
                         <div class="flex justify-between items-center">
                             <div class="flex flex-wrap gap-2">
                                 <span class="tag px-3 py-1 rounded-full text-sm font-medium">AD DS</span>
@@ -749,8 +679,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="interest-card certificate-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group animate-fadeInUp delay-300">
+
+                <div class="interest-card certificate-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group scroll-animate scale delay-3">
                     <div class="relative h-48 overflow-hidden">
                         <img src="Conception/Site/images/certificat 3.png" alt="Certificat Linux" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div class="certificate-badge absolute top-4 right-4 bg-[#4e9eff] text-white px-3 py-1 rounded-full text-sm font-medium z-10">
@@ -763,12 +693,12 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300">Implementer des objets de stratégie de groupe</h3>
-                        <div class="flex items-center text-[#c7d5e0] mb-3">
+                        <h3 class="text-xl font-semibold mb-2 group-hover:text-[#4e9eff] transition-colors duration-300 certificate-title">Implementer des objets de stratégie de groupe</h3>
+                        <div class="flex items-center section-text mb-3">
                             <i class="fas fa-calendar-alt mr-2 text-sm"></i>
                             <span class="text-sm">Obtenu en 2024</span>
                         </div>
-                        <p class="text-[#c7d5e0] mb-4 group-hover:text-white/80 transition-colors duration-300">Certification sur les bases de l'administration système Linux, gestion des utilisateurs et services.</p>
+                        <p class="section-text mb-4 group-hover:text-white/80 transition-colors duration-300">Certification sur les bases de l'administration système Linux, gestion des utilisateurs et services.</p>
                         <div class="flex justify-between items-center">
                             <a href="Conception/Site/images/Réalisations 3.pdf" class="text-[#4e9eff] hover:text-[#601cfc] transition duration-300">
                                 <i class="fas fa-external-link-alt"></i>
@@ -780,32 +710,32 @@
         </div>
     </section>
 
-    <!-- ==================== SECTION VEILLE TECHNOLOGIQUE ==================== -->
-    <section id="veille" class="section bg-gradient-to-b from-[#0a0e1a] to-[#0f1324]">
+    <!-- ==================== VEILLE ==================== -->
+    <section id="veille" class="section bg-gradient-to-b from-[#0a0e1a] to-[#0f1324] scroll-animate">
         <div class="container mx-auto px-6 max-w-7xl">
-            <div class="text-center mb-12 animate-fadeInUp">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Veille <span class="gradient-text">Technologique</span></h2>
+            <div class="text-center mb-12 scroll-animate">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 section-title">Veille <span class="gradient-text">Technologique</span></h2>
                 <div class="max-w-4xl mx-auto">
-                    <p class="text-[#c7d5e0] text-lg leading-relaxed">
+                    <p class="section-text text-lg leading-relaxed">
                         La veille technologique consiste à se tenir informé des nouvelles technologies et de leur évolution.
                         Elle permet de suivre les changements dans le domaine informatique afin de mieux comprendre les outils utilisés en entreprise.
                     </p>
                 </div>
             </div>
 
-            <div class="mb-16 animate-fadeInUp">
+            <div class="mb-16 scroll-animate left delay-1">
                 <div class="flex items-center gap-3 mb-8">
                     <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
                         <i class="fas fa-search text-xl text-[#4e9eff]"></i>
                     </div>
-                    <h3 class="text-3xl font-semibold text-white">Qu'est-ce que la veille technologique ?</h3>
+                    <h3 class="text-3xl font-semibold section-title">Qu'est-ce que la veille technologique ?</h3>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-10">
-                    <div class="space-y-4 text-[#c7d5e0]">
+                    <div class="space-y-4 section-text">
                         <p>La veille technologique est une activité régulière qui consiste à collecter des informations sur les nouvelles technologies, les tendances et les innovations dans le domaine informatique.</p>
                         <p>Elle permet aux professionnels de l'informatique de rester à jour et d'anticiper les changements technologiques.</p>
                     </div>
-                    <div class="space-y-4 text-[#c7d5e0]">
+                    <div class="space-y-4 section-text">
                         <p><strong>À quoi ça sert ?</strong> La veille aide à :</p>
                         <ul class="space-y-2 ml-4">
                             <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span>Comprendre les nouveaux outils et méthodes</span></li>
@@ -817,86 +747,86 @@
                 </div>
             </div>
 
-            <div class="mb-16 animate-fadeInUp">
+            <div class="mb-16 scroll-animate right delay-2">
                 <div class="flex items-center gap-3 mb-8">
                     <div class="w-10 h-10 rounded-lg bg-[#4e9eff]/20 flex items-center justify-center">
                         <i class="fas fa-user-shield text-xl text-[#4e9eff]"></i>
                     </div>
-                    <h3 class="text-3xl font-semibold text-white">Thème : La gestion des utilisateurs et des droits en entreprise</h3>
+                    <h3 class="text-3xl font-semibold section-title">Thème : La gestion des utilisateurs et des droits en entreprise</h3>
                 </div>
                 <div class="interest-card rounded-2xl p-8">
                     <div class="max-w-4xl mx-auto">
-                        <p class="text-[#c7d5e0] text-lg leading-relaxed">Ce thème explore comment les entreprises organisent l'accès à leurs systèmes informatiques. Il concerne la création des comptes utilisateurs, l'attribution des droits d'accès et la sécurité des informations.</p>
+                        <p class="section-text text-lg leading-relaxed">Ce thème explore comment les entreprises organisent l'accès à leurs systèmes informatiques. Il concerne la création des comptes utilisateurs, l'attribution des droits d'accès et la sécurité des informations.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mb-16 animate-fadeInUp">
-                <h3 class="text-3xl font-semibold text-white mb-8 text-center">Pourquoi la gestion des utilisateurs et des droits est importante ?</h3>
+            <div class="mb-16 scroll-animate">
+                <h3 class="text-3xl font-semibold section-title mb-8 text-center">Pourquoi la gestion des utilisateurs et des droits est importante ?</h3>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="interest-card card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition-all duration-500">
+                    <div class="interest-card card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition-all duration-500 scroll-animate scale delay-1">
                         <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#4e9eff] to-[#601cfc] flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-shield-alt text-2xl text-white"></i>
                         </div>
-                        <h4 class="text-lg font-semibold text-white mb-3">Sécurité</h4>
-                        <p class="text-sm text-[#c7d5e0]">Empêche les accès non autorisés aux données sensibles de l'entreprise</p>
+                        <h4 class="text-lg font-semibold section-title mb-3">Sécurité</h4>
+                        <p class="text-sm section-text">Empêche les accès non autorisés aux données sensibles de l'entreprise</p>
                     </div>
-                    <div class="interest-card card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition-all duration-500">
+                    <div class="interest-card card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition-all duration-500 scroll-animate scale delay-2">
                         <div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-emerald-700 flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-cogs text-2xl text-white"></i>
                         </div>
-                        <h4 class="text-lg font-semibold text-white mb-3">Fonctionnement</h4>
-                        <p class="text-sm text-[#c7d5e0]">Assure le bon fonctionnement des systèmes en limitant les erreurs</p>
+                        <h4 class="text-lg font-semibold section-title mb-3">Fonctionnement</h4>
+                        <p class="text-sm section-text">Assure le bon fonctionnement des systèmes en limitant les erreurs</p>
                     </div>
-                    <div class="interest-card card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition-all duration-500">
+                    <div class="interest-card card-bg rounded-xl p-6 text-center group hover:-translate-y-1 transition-all duration-500 scroll-animate scale delay-3">
                         <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-700 flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-balance-scale text-2xl text-white"></i>
                         </div>
-                        <h4 class="text-lg font-semibold text-white mb-3">Conformité</h4>
-                        <p class="text-sm text-[#c7d5e0]">Respecte les lois comme le RGPD sur la protection des données</p>
+                        <h4 class="text-lg font-semibold section-title mb-3">Conformité</h4>
+                        <p class="text-sm section-text">Respecte les lois comme le RGPD sur la protection des données</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mb-16 animate-fadeInUp">
-                <h3 class="text-3xl font-semibold text-white mb-8 text-center">Types d'utilisateurs</h3>
+            <div class="mb-16 scroll-animate">
+                <h3 class="text-3xl font-semibold section-title mb-8 text-center">Types d'utilisateurs</h3>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="interest-card card-bg rounded-xl p-6">
+                    <div class="interest-card card-bg rounded-xl p-6 scroll-animate left delay-1">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
                                 <i class="fas fa-user text-blue-400"></i>
                             </div>
-                            <h4 class="text-lg font-semibold text-white">Utilisateur standard</h4>
+                            <h4 class="text-lg font-semibold section-title">Utilisateur standard</h4>
                         </div>
-                        <ul class="space-y-2 text-sm text-[#c7d5e0]">
+                        <ul class="space-y-2 text-sm section-text">
                             <li>• Accès limité aux applications nécessaires</li>
                             <li>• Peut lire et modifier ses fichiers</li>
                             <li>• Ne peut pas installer de logiciels</li>
                             <li>• Exemple : un employé du service comptabilité</li>
                         </ul>
                     </div>
-                    <div class="interest-card card-bg rounded-xl p-6">
+                    <div class="interest-card card-bg rounded-xl p-6 scroll-animate scale delay-2">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
                                 <i class="fas fa-user-cog text-red-400"></i>
                             </div>
-                            <h4 class="text-lg font-semibold text-white">Administrateur</h4>
+                            <h4 class="text-lg font-semibold section-title">Administrateur</h4>
                         </div>
-                        <ul class="space-y-2 text-sm text-[#c7d5e0]">
+                        <ul class="space-y-2 text-sm section-text">
                             <li>• Accès complet au système</li>
                             <li>• Peut créer/modifier/supprimer des comptes</li>
                             <li>• Peut installer des logiciels</li>
                             <li>• Gère la sécurité du réseau</li>
                         </ul>
                     </div>
-                    <div class="interest-card card-bg rounded-xl p-6">
+                    <div class="interest-card card-bg rounded-xl p-6 scroll-animate right delay-3">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
                                 <i class="fas fa-robot text-green-400"></i>
                             </div>
-                            <h4 class="text-lg font-semibold text-white">Compte technique</h4>
+                            <h4 class="text-lg font-semibold section-title">Compte technique</h4>
                         </div>
-                        <ul class="space-y-2 text-sm text-[#c7d5e0]">
+                        <ul class="space-y-2 text-sm section-text">
                             <li>• Utilisé par les applications</li>
                             <li>• Pas de connexion humaine</li>
                             <li>• Droits limités à une tâche spécifique</li>
@@ -906,44 +836,44 @@
                 </div>
             </div>
 
-            <div class="mb-16 animate-fadeInUp">
-                <h3 class="text-3xl font-semibold text-white mb-8 text-center">Risques d'une mauvaise gestion des droits</h3>
+            <div class="mb-16 scroll-animate">
+                <h3 class="text-3xl font-semibold section-title mb-8 text-center">Risques d'une mauvaise gestion des droits</h3>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="interest-card bg-red-500/10 rounded-xl p-6">
+                    <div class="interest-card bg-red-500/10 rounded-xl p-6 scroll-animate left delay-1">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
                                 <i class="fas fa-exclamation-triangle text-xl text-red-400"></i>
                             </div>
-                            <h4 class="text-lg font-semibold text-white">Risques principaux</h4>
+                            <h4 class="text-lg font-semibold section-title">Risques principaux</h4>
                         </div>
                         <ul class="space-y-3">
-                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Perte de données :</strong> Un employé peut supprimer des fichiers importants par erreur</span></li>
-                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Accès non autorisé :</strong> Une personne peut voir des informations confidentielles</span></li>
-                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Erreurs de configuration :</strong> Modifications accidentelles qui cassent le système</span></li>
-                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Piratage facilité :</strong> Un compte trop permissif peut être utilisé par un pirate</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="section-text"><strong>Perte de données :</strong> Un employé peut supprimer des fichiers importants par erreur</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="section-text"><strong>Accès non autorisé :</strong> Une personne peut voir des informations confidentielles</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="section-text"><strong>Erreurs de configuration :</strong> Modifications accidentelles qui cassent le système</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-times text-red-400 mt-1"></i><span class="section-text"><strong>Piratage facilité :</strong> Un compte trop permissif peut être utilisé par un pirate</span></li>
                         </ul>
                     </div>
-                    <div class="interest-card bg-green-500/10 rounded-xl p-6">
+                    <div class="interest-card bg-green-500/10 rounded-xl p-6 scroll-animate right delay-2">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
                                 <i class="fas fa-check-circle text-xl text-green-400"></i>
                             </div>
-                            <h4 class="text-lg font-semibold text-white">Bonnes pratiques</h4>
+                            <h4 class="text-lg font-semibold section-title">Bonnes pratiques</h4>
                         </div>
                         <ul class="space-y-3">
-                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Principe du moindre privilège :</strong> Donner seulement les droits nécessaires</span></li>
-                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Révision régulière :</strong> Vérifier qui a accès à quoi</span></li>
-                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Séparation des tâches :</strong> Une personne ne peut pas tout faire seule</span></li>
-                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="text-[#c7d5e0]"><strong>Journalisation :</strong> Tracer qui fait quoi dans le système</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="section-text"><strong>Principe du moindre privilège :</strong> Donner seulement les droits nécessaires</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="section-text"><strong>Révision régulière :</strong> Vérifier qui a accès à quoi</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="section-text"><strong>Séparation des tâches :</strong> Une personne ne peut pas tout faire seule</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-400 mt-1"></i><span class="section-text"><strong>Journalisation :</strong> Tracer qui fait quoi dans le système</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="animate-fadeInUp">
-                <h3 class="text-3xl font-semibold text-white mb-10 text-center">Articles de veille</h3>
+            <div class="scroll-animate">
+                <h3 class="text-3xl font-semibold section-title mb-10 text-center">Articles de veille</h3>
                 <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <a href="https://www.cnil.fr/fr/securite-gerer-les-habilitations" target="_blank" rel="noopener noreferrer" class="interest-card block rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
+                    <a href="https://www.cnil.fr/fr/securite-gerer-les-habilitations" target="_blank" rel="noopener noreferrer" class="interest-card block rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group scroll-animate scale delay-1">
                         <div class="relative aspect-[4/3] rounded-t-xl overflow-hidden">
                             <img src="Conception/Site/images/CNIL logo.png" alt="Logo CNIL" class="absolute inset-0 w-full h-full object-contain bg-white p-4 group-hover:scale-105 transition duration-300">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -953,15 +883,15 @@
                             </div>
                         </div>
                         <div class="p-5">
-                            <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-[#4e9eff] transition duration-300">Sécurité : gérer les habilitations</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-4 group-hover:text-white/80 transition-colors duration-300">Guide officiel expliquant comment limiter les accès et gérer les droits des utilisateurs pour protéger les données.</p>
-                            <div class="flex items-center justify-between text-xs text-[#c7d5e0]">
+                            <h4 class="text-lg font-semibold section-title mb-3 group-hover:text-[#4e9eff] transition duration-300">Sécurité : gérer les habilitations</h4>
+                            <p class="text-sm section-text mb-4 group-hover:text-white/80 transition-colors duration-300">Guide officiel expliquant comment limiter les accès et gérer les droits des utilisateurs pour protéger les données.</p>
+                            <div class="flex items-center justify-between text-xs section-text">
                                 <div class="flex items-center gap-1"><i class="fas fa-shield-alt"></i><span>Source officielle</span></div>
                                 <div class="flex items-center gap-1"><i class="fas fa-file-alt"></i><span>Guide pratique</span></div>
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.forum-des-competences.org/gestion-des-habilitations/" target="_blank" rel="noopener noreferrer" class="interest-card block rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
+                    <a href="https://www.forum-des-competences.org/gestion-des-habilitations/" target="_blank" rel="noopener noreferrer" class="interest-card block rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group scroll-animate scale delay-2">
                         <div class="relative aspect-[4/3] rounded-t-xl overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Forum des compétences" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -971,15 +901,15 @@
                             </div>
                         </div>
                         <div class="p-5">
-                            <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-[#4e9eff] transition duration-300">La gestion des habilitations : définition et enjeu</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-4 group-hover:text-white/80 transition-colors duration-300">Présente ce qu'est la gestion des habilitations, pourquoi elle est importante et comment on attribue les droits.</p>
-                            <div class="flex items-center justify-between text-xs text-[#c7d5e0]">
+                            <h4 class="text-lg font-semibold section-title mb-3 group-hover:text-[#4e9eff] transition duration-300">La gestion des habilitations : définition et enjeu</h4>
+                            <p class="text-sm section-text mb-4 group-hover:text-white/80 transition-colors duration-300">Présente ce qu'est la gestion des habilitations, pourquoi elle est importante et comment on attribue les droits.</p>
+                            <div class="flex items-center justify-between text-xs section-text">
                                 <div class="flex items-center gap-1"><i class="fas fa-info-circle"></i><span>Définition complète</span></div>
                                 <div class="flex items-center gap-1"><i class="fas fa-lightbulb"></i><span>Enjeux expliqués</span></div>
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.freelance-informatique.fr/actualites/gestion-habilitations" target="_blank" rel="noopener noreferrer" class="interest-card block rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
+                    <a href="https://www.freelance-informatique.fr/actualites/gestion-habilitations" target="_blank" rel="noopener noreferrer" class="interest-card block rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group scroll-animate scale delay-3">
                         <div class="relative aspect-[4/3] rounded-t-xl overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Freelance Informatique" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -989,36 +919,36 @@
                             </div>
                         </div>
                         <div class="p-5">
-                            <h4 class="text-lg font-semibold text-white mb-3 group-hover:text-[#4e9eff] transition duration-300">Guide pratique : Gestion des habilitations</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-4 group-hover:text-white/80 transition-colors duration-300">Un article pratique qui décrit des bonnes pratiques pour mettre en place une gestion des droits efficace.</p>
-                            <div class="flex items-center justify-between text-xs text-[#c7d5e0]">
+                            <h4 class="text-lg font-semibold section-title mb-3 group-hover:text-[#4e9eff] transition duration-300">Guide pratique : Gestion des habilitations</h4>
+                            <p class="text-sm section-text mb-4 group-hover:text-white/80 transition-colors duration-300">Un article pratique qui décrit des bonnes pratiques pour mettre en place une gestion des droits efficace.</p>
+                            <div class="flex items-center justify-between text-xs section-text">
                                 <div class="flex items-center gap-1"><i class="fas fa-tools"></i><span>Pratique</span></div>
                                 <div class="flex items-center gap-1"><i class="fas fa-check-circle"></i><span>Bonnes pratiques</span></div>
                             </div>
                         </div>
                     </a>
                 </div>
-                
-                <div class="mt-16 animate-fadeInUp">
+
+                <div class="mt-16 scroll-animate">
                     <div class="text-center mb-10">
-                        <h3 class="text-2xl font-semibold text-white mb-3">Outils utilisés pour la veille</h3>
-                        <p class="text-[#c7d5e0] max-w-2xl mx-auto">Cliquez sur un outil pour accéder directement au site :</p>
+                        <h3 class="text-2xl font-semibold section-title mb-3">Outils utilisés pour la veille</h3>
+                        <p class="section-text max-w-2xl mx-auto">Cliquez sur un outil pour accéder directement au site :</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-3xl mx-auto justify-items-center">
-                        <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs">
+                        <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs scroll-animate scale delay-1">
                             <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition duration-300">
                                 <i class="fas fa-shield-alt text-xl text-blue-400"></i>
                             </div>
-                            <h4 class="font-semibold text-white mb-1 group-hover:text-[#4e9eff] transition duration-300">CNIL</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-2 group-hover:text-white/80 transition-colors duration-300">Guides et bonnes pratiques sécurité</p>
+                            <h4 class="font-semibold section-title mb-1 group-hover:text-[#4e9eff] transition duration-300">CNIL</h4>
+                            <p class="text-sm section-text mb-2 group-hover:text-white/80 transition-colors duration-300">Guides et bonnes pratiques sécurité</p>
                             <div class="text-xs text-[#4e9eff] font-medium">Cliquer pour visiter →</div>
                         </a>
-                        <a href="https://www.silicon.fr" target="_blank" rel="noopener noreferrer" class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs">
+                        <a href="https://www.silicon.fr" target="_blank" rel="noopener noreferrer" class="interest-card card-bg rounded-xl p-5 text-center group hover:-translate-y-1 transition-all duration-500 hover:shadow-2xl w-full max-w-xs scroll-animate scale delay-2">
                             <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition duration-300">
                                 <i class="fas fa-laptop-code text-xl text-purple-400"></i>
                             </div>
-                            <h4 class="font-semibold text-white mb-1 group-hover:text-[#4e9eff] transition duration-300">Silicon.fr</h4>
-                            <p class="text-sm text-[#c7d5e0] mb-2 group-hover:text-white/80 transition-colors duration-300">Actualités informatique entreprise</p>
+                            <h4 class="font-semibold section-title mb-1 group-hover:text-[#4e9eff] transition duration-300">Silicon.fr</h4>
+                            <p class="text-sm section-text mb-2 group-hover:text-white/80 transition-colors duration-300">Actualités informatique entreprise</p>
                             <div class="text-xs text-[#4e9eff] font-medium">Cliquer pour visiter →</div>
                         </a>
                     </div>
@@ -1027,32 +957,33 @@
         </div>
     </section>
 
-    <!-- ==================== SECTION CONTACT ==================== -->
-    <section id="contact" class="section">
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section scroll-animate">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-fadeInUp">Contactez-moi</h2>
-            <p class="text-[#c7d5e0] text-center max-w-2xl mx-auto mb-16 animate-fadeInUp delay-100"></p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 scroll-animate section-title">Contactez-moi</h2>
+            <p class="section-text text-center max-w-2xl mx-auto mb-16 scroll-animate delay-1"></p>
             <div class="max-w-4xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center animate-fadeInUp delay-100 group">
+                    <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center group scroll-animate left delay-2">
                         <div class="text-[#4e9eff] text-3xl mb-4 group-hover:text-white transition-colors duration-300"><i class="fas fa-phone"></i></div>
-                        <h3 class="text-xl font-semibold mb-2 text-white group-hover:text-[#4e9eff] transition-colors duration-300">Téléphone</h3>
-                        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">+33 7 43 34 95 47</p>
+                        <h3 class="text-xl font-semibold mb-2 section-title group-hover:text-[#4e9eff] transition-colors duration-300">Téléphone</h3>
+                        <p class="section-text group-hover:text-white/80 transition-colors duration-300">+33 7 43 34 95 47</p>
                     </div>
-                    <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center animate-fadeInUp delay-200 group">
+                    <div class="interest-card card-bg p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center group scroll-animate right delay-3">
                         <div class="text-[#4e9eff] text-3xl mb-4 group-hover:text-white transition-colors duration-300"><i class="fas fa-envelope"></i></div>
-                        <h3 class="text-xl font-semibold mb-2 text-white group-hover:text-[#4e9eff] transition-colors duration-300">Email</h3>
-                        <p class="text-[#c7d5e0] group-hover:text-white/80 transition-colors duration-300">aymane.ayyadi@hotmail.com</p>
+                        <h3 class="text-xl font-semibold mb-2 section-title group-hover:text-[#4e9eff] transition-colors duration-300">Email</h3>
+                        <p class="section-text group-hover:text-white/80 transition-colors duration-300">aymane.ayyadi@hotmail.com</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ==================== PIED DE PAGE ==================== -->
+
+    <!-- ==================== FOOTER ==================== -->
     <footer class="py-8 border-t border-[rgba(255,255,255,0.1)]">
         <div class="container mx-auto px-6">
             <div class="flex flex-col items-center text-center">
-                <p class="text-[#c7d5e0] text-sm md:text-base">© 2025 AYMANE AYYADI – Portfolio BTS SIO SISR</p>
+                <p class="section-text text-sm md:text-base">© 2025 AYMANE AYYADI – Portfolio BTS SIO SISR</p>
                 <a href="mentions-legales.html" class="text-[#4e9eff] text-base mt-2 hover:text-[#601cfc] transition duration-300">Mentions légales</a>
                 <div class="flex space-x-4 mt-4">
                     <a href="https://www.linkedin.com/in/aymane-ayyadi-52b62a340/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[rgba(255,255,255,0.05)] text-[#c7d5e0] hover:bg-[#4e9eff] hover:text-white transition duration-300"><i class="fab fa-linkedin"></i></a>
@@ -1075,369 +1006,402 @@
         </a>
     </div>
 
-    <!-- ==================== SCRIPTS JAVASCRIPT CORRIGÉS ==================== -->
+    <!-- ==================== SCRIPTS ==================== -->
+    <script>
+        // Navigation et scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.header');
+            const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+            const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
 
-<!-- Script 1 : Navigation et scroll -->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.header');
-    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
-    const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
+            function onScroll() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
 
-    function onScroll() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-        
-        let activeIndex = -1;
-        for (let i = 0; i < sections.length; i++) {
-            const sec = sections[i];
-            if (!sec) continue;
-            const rect = sec.getBoundingClientRect();
-            if (rect.top <= window.innerHeight * 0.35) {
-                activeIndex = i;
+                let activeIndex = -1;
+                for (let i = 0; i < sections.length; i++) {
+                    const sec = sections[i];
+                    if (!sec) continue;
+                    const rect = sec.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight * 0.35) {
+                        activeIndex = i;
+                    }
+                }
+                navLinks.forEach((link, i) => {
+                    link.classList.toggle('active', i === activeIndex);
+                });
             }
-        }
-        navLinks.forEach((link, i) => {
-            link.classList.toggle('active', i === activeIndex);
+            onScroll();
+            window.addEventListener('scroll', onScroll, { passive: true });
         });
-    }
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-});
-</script>
 
-<!-- Script 2 : Animation du texte et particules -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    // Effet de frappe
-    const title = document.querySelector("#accueil h1");
-    if (title) {
-        const subtitle = title.querySelector("span");
-        const titleText = "Portfolio Aymane Ayyadi";
-        const subtitleText = "Etudiant en BTS SIO – Option SISR";
-        let i = 0, j = 0;
-        title.childNodes[0].textContent = "";
-        subtitle.textContent = "";
-        
-        function typeTitle() {
-            if (i < titleText.length) {
-                title.childNodes[0].textContent += titleText.charAt(i);
-                i++;
-                setTimeout(typeTitle, 70);
-            } else {
-                setTimeout(typeSubtitle, 400);
+        // Animation du texte
+        document.addEventListener("DOMContentLoaded", () => {
+            const title = document.querySelector("#accueil h1");
+            if (title) {
+                const subtitle = title.querySelector("span");
+                const titleText = "Portfolio Aymane Ayyadi";
+                const subtitleText = "Etudiant en BTS SIO – Option SISR";
+                let i = 0,
+                    j = 0;
+                title.childNodes[0].textContent = "";
+                subtitle.textContent = "";
+
+                function typeTitle() {
+                    if (i < titleText.length) {
+                        title.childNodes[0].textContent += titleText.charAt(i);
+                        i++;
+                        setTimeout(typeTitle, 70);
+                    } else {
+                        setTimeout(typeSubtitle, 400);
+                    }
+                }
+
+                function typeSubtitle() {
+                    if (j < subtitleText.length) {
+                        subtitle.textContent += subtitleText.charAt(j);
+                        j++;
+                        setTimeout(typeSubtitle, 35);
+                    }
+                }
+                typeTitle();
             }
-        }
-        function typeSubtitle() {
-            if (j < subtitleText.length) {
-                subtitle.textContent += subtitleText.charAt(j);
-                j++;
-                setTimeout(typeSubtitle, 35);
+
+            const arrow = document.querySelector(".scroll-arrow");
+            if (arrow) {
+                let direction = 1;
+                let offset = 0;
+
+                function animateArrow() {
+                    offset += direction * 0.3;
+                    if (offset > 8 || offset < 0) direction *= -1;
+                    arrow.style.transform = `translate(-50%, ${offset}px)`;
+                    requestAnimationFrame(animateArrow);
+                }
+                animateArrow();
             }
-        }
-        typeTitle();
-    }
+        });
 
-    // Scroll parallax
-    const bg = document.querySelector("#accueil img");
-    if (bg) {
-        window.addEventListener("scroll", () => {
-            const scrollY = window.scrollY;
-            bg.style.transform = `translateY(${scrollY * 0.15}px)`;
-        }, { passive: true });
-    }
+        // Thème clair/sombre
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const body = document.body;
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'light') body.setAttribute('data-theme', 'light');
 
-    // Particules
-    const canvas = document.getElementById("heroParticles");
-    if (canvas) {
-        const ctx = canvas.getContext("2d");
-        let w, h;
-        function resize() {
-            w = canvas.width = window.innerWidth;
-            h = canvas.height = window.innerHeight;
-        }
-        resize();
-        window.addEventListener("resize", resize);
-        const particles = Array.from({ length: 70 }, () => ({
-            x: Math.random() * w,
-            y: Math.random() * h,
-            r: Math.random() * 2 + 1,
-            dx: (Math.random() - 0.5) * 0.4,
-            dy: (Math.random() - 0.5) * 0.4
-        }));
-        function animateParticles() {
-            ctx.clearRect(0, 0, w, h);
-            ctx.fillStyle = "rgba(78, 158, 255, 0.7)";
-            particles.forEach(p => {
-                p.x += p.dx;
-                p.y += p.dy;
-                if (p.x < 0 || p.x > w) p.dx *= -1;
-                if (p.y < 0 || p.y > h) p.dy *= -1;
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                ctx.fill();
+            function updateIcons(theme) {
+                if (theme === 'light') {
+                    sunIcon.style.opacity = '1';
+                    sunIcon.style.transform = 'scale(1) rotate(0deg)';
+                    moonIcon.style.opacity = '0';
+                    moonIcon.style.transform = 'scale(0) rotate(-180deg)';
+                } else {
+                    sunIcon.style.opacity = '0';
+                    sunIcon.style.transform = 'scale(0) rotate(180deg)';
+                    moonIcon.style.opacity = '1';
+                    moonIcon.style.transform = 'scale(1) rotate(0deg)';
+                }
+            }
+
+            updateIcons(savedTheme);
+
+            function toggleTheme() {
+                const currentTheme = body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                themeToggle.style.transform = 'scale(0.95)';
+                setTimeout(() => { themeToggle.style.transform = 'scale(1.1) rotate(180deg)'; }, 100);
+                setTimeout(() => { themeToggle.style.transform = 'scale(1) rotate(360deg)'; }, 200);
+                body.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcons(newTheme);
+            }
+
+            themeToggle.addEventListener('click', toggleTheme);
+            themeToggle.addEventListener('keydown', function(e) {
+                if (e.key === ' ' || e.key === 'Enter') {
+                    e.preventDefault();
+                    toggleTheme();
+                }
             });
-            requestAnimationFrame(animateParticles);
-        }
-        animateParticles();
-    }
+        });
 
-    // Flèche animée
-    const arrow = document.querySelector(".scroll-arrow");
-    if (arrow) {
-        let direction = 1;
-        let offset = 0;
-        function animateArrow() {
-            offset += direction * 0.3;
-            if (offset > 8 || offset < 0) direction *= -1;
-            arrow.style.transform = `translate(-50%, ${offset}px)`;
-            requestAnimationFrame(animateArrow);
-        }
-        animateArrow();
-    }
-});
-</script>
+        // Curseur personnalisé
+        document.addEventListener('DOMContentLoaded', function() {
+            const cursor = document.getElementById('custom-cursor');
+            const dot = document.getElementById('cursor-dot');
 
-<!-- Script 3 : Thème clair/sombre -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.getElementById('themeToggle');
-    const sunIcon = document.getElementById('sunIcon');
-    const moonIcon = document.getElementById('moonIcon');
-    const body = document.body;
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    if (savedTheme === 'light') body.setAttribute('data-theme', 'light');
+            if (!cursor || !dot) return;
 
-    function updateIcons(theme) {
-        if (theme === 'light') {
-            sunIcon.style.opacity = '1';
-            sunIcon.style.transform = 'scale(1) rotate(0deg)';
-            moonIcon.style.opacity = '0';
-            moonIcon.style.transform = 'scale(0) rotate(-180deg)';
-        } else {
-            sunIcon.style.opacity = '0';
-            sunIcon.style.transform = 'scale(0) rotate(180deg)';
-            moonIcon.style.opacity = '1';
-            moonIcon.style.transform = 'scale(1) rotate(0deg)';
-        }
-    }
+            let mouseX = 0,
+                mouseY = 0;
+            let cursorX = 0,
+                cursorY = 0;
 
-    updateIcons(savedTheme);
-
-    function toggleTheme() {
-        const currentTheme = body.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        themeToggle.style.transform = 'scale(0.95)';
-        setTimeout(() => { themeToggle.style.transform = 'scale(1.1) rotate(180deg)'; }, 100);
-        setTimeout(() => { themeToggle.style.transform = 'scale(1) rotate(360deg)'; }, 200);
-        body.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcons(newTheme);
-    }
-
-    themeToggle.addEventListener('click', toggleTheme);
-    themeToggle.addEventListener('keydown', function(e) {
-        if (e.key === ' ' || e.key === 'Enter') {
-            e.preventDefault();
-            toggleTheme();
-        }
-    });
-});
-</script>
-
-<!-- Script 4 : Animation Lightfall (WebGL) -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const wrapper = document.getElementById('lightfall-wrapper');
-    if (!wrapper) return;
-
-    const canvas = document.createElement('canvas');
-    canvas.style.width = '100%';
-    canvas.style.height = '100%';
-    canvas.style.display = 'block';
-    canvas.style.pointerEvents = 'none';
-    wrapper.appendChild(canvas);
-
-    const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
-    if (!gl) {
-        console.warn('WebGL non supporté');
-        wrapper.style.display = 'none';
-        return;
-    }
-
-    function resizeCanvas() {
-        const rect = wrapper.getBoundingClientRect();
-        const dpr = window.devicePixelRatio || 1;
-        canvas.width = Math.floor(rect.width * dpr);
-        canvas.height = Math.floor(rect.height * dpr);
-        canvas.style.width = rect.width + 'px';
-        canvas.style.height = rect.height + 'px';
-        gl.viewport(0, 0, canvas.width, canvas.height);
-    }
-
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
-
-    const vertexShaderSource = `
-        attribute vec2 position;
-        attribute vec2 uv;
-        varying vec2 vUv;
-        void main() {
-            vUv = uv;
-            gl_Position = vec4(position, 0.0, 1.0);
-        }
-    `;
-
-    const fragmentShaderSource = `
-        precision highp float;
-
-        uniform vec3  iResolution;
-        uniform float iTime;
-        uniform vec3  uBgColor;
-
-        varying vec2 vUv;
-
-        void main() {
-            vec2 uv = vUv;
-            vec2 p = uv * 2.0 - 1.0;
-            
-            float d = length(p);
-            float glow = exp(-d * 2.0);
-            
-            vec3 color1 = vec3(0.3, 0.4, 1.0);
-            vec3 color2 = vec3(0.8, 0.2, 0.8);
-            vec3 color3 = vec3(0.2, 0.8, 0.9);
-            
-            float t = iTime * 0.05;
-            float mixVal = sin(p.x * 3.0 + p.y * 2.0 + t) * 0.5 + 0.5;
-            float mixVal2 = cos(p.x * 2.0 - p.y * 3.0 + t * 1.3) * 0.5 + 0.5;
-            
-            vec3 col = mix(color1, color2, mixVal);
-            col = mix(col, color3, mixVal2);
-            col *= glow * 0.6;
-            
-            float particles = 0.0;
-            for (int i = 0; i < 30; i++) {
-                float fi = float(i);
-                float px = sin(fi * 127.1 + fi * 311.7 + t * fi * 0.1) * 0.5 + 0.5;
-                float py = cos(fi * 269.5 + fi * 183.3 + t * fi * 0.08) * 0.5 + 0.5;
-                vec2 pp = vec2(px, py) * 2.0 - 1.0;
-                float dist = length(p - pp);
-                particles += exp(-dist * 15.0) * 0.15;
+            function getThemeColor() {
+                const theme = document.body.getAttribute('data-theme');
+                return theme === 'light' ? '#2563eb' : '#4e9eff';
             }
-            col += vec3(0.7, 0.5, 1.0) * particles * 0.5;
-            
-            vec3 bg = uBgColor * 0.3;
-            col += bg * (1.0 - glow * 0.8);
-            
-            float vignette = 1.0 - d * 0.6;
-            col *= vignette;
-            
-            gl_FragColor = vec4(col, 0.85);
-        }
-    `;
 
-    function createShader(type, source) {
-        const shader = gl.createShader(type);
-        gl.shaderSource(shader, source);
-        gl.compileShader(shader);
-        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-            console.error('Erreur de compilation:', gl.getShaderInfoLog(shader));
-            gl.deleteShader(shader);
-            return null;
-        }
-        return shader;
-    }
+            document.addEventListener('mousemove', function(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                dot.style.left = mouseX + 'px';
+                dot.style.top = mouseY + 'px';
+                setTimeout(() => {
+                    cursorX = mouseX;
+                    cursorY = mouseY;
+                }, 30);
+            });
 
-    const vs = createShader(gl.VERTEX_SHADER, vertexShaderSource);
-    const fs = createShader(gl.FRAGMENT_SHADER, fragmentShaderSource);
-    
-    if (!vs || !fs) {
-        wrapper.style.display = 'none';
-        return;
-    }
+            function animateCursor() {
+                cursorX += (mouseX - cursorX) * 0.15;
+                cursorY += (mouseY - cursorY) * 0.15;
+                cursor.style.left = cursorX + 'px';
+                cursor.style.top = cursorY + 'px';
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
 
-    const program = gl.createProgram();
-    gl.attachShader(program, vs);
-    gl.attachShader(program, fs);
-    gl.linkProgram(program);
-    
-    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-        console.error('Erreur de liaison:', gl.getProgramInfoLog(program));
-        wrapper.style.display = 'none';
-        return;
-    }
+            const hoverElements = document.querySelectorAll(
+                'a, button, .btn-synthese, .nav-link, .interest-card, .project-card, .certificate-card, .tag, .gradient-bg'
+            );
 
-    const positions = new Float32Array([
-        -1.0, -1.0,
-         1.0, -1.0,
-        -1.0,  1.0,
-         1.0,  1.0
-    ]);
-    const uvs = new Float32Array([
-        0.0, 0.0,
-        1.0, 0.0,
-        0.0, 1.0,
-        1.0, 1.0
-    ]);
+            hoverElements.forEach(el => {
+                el.addEventListener('mouseenter', function() {
+                    cursor.classList.add('hover');
+                    dot.classList.add('hover');
+                });
+                el.addEventListener('mouseleave', function() {
+                    cursor.classList.remove('hover');
+                    dot.classList.remove('hover');
+                });
+            });
 
-    const positionBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
+            const observer = new MutationObserver(function() {
+                const color = getThemeColor();
+                dot.style.background = color;
+                cursor.style.borderColor = color + '99';
+                dot.style.boxShadow = '0 0 15px ' + color + '80';
+            });
 
-    const uvBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, uvBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, uvs, gl.STATIC_DRAW);
+            observer.observe(document.body, {
+                attributes: true,
+                attributeFilter: ['data-theme']
+            });
 
-    const posLoc = gl.getAttribLocation(program, 'position');
-    const uvLoc = gl.getAttribLocation(program, 'uv');
+            document.addEventListener('mouseleave', function() {
+                cursor.style.opacity = '0';
+                dot.style.opacity = '0';
+            });
 
-    const resolutionLoc = gl.getUniformLocation(program, 'iResolution');
-    const timeLoc = gl.getUniformLocation(program, 'iTime');
-    const bgLoc = gl.getUniformLocation(program, 'uBgColor');
+            document.addEventListener('mouseenter', function() {
+                cursor.style.opacity = '1';
+                dot.style.opacity = '1';
+            });
+        });
 
-    let startTime = performance.now();
+        // Animations au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.scroll-animate');
 
-    function render() {
-        const now = performance.now();
-        const elapsed = (now - startTime) / 1000;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
 
-        const rect = wrapper.getBoundingClientRect();
-        const dpr = window.devicePixelRatio || 1;
-        if (canvas.width !== Math.floor(rect.width * dpr) || canvas.height !== Math.floor(rect.height * dpr)) {
-            canvas.width = Math.floor(rect.width * dpr);
-            canvas.height = Math.floor(rect.height * dpr);
-            canvas.style.width = rect.width + 'px';
-            canvas.style.height = rect.height + 'px';
-            gl.viewport(0, 0, canvas.width, canvas.height);
-        }
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
 
-        gl.clearColor(0, 0, 0, 0);
-        gl.clear(gl.COLOR_BUFFER_BIT);
-        gl.useProgram(program);
+            const mutationObserver = new MutationObserver(() => {
+                document.querySelectorAll('.scroll-animate:not(.observed)').forEach(el => {
+                    el.classList.add('observed');
+                    observer.observe(el);
+                });
+            });
 
-        gl.uniform3f(resolutionLoc, canvas.width, canvas.height, 1.0);
-        gl.uniform1f(timeLoc, elapsed);
-        gl.uniform3f(bgLoc, 0.02, 0.04, 0.08);
+            mutationObserver.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
 
-        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-        gl.enableVertexAttribArray(posLoc);
-        gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+        // Animation Lightfall (WebGL)
+        document.addEventListener('DOMContentLoaded', function() {
+            const wrapper = document.getElementById('lightfall-wrapper');
+            if (!wrapper) return;
 
-        gl.bindBuffer(gl.ARRAY_BUFFER, uvBuffer);
-        gl.enableVertexAttribArray(uvLoc);
-        gl.vertexAttribPointer(uvLoc, 2, gl.FLOAT, false, 0, 0);
+            const canvas = document.createElement('canvas');
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.display = 'block';
+            canvas.style.pointerEvents = 'none';
+            wrapper.appendChild(canvas);
 
-        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+            const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
+            if (!gl) {
+                wrapper.style.display = 'none';
+                return;
+            }
 
-        requestAnimationFrame(render);
-    }
+            function resizeCanvas() {
+                const rect = wrapper.getBoundingClientRect();
+                const dpr = window.devicePixelRatio || 1;
+                canvas.width = Math.floor(rect.width * dpr);
+                canvas.height = Math.floor(rect.height * dpr);
+                canvas.style.width = rect.width + 'px';
+                canvas.style.height = rect.height + 'px';
+                gl.viewport(0, 0, canvas.width, canvas.height);
+            }
 
-    render();
-});
-</script>
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            const vertexShaderSource = `
+                attribute vec2 position;
+                attribute vec2 uv;
+                varying vec2 vUv;
+                void main() {
+                    vUv = uv;
+                    gl_Position = vec4(position, 0.0, 1.0);
+                }
+            `;
+
+            const fragmentShaderSource = `
+                precision highp float;
+                uniform vec3  iResolution;
+                uniform float iTime;
+                uniform vec3  uBgColor;
+                varying vec2 vUv;
+
+                void main() {
+                    vec2 uv = vUv;
+                    vec2 p = uv * 2.0 - 1.0;
+                    float d = length(p);
+                    float glow = exp(-d * 2.0);
+                    vec3 color1 = vec3(0.3, 0.4, 1.0);
+                    vec3 color2 = vec3(0.8, 0.2, 0.8);
+                    vec3 color3 = vec3(0.2, 0.8, 0.9);
+                    float t = iTime * 0.05;
+                    float mixVal = sin(p.x * 3.0 + p.y * 2.0 + t) * 0.5 + 0.5;
+                    float mixVal2 = cos(p.x * 2.0 - p.y * 3.0 + t * 1.3) * 0.5 + 0.5;
+                    vec3 col = mix(color1, color2, mixVal);
+                    col = mix(col, color3, mixVal2);
+                    col *= glow * 0.6;
+                    float particles = 0.0;
+                    for (int i = 0; i < 30; i++) {
+                        float fi = float(i);
+                        float px = sin(fi * 127.1 + fi * 311.7 + t * fi * 0.1) * 0.5 + 0.5;
+                        float py = cos(fi * 269.5 + fi * 183.3 + t * fi * 0.08) * 0.5 + 0.5;
+                        vec2 pp = vec2(px, py) * 2.0 - 1.0;
+                        float dist = length(p - pp);
+                        particles += exp(-dist * 15.0) * 0.15;
+                    }
+                    col += vec3(0.7, 0.5, 1.0) * particles * 0.5;
+                    vec3 bg = uBgColor * 0.3;
+                    col += bg * (1.0 - glow * 0.8);
+                    float vignette = 1.0 - d * 0.6;
+                    col *= vignette;
+                    gl_FragColor = vec4(col, 0.85);
+                }
+            `;
+
+            function createShader(type, source) {
+                const shader = gl.createShader(type);
+                gl.shaderSource(shader, source);
+                gl.compileShader(shader);
+                if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+                    gl.deleteShader(shader);
+                    return null;
+                }
+                return shader;
+            }
+
+            const vs = createShader(gl.VERTEX_SHADER, vertexShaderSource);
+            const fs = createShader(gl.FRAGMENT_SHADER, fragmentShaderSource);
+
+            if (!vs || !fs) {
+                wrapper.style.display = 'none';
+                return;
+            }
+
+            const program = gl.createProgram();
+            gl.attachShader(program, vs);
+            gl.attachShader(program, fs);
+            gl.linkProgram(program);
+
+            if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+                wrapper.style.display = 'none';
+                return;
+            }
+
+            const positions = new Float32Array([-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, 1.0]);
+            const uvs = new Float32Array([0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0]);
+
+            const positionBuffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+            gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
+
+            const uvBuffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, uvBuffer);
+            gl.bufferData(gl.ARRAY_BUFFER, uvs, gl.STATIC_DRAW);
+
+            const posLoc = gl.getAttribLocation(program, 'position');
+            const uvLoc = gl.getAttribLocation(program, 'uv');
+
+            const resolutionLoc = gl.getUniformLocation(program, 'iResolution');
+            const timeLoc = gl.getUniformLocation(program, 'iTime');
+            const bgLoc = gl.getUniformLocation(program, 'uBgColor');
+
+            let startTime = performance.now();
+
+            function render() {
+                const now = performance.now();
+                const elapsed = (now - startTime) / 1000;
+
+                const rect = wrapper.getBoundingClientRect();
+                const dpr = window.devicePixelRatio || 1;
+                if (canvas.width !== Math.floor(rect.width * dpr) || canvas.height !== Math.floor(rect.height * dpr)) {
+                    canvas.width = Math.floor(rect.width * dpr);
+                    canvas.height = Math.floor(rect.height * dpr);
+                    canvas.style.width = rect.width + 'px';
+                    canvas.style.height = rect.height + 'px';
+                    gl.viewport(0, 0, canvas.width, canvas.height);
+                }
+
+                gl.clearColor(0, 0, 0, 0);
+                gl.clear(gl.COLOR_BUFFER_BIT);
+                gl.useProgram(program);
+
+                gl.uniform3f(resolutionLoc, canvas.width, canvas.height, 1.0);
+                gl.uniform1f(timeLoc, elapsed);
+                gl.uniform3f(bgLoc, 0.02, 0.04, 0.08);
+
+                gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+                gl.enableVertexAttribArray(posLoc);
+                gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+                gl.bindBuffer(gl.ARRAY_BUFFER, uvBuffer);
+                gl.enableVertexAttribArray(uvLoc);
+                gl.vertexAttribPointer(uvLoc, 2, gl.FLOAT, false, 0, 0);
+
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                requestAnimationFrame(render);
+            }
+
+            render();
+        });
+    </script>
 </body>
 </html>
