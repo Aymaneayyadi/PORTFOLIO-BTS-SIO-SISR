@@ -645,6 +645,14 @@ body:not([data-theme="light"]) #sunIcon {
     color: #475569 !important;
 }
 
+[data-theme="dark"] .accueil-title {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .accueil-subtitle {
+    color: #c7d5e0 !important;
+}
+
 /* Tous les titres de section */
 [data-theme="light"] .section-title {
     color: #0f172a !important;
@@ -791,7 +799,8 @@ body:not([data-theme="light"]) #sunIcon {
     color: #1d4ed8 !important;
 }
 
-[data-theme="light"] .text-[#4e9eff] {
+/* CORRECTION : échappement des crochets dans le nom de classe */
+[data-theme="light"] .text-\[#4e9eff\] {
     color: #2563eb !important;
 }
 
