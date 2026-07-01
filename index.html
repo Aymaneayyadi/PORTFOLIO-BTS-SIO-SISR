@@ -36,16 +36,12 @@
     <!-- Favicon -->
     <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
 
-    <!-- React & OGL -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js">
-    </script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js">
-    </script>
-    <script src="https://unpkg.com/ogl@0.0.13/dist/ogl.min.js">
-    </script>
 </head>
 
 <body class="antialiased" data-theme="dark">
+    <!-- BARRE DE PROGRESSION -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-0.5 z-[10001] bg-gradient-to-r from-[#4e9eff] to-[#601cfc]"></div>
+
     <!-- CURSEUR PERSONNALISÉ -->
     <div id="custom-cursor"></div>
     <div id="cursor-dot"></div>
@@ -73,10 +69,31 @@
                 <a href="#certificats" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Certificats</a>
                 <a href="#veille" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
                 <a href="#contact" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
-                <a href="mentions-legales.html" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Mentions légales</a>
+                <a href="mentions-legales.html" class="nav-link text-white hover:text-[#4e9eff] transition duration-300 hidden lg:inline">Mentions légales</a>
             </nav>
+
+            <!-- MENU BURGER MOBILE -->
+            <button id="menu-toggle" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 z-[60]" aria-label="Menu">
+                <span class="menu-bar block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                <span class="menu-bar block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                <span class="menu-bar block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+            </button>
         </div>
     </header>
+
+    <!-- MENU MOBILE OVERLAY -->
+    <div id="mobile-menu" class="fixed inset-0 z-[55] bg-[#0a0e1a]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-6 opacity-0 pointer-events-none transition-all duration-500 md:hidden">
+        <a href="#accueil" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Accueil</a>
+        <a href="#profil" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
+        <a href="#parcours" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Parcours</a>
+        <a href="#projets" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Projets</a>
+        <a href="#epreuve-e5" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Epreuve E5</a>
+        <a href="#epreuve-e6" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Epreuve E6</a>
+        <a href="#certificats" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Certificats</a>
+        <a href="#veille" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
+        <a href="#contact" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
+        <a href="mentions-legales.html" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Mentions légales</a>
+    </div>
 
     <!-- ==================== ACCUEIL ==================== -->
     <section id="accueil" class="min-h-screen flex items-center relative bg-[#0a0e1a] overflow-hidden">
@@ -1402,6 +1419,95 @@
 
             render();
         });
+
+        // Barre de progression au scroll
+        const progressBar = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = progress + '%';
+        });
+
+        // Menu mobile toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBars = menuToggle.querySelectorAll('.menu-bar');
+        let menuOpen = false;
+
+        function toggleMenu() {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('opacity-0', !menuOpen);
+            mobileMenu.classList.toggle('pointer-events-none', !menuOpen);
+            menuBars.forEach((bar, i) => {
+                if (menuOpen) {
+                    bar.style.background = '#4e9eff';
+                    if (i === 0) { bar.style.transform = 'translateY(7px) rotate(45deg)'; }
+                    if (i === 1) { bar.style.opacity = '0'; }
+                    if (i === 2) { bar.style.transform = 'translateY(-7px) rotate(-45deg)'; }
+                } else {
+                    bar.style.background = 'white';
+                    bar.style.transform = '';
+                    bar.style.opacity = '1';
+                }
+            });
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => { if (menuOpen) toggleMenu(); });
+        });
+
+        // Effet 3D Tilt sur les cartes
+        document.querySelectorAll('.interest-card, .project-card, .certificate-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -8;
+                const rotateY = ((x - centerX) / centerX) * 8;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // Effet Magnétique sur les boutons sociaux
+        document.querySelectorAll('.social-btn, .hero-social a, #accueil a[href*="linkedin"], #accueil a[href*="github"]').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
+        });
+
+        // Curseur de la machine à écrire
+        const style = document.createElement('style');
+        style.textContent = `
+            .type-cursor::after {
+                content: '|';
+                animation: blink 0.8s step-end infinite;
+                color: #4e9eff;
+                font-weight: 300;
+            }
+            @keyframes blink {
+                50% { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+        const typeTitle = document.querySelector("#accueil h1");
+        if (typeTitle) {
+            const cursorSpan = document.createElement('span');
+            cursorSpan.className = 'type-cursor';
+            typeTitle.appendChild(cursorSpan);
+        }
     </script>
 </body>
 </html>
