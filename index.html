@@ -36,16 +36,12 @@
     <!-- Favicon -->
     <link rel="icon" href="Conception/Site/images/favicon.ico" type="image/x-icon">
 
-    <!-- React & OGL -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js">
-    </script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js">
-    </script>
-    <script src="https://unpkg.com/ogl@0.0.13/dist/ogl.min.js">
-    </script>
 </head>
 
 <body class="antialiased" data-theme="dark">
+    <!-- BARRE DE PROGRESSION -->
+    <div id="progress-bar"></div>
+
     <!-- CURSEUR PERSONNALISÉ -->
     <div id="custom-cursor"></div>
     <div id="cursor-dot"></div>
@@ -73,10 +69,29 @@
                 <a href="#certificats" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Certificats</a>
                 <a href="#veille" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
                 <a href="#contact" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
-                <a href="mentions-legales.html" class="nav-link text-white hover:text-[#4e9eff] transition duration-300">Mentions légales</a>
+                <a href="mentions-legales.html" class="nav-link text-white hover:text-[#4e9eff] transition duration-300 hidden lg:inline">Mentions légales</a>
             </nav>
+
+            <button id="menu-toggle" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 z-[60]" aria-label="Menu">
+                <span class="menu-bar block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                <span class="menu-bar block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+                <span class="menu-bar block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+            </button>
         </div>
     </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[55] bg-[#0a0e1a]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-6 opacity-0 pointer-events-none transition-all duration-500 md:hidden">
+        <a href="#accueil" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Accueil</a>
+        <a href="#profil" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Profil</a>
+        <a href="#parcours" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Parcours</a>
+        <a href="#projets" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Projets</a>
+        <a href="#epreuve-e5" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Epreuve E5</a>
+        <a href="#epreuve-e6" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Epreuve E6</a>
+        <a href="#certificats" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Certificats</a>
+        <a href="#veille" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Veille</a>
+        <a href="#contact" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Contact</a>
+        <a href="mentions-legales.html" class="mobile-link text-2xl font-semibold text-white hover:text-[#4e9eff] transition duration-300">Mentions légales</a>
+    </div>
 
     <!-- ==================== ACCUEIL ==================== -->
     <section id="accueil" class="min-h-screen flex items-center relative bg-[#0a0e1a] overflow-hidden">
@@ -1401,6 +1416,44 @@
             }
 
             render();
+        });
+
+        // Barre de progression au scroll
+        const progressBar = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+        });
+
+        // Menu mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBars = menuToggle.querySelectorAll('.menu-bar');
+        let menuOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('opacity-0', !menuOpen);
+            mobileMenu.classList.toggle('pointer-events-none', !menuOpen);
+            menuBars.forEach((bar, i) => {
+                if (menuOpen) {
+                    bar.style.background = '#4e9eff';
+                    if (i === 0) bar.style.transform = 'translateY(7px) rotate(45deg)';
+                    if (i === 1) bar.style.opacity = '0';
+                    if (i === 2) bar.style.transform = 'translateY(-7px) rotate(-45deg)';
+                } else {
+                    bar.style.background = 'white';
+                    bar.style.transform = '';
+                    bar.style.opacity = '1';
+                }
+            });
+        });
+
+        mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuOpen) menuToggle.click();
+            });
         });
     </script>
 </body>
